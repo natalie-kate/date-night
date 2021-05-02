@@ -6,10 +6,9 @@ body {
 
 .landing-page-container {
     height: 100vh;
-    background-image: url("assets/images/pic1.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/pic1.jpg"); 
     background-position: center;
-    background-color:rgba(0 0 0 0.5);
+    background-size: cover;
 }
 
 h1 {
