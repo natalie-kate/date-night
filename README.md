@@ -48,17 +48,16 @@ I wanted to create a fun quiz that helps indecisive people make a decision. Now 
 
    ### Strategy 
    - User goals 
-     * As a user 
-     * As a user 
-     * As a user 
-     * As a user 
+     * As a user I want help deciding what to do for date night.
+     * As a user I want to have fun  
 
    - Site owner/ business goals
-     * 
-     * 
+     * I want this application to become popular so that there is a possibility of monetising 
+       it through sponsored links e.g restaurant chains.
      * As the site owner I want my site to be responsive to different screen sizes.
      * As the site owner I want my site to be accessible to my visitors.
-     * As the site owner I want to build up a media presence 
+     * As the site owner I want to build up a media presence so that future applications will
+       have footfall immediately.
 
    ### User Stories
 
@@ -69,19 +68,19 @@ I wanted to create a fun quiz that helps indecisive people make a decision. Now 
         3. As a first time visitor, I expect to see an attractive, visually appealing site.
         4. As a first time visitor, I expect an accessible site.
         5. As a first time visitor, I expect the site to look good on my mobile device.
+        6. As a first time visitor, I want a quick and fun way to choose what to do for date night.
 
    - #### Returning Visitor Goals
 
-        1. 
+        1. As a returning visitor, if my result is to go out to do something e.g cinema, I want to see where      the   cinemas are on google maps.
         2. As a returning visitor, I want to see social media links so that I can follow on my chosen platforms.
-        3. 
-        4. As a returning visitor, I want to be able to contact the owner with comments or questions.
+        3. As a returning visitor, I want to be able to contact the owner with comments or questions.
 
    - #### Frequent Visitor Goals
 
-        1. 
-        2. 
-        3. 
+        1. As a frequent visitor I don't want to be choosing between the same two options each time e.g restaurant vs club. 
+        2. As a returning visitor, I want to be able to contact the owner with suggestions of more options.
+        3. As a returning visitor I want to use links to food delivery services if the result is takeaway.
 
    ### Scope
 
@@ -89,8 +88,37 @@ I wanted to create a fun quiz that helps indecisive people make a decision. Now 
    between 1 & 5 for importance and feasbility/ viability which then decided which features 
    could be included for initial launch.    
 
+   #### Current features 
+
+-   Responsive on all device sizes
+
+-   Accessible 
+
+-   Easy to navigate (Single use learning)
+
+-   Interactive elements 
+
+-   Social Links (build up media presence)
+
+-   Ability to contact owner 
+
+-   Timer to ensure user answers the question instinctively and not overthinking it.
+
+-   If user gets result of getting food delivered there are links to Uber Eats, Deliveroo and Just Eat.
+
+-   If users initial option is Go out. Then their result will have a google map showing them where the cinema,
+    or restaurants or clubs etc are.
+
+-   On successful submission of contact form there is a confirmation modal.
+
+### Features to implement in the future
+
+-   To add in another option on landing page to get help choosing what to eat. In addition when a users result is to    order takeaway or go to restaurant then there would also be a link to the What to Eat decision making game. Out with scope of initial launch due to time constraints.
+-   If user gets Stay in and try new recipe then have another decision game and depending on that result a recipe api will come back with options to try. Not implementing for initaial launch due to time constraints.
+-   To add in or remove options in the game depending on whats available in the users area. Would require to have result picture and result paragraph for most things which would be too time consuming for initial launch. Also think it is out of the developers skill level at the moment.
+
    ### Structure
--  I decided that it would make sense to have three pages with different sections on the home/about and evidence page.<br>
+-  I decided that it would make sense to have three pages with different sections on the home/about and evidence page.<br>.
     The content took two distinct groups, that of information (Home/about page) and that of evidence. I believe 
     that on a site that is informational that encouraging users to pursue this new interest through
     further resources is important. As it didn't warrant a page to itself, due to its size, I chose to put this after the 
@@ -178,26 +206,6 @@ visually tired.
 - I also added another fact box in the further resources section to fill it out, it 
   looked a bit sparse. 
 
-
-## Features
-
-### Current features
-
--   Responsive on all device sizes
-
--   Accessible 
-
--   Easy to navigate (Single use learning)
-
--   Interactive elements 
-
--   Social Links (build up media presence)
-
--   Ability to contact owner 
-
-### Features to implement in the future
-
--   
 
 ## Technologies 
 
