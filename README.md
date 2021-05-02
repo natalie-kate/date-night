@@ -1,4 +1,4 @@
-# Decisions decisions 
+# Date Night 
 
 
 Here is a link to the live project. (https://natalie-kate.github.io/haunted/)
@@ -111,102 +111,44 @@ I wanted to create a fun quiz that helps indecisive people make a decision. Now 
 
 -   On successful submission of contact form there is a confirmation modal.
 
-### Features to implement in the future
+   #### Features to implement in the future
 
 -   To add in another option on landing page to get help choosing what to eat. In addition when a users result is to    order takeaway or go to restaurant then there would also be a link to the What to Eat decision making game. Out with scope of initial launch due to time constraints.
 -   If user gets Stay in and try new recipe then have another decision game and depending on that result a recipe api will come back with options to try. Not implementing for initaial launch due to time constraints.
 -   To add in or remove options in the game depending on whats available in the users area. Would require to have result picture and result paragraph for most things which would be too time consuming for initial launch. Also think it is out of the developers skill level at the moment.
 
    ### Structure
--  I decided that it would make sense to have three pages with different sections on the home/about and evidence page.<br>.
-    The content took two distinct groups, that of information (Home/about page) and that of evidence. I believe 
-    that on a site that is informational that encouraging users to pursue this new interest through
-    further resources is important. As it didn't warrant a page to itself, due to its size, I chose to put this after the 
-    video evidence as a few of the resources were to the channels that the videos themselves came from, so i thought this would 
-    flow nicely. I did however give it its own listing in the navbar due to it being important for users to find and I also think 
-    this section will become larger over time and will end up as its own page eventually.<br>
--  The contact form I chose to put on its own page instead of a modal as I wanted a decently sized text area for people to write in 
-    and to have a confirmation modal to pop up on successful submission. In addition this page will have the sign in portal for paid 
-    subscribers in the future.<br>
--   All pages will have a nav menu at the top and a footer at the bottom with the social links as this is what users expect 
-    and they will therefore be able to navigate intuitively. On small screens the navigation menu will collapse into the burger 
-    icon on the right hand side of the screen with the brand name on the left.<br>
--   I decided to include a Home and About menu item even though they are the same page as people expect home and about to be 
-    listed. If I took away Home people may not be sure how to get back to the beginning from other pages. 
+-  We start with a landing page with a start button, this then takes the user to the beginning of the options and the timer will start. The user goes through the options until only one is left. The result page is opened, displaying the result, with accompanying picture and short paragraph, some will also have accompanying links or map.<br>
+-  The About section is a modal outlining the premise of the game.
+-  The contact form I chose to put on its own page instead of a modal as I wanted a decently sized text area for people to write in and to have a confirmation modal to pop up on successful submission.<br>
+-   All pages will have nav links to Home, About and Contact at the top and social links at the bottom as this is what users expect to see.<br>
 
-   ### Surface
+  ### Skeleton 
 
- -   #### Colour Scheme
-        In project inception I looked at possibly a logo for my site on Wix. While I ultimately didn't go with the logo I 
-        did find a colour scheme. I wanted to create an atmosphere, not too dark as to create a scary feel, horror is not 
-        what we're aiming but not too cheery at the same time. 
-
-        ![Colour scheme](assets/readme-assets/readme-images/colour-scheme.png)
-
-        The navy/very dark purple and the purple set the tone. The grey is used for the nav and footer providing contrast 
-        for the brand name and menu and was picked from the hero image. The very pale green is used to lift and highlight, 
-        where as the darker green is used on the badges and for the keyboard focus outline to draw attention. The dark green
-        was also used for the hover style of the reference sup element, as the writing is small it was hard to distinguish 
-        the colour change from purple to the darker purple used on the other elements.
-    
--   #### Typography
-    For the headers the font family is Noto Sans KR imported from Google fonts. To complement it I chose Montserrat 
-    from the popular pairings section of their website. I chose these as they are easy to read and do not distract 
-    from the content itself. In addition they go well with the feel that I want to achieve, others would have not 
-    suited the subject matter.
-        
--   #### Imagery
-    The hero image was chosen for the moodyness the colours and the castle ruins portray. It conveys the sort of place
-    that you would imagine to be haunted without being scary and putting people off the site. Similarly the header 
-    image in the other two pages has the heavy purple clouds with the spooky ruins drawing you in. 
-    The font-awesome ghost "Casper" is again to highlight that this is a light hearted site, not to be taken too seriously.
-
--   #### Design choices
-    I decided to use pictures, text, table and fact boxes in my design. Different ways of presenting information is 
-    visually more interesting to a user and makes it easier to pick out sections to look at. As an information site I 
-    wanted the content to be there for who is interested but also aware that some people will skip over paragraphs of 
-    text so tried to use the design to break up the information into easier to digest sections.
-    I chose to make the hero image min-height of 80vh so that there would be a space visible at the bottom of the screen
-    indicating to the user to scroll.
-    Made the decision to have the CTA button to "share your experiences" within the hidden content on mobiles as two buttons on
-    top of one another didn't look nice. Users that have a story to tell will be interested in reading others and so will see it 
-    when they press the read more button. 
-
-   ### Skeleton 
 Wireframes were created on Balsamiq (see links below)
 
-* [Mobile](assets/readme-assets/wireframes/ms1-mobile.pdf)
-* [Tablet](assets/readme-assets/wireframes/ms1-tablet.pdf)
-* [Desktop](assets/readme-assets/wireframes/ms1-desktop.pdf)
+* [Mobile](assets/readme-assets/wireframes/ms2-mobile.pdf)
+* [Tablet](assets/readme-assets/wireframes/ms2-tablet.pdf)
+* [Desktop](assets/readme-assets/wireframes/ms2-desktop.pdf)
 
-- On mobile I had a one column design to allow nice spacing and easy to read content
+ ### Surface
 
-- On tablet I wanted two columns in some sections just to make the layout 
-visually more interesting for the user.
+ -   #### Colour Scheme
+        
+        Found a picture for the background image and used that to pick colours from. 
 
-- On desktop I wanted to use the rule of 3. Some sections have 3 columns of equal width,
-others have 2 columns one of a third and one of two thirds. Again this makes it visually 
-interesting, helping distinguish between sections and prevents users becoming 
-visually tired.
+        ![Colour scheme](assets/)
 
-- Difference from the wireframes to the final site were not many. 
-
-- The About and Introduction paragraphs ended up being on top of one another rather 
- than side by side, this was due to the introduction being longer and creating 
- an empty space which didn't look great.
-
-- Similarly with the media evidence section, originally the pictures and video 
- were to be side by side but the video column had a lot of white space under 
- it due to the pictures taking up more height.
-
-- A picture was also added in to the true stories section for tablet only. This is 
-  due to three stories being in one row and the rest in a new row (for hiding on 
-  mobile purposes) and so an empty space appeared that needed filled.
-
-- I also added another fact box in the further resources section to fill it out, it 
-  looked a bit sparse. 
-
-
+-   #### Typography
+    
+        
+-   #### Imagery
+      
+       Picked the background image for its modern and simple design as I didn't want it to be distracting. The overlay muted the colours, so that the writing could still be clearly seen. 
+       Used vectors for the result images. They have a fun aspect to them and they are all of similar design so they tie in together which would be harder to get with photos.
+  
+-   #### Design choices
+    
 ## Technologies 
 
 ### Languages Used
