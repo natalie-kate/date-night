@@ -3,20 +3,54 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
 .landing-page-container {
     height: 100vh;
-    background: url("../images/pic1.jpg"); 
-    background-position: center;
+    background: url("../images/pic1.jpg") no-repeat center center; 
     background-size: cover;
 }
-
+.overlay {
+  background-color: rgba(255, 255, 255, 0.5)
+}
+.heading {
+  margin: 5vh 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 70vh;
+  border-radius: 18px;
+}
 h1 {
   font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  margin-top: 5vh;
+  color:rgb(97, 74, 64);
+}
+h2 {
+  margin-top: 5vh;
+  line-height: 1;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.heading .btn {
+    background-color: rgb(210 187 177);
+    border-radius: 10px;
+    margin-top: 5vh;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+    font-size: 1.8rem;
 }
 
-.btn {
-    background-color:rgb(221, 151, 46);
-    border-radius: 18px;
-    border: 1px solid black;
+.nav-item .nav-link {
+  color: rgb(240 231 228);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgb(240 231 228);
+  color: rgb(97, 74, 64);
+}
+
+.social-links a {
+  color: rgb(240 231 228);
+  font-size: 30px;
+  padding: 10px;
 }
