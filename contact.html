@@ -38,6 +38,30 @@
             </nav>
         </header>
 
+        <div class="form-container">
+            <form id="contact-form" method="POST">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="first_name">First Name:</label><br>
+                    <input id="first_name" type="text" name="firstName"/><br>
+                    <label for="second_name">Surname:</label><br>
+                    <input id="second_name" type="text" name="secondName"/><br>
+                    <label for="email">Email Address:</label><br>
+                    <input id="email" type="email" name="emailAddress"/><br>
+                </fieldset>
+                <label for="textarea">Comments:</label><br>
+                <textarea id="textarea" type="text" name="comments" cols="30" rows="5"></textarea>
+                <div class="rating">
+                    <label for="rating">Rate us:</label><br>
+                    <input id="rating1" type="checkbox" name="rating"><i class="fas fa-star"></i>
+                    <input id="rating2" type="checkbox" name="rating"><i class="fas fa-star"></i>
+                    <input id="rating3" type="checkbox" name="rating"><i class="fas fa-star"></i>
+                    <input id="rating4" type="checkbox" name="rating"><i class="fas fa-star"></i>
+                    <input id="rating5" type="checkbox" name="rating"><i class="fas fa-star"></i>
+                </div>
+            </form>
+        </div>
+
     
         <div class="row">
             <footer>
