@@ -38,35 +38,42 @@
             </nav>
         </header>
 
-        <div class="form-container">
-            <form id="contact-form" method="POST">
-                <fieldset>
-                    <legend>Personal Details</legend>
-                    <label for="first_name">First Name:</label><br>
-                    <input id="first_name" type="text" name="firstName"/><br>
-                    <label for="second_name">Surname:</label><br>
-                    <input id="second_name" type="text" name="secondName"/><br>
-                    <label for="email">Email Address:</label><br>
-                    <input id="email" type="email" name="emailAddress"/><br>
-                </fieldset>
-                <label for="textarea">Comments:</label><br>
-                <textarea id="textarea" type="text" name="comments" cols="30" rows="5"></textarea>
-                <div class="rating">
-                    <label for="rating">Rate us:</label><br>
-                    <input id="rating1" type="checkbox" name="rating"><i class="fas fa-star"></i>
-                    <input id="rating2" type="checkbox" name="rating"><i class="fas fa-star"></i>
-                    <input id="rating3" type="checkbox" name="rating"><i class="fas fa-star"></i>
-                    <input id="rating4" type="checkbox" name="rating"><i class="fas fa-star"></i>
-                    <input id="rating5" type="checkbox" name="rating"><i class="fas fa-star"></i>
-                </div>
-            </form>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 form-container">
+                <h2 class="text-center"> Contact Us</h2>
+                <form id="contact-form" method="POST">
+                    <fieldset>
+                        <label for="first_name">First Name:</label><br>
+                        <input id="first_name" type="text" name="firstName" /><br>
+                        <label for="second_name">Surname:</label><br>
+                        <input id="second_name" type="text" name="secondName" /><br>
+                        <label for="email">Email Address:</label><br>
+                        <input id="email" type="email" name="emailAddress" /><br>
+                    </fieldset>
+                    <label for="textarea">Comments:</label><br>
+                    <textarea id="textarea" type="text" name="comments" cols="30" rows="5"></textarea>
+                    <div class="rating-stars">
+                        <p>Rate us: </p>
+                        <label for="rating"><i class="fas fa-star"></i></label>
+                        <input id="rating" type="checkbox" name="rating">
+                        <label for="rating1"><i class="fas fa-star"></i></label>
+                        <input id="rating1" type="checkbox" name="rating">
+                        <label for="rating2"><i class="fas fa-star"></i></label>
+                        <input id="rating2" type="checkbox" name="rating">
+                        <label for="rating3"><i class="fas fa-star"></i></label>
+                        <input id="rating3" type="checkbox" name="rating">
+                        <label for="rating4"><i class="fas fa-star"></i></label>
+                        <input id="rating4" type="checkbox" name="rating">
+                    </div>
+                    <button class="btn btn-lg submit" type="submit">Send Form <i class="fas fa-envelope"></i></button>
+                </form>
+            </div>
         </div>
 
-    
-        <div class="row">
-            <footer>
+        <footer>
+            <div class="row">
                 <div class="col-12">
-                    <ul class="nav justify-content-center fixed-bottom social-links">
+                    <ul class="nav justify-content-center social-links">
                         <li>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener"><i
                                     class="fab fa-instagram" aria-hidden="true"></i></a>
@@ -85,32 +92,32 @@
                         </li>
                     </ul>
                 </div>
-            </footer>
+            </div>
+        </footer>
+        </div>
 
-            <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content text-center">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="aboutmodaltitle">About</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
-                            </button>
-                        </div>
-                        <p class="text-left">This game is to help you quickly narrow down your date night choices until
-                            you have a winner.<br>
-                            The premise is that sub consciously we know what we want to do, but we over think it and
-                            then hum an haw. <br>
-                            You have 5 seconds to choose between two options each time meaning you'll have to answer
-                            with your gut! <br>
-                            There are 8 decisions to make, so in only 40 seconds you'll have your plan for tonight.
-                            Meaning you'll have more time to get ready. Win Win!</p>
-                        <button type="button" class="btn modal-btn" data-dismiss="modal">Close</button>
+        <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="aboutmodaltitle">About</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
+                        </button>
                     </div>
+                    <p class="text-left">This game is to help you quickly narrow down your date night choices until
+                        you have a winner.<br>
+                        The premise is that sub consciously we know what we want to do, but we over think it and
+                        then hum an haw. <br>
+                        You have 5 seconds to choose between two options each time meaning you'll have to answer
+                        with your gut! <br>
+                        There are 8 decisions to make, so in only 40 seconds you'll have your plan for tonight.
+                        Meaning you'll have more time to get ready. Win Win!</p>
+                    <button type="button" class="btn modal-btn" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
