@@ -8,10 +8,6 @@ body {
     background: url("../images/pic1.jpg") no-repeat center center; 
     background-size: cover;
 }
-.contact-container {
-  background-color: #695539;
-  height: 100vh;
-}
 .overlay {
   background-color: rgba(255, 255, 255, 0.5)
 }
@@ -78,11 +74,23 @@ h2 {
 input[name=rating]{
   display: none;
 }
-.rating i {
+.rating-stars label {
   font-size: 20px;
-  color: white;
+  color:rgb(210 187 177);
 }
-input:checked {
-  font-size: 20px;
-  color: black;
+label,
+form p {
+  margin-top: 5px;
+  margin-bottom: 0;
 }
+button.submit {
+  background-color: rgb(240 231 228);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+  font-size: 1rem;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
