@@ -31,7 +31,8 @@ h2 {
   font-weight: 600;
   color:rgb(97, 74, 64);
 }
-.heading .btn {
+.heading .btn,
+.error-message .btn {
     background-color: rgb(210 187 177);
     border-radius: 10px;
     margin-top: 5vh;
@@ -119,7 +120,19 @@ hr {
   font-size: 40px;
   transition: font-size 1s ease-out;
 }
-
+.error-message h1 {
+  margin-top: 15vh;
+}
+.issue-link {
+  margin-top: 15px;
+}
+.issue-link a {
+  color:rgb(97, 74, 64);
+}
+.issue-link a:hover {
+  color: rgb(210 187 177);
+  text-decoration: none;
+}
 
 
 
