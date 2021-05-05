@@ -41,17 +41,18 @@
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 form-container">
                 <h2 class="text-center"> Contact Us</h2>
-                <form id="contact-form" method="POST">
+                <hr>
+                <form id="contact-form">
                     <fieldset>
                         <label for="first_name">First Name:</label><br>
-                        <input id="first_name" type="text" name="firstName" /><br>
+                        <input id="first_name" type="text" name="firstName" required /><br>
                         <label for="second_name">Surname:</label><br>
-                        <input id="second_name" type="text" name="secondName" /><br>
+                        <input id="second_name" type="text" name="secondName" required /><br>
                         <label for="email">Email Address:</label><br>
-                        <input id="email" type="email" name="emailAddress" /><br>
+                        <input id="email" type="email" name="emailAddress" required /><br>
                     </fieldset>
                     <label for="textarea">Comments:</label><br>
-                    <textarea id="textarea" type="text" name="comments" cols="30" rows="5"></textarea>
+                    <textarea id="textarea" type="text" name="comments" cols="30" rows="5" required></textarea>
                     <div class="rating-stars">
                         <p>Rate us: </p>
                         <label for="rating"><i class="fas fa-star"></i></label>
@@ -65,7 +66,8 @@
                         <label for="rating4"><i class="fas fa-star"></i></label>
                         <input id="rating4" type="checkbox" name="rating">
                     </div>
-                    <button class="btn btn-lg submit" type="submit">Send Form <i class="fas fa-envelope"></i></button>
+                    <button class="btn btn-lg submit" type="submit" data-toggle="modal" data-target="#submit-modal">Send
+                        Form <i class="fas fa-envelope"></i></button>
                 </form>
             </div>
         </div>
@@ -94,30 +96,49 @@
                 </div>
             </div>
         </footer>
-        </div>
+    </div>
 
-        <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content text-center">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="aboutmodaltitle">About</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
-                        </button>
-                    </div>
-                    <p class="text-left">This game is to help you quickly narrow down your date night choices until
-                        you have a winner.<br>
-                        The premise is that sub consciously we know what we want to do, but we over think it and
-                        then hum an haw. <br>
-                        You have 5 seconds to choose between two options each time meaning you'll have to answer
-                        with your gut! <br>
-                        There are 8 decisions to make, so in only 40 seconds you'll have your plan for tonight.
-                        Meaning you'll have more time to get ready. Win Win!</p>
-                    <button type="button" class="btn modal-btn" data-dismiss="modal">Close</button>
+    <div class="modal" id="submit-modal" role="dialog" tabindex="-1" aria-labelledby="sentmodaltitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="sentmodaltitle">Thanks, we'll be in touch. <i class="fas fa-envelope"></i></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
+                    </button>
                 </div>
+                <div class="modal-content">
+                <h4>You sent:</h4>
+                <p id="senttext"></p>
+                </div>
+                <button type="button" class="btn modal-btn" data-dismiss="modal">Close</button>
             </div>
         </div>
+    </div>
+
+    <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="aboutmodaltitle">About</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
+                    </button>
+                </div>
+                <p class="text-left">This game is to help you quickly narrow down your date night choices until
+                    you have a winner.<br>
+                    The premise is that sub consciously we know what we want to do, but we over think it and
+                    then hum an haw. <br>
+                    You have 5 seconds to choose between two options each time meaning you'll have to answer
+                    with your gut! <br>
+                    There are 8 decisions to make, so in only 40 seconds you'll have your plan for tonight.
+                    Meaning you'll have more time to get ready. Win Win!</p>
+                <button type="button" class="btn modal-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 
 
 
