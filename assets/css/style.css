@@ -84,7 +84,7 @@ form p {
   margin-bottom: 0;
 }
 button.submit {
-  background-color: rgb(240 231 228);
+  background-color: rgb(210 187 177);
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0,0,0,.5);
   font-size: 1rem;
@@ -93,4 +93,17 @@ button.submit {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.contact-container h2,
+.contact-container a,
+.contact-container .nav-link {
+  color:rgb(97, 74, 64);
+}
+hr {
+  height: 5px;
+  width: 80%;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(226, 192, 139, 0), rgba(226, 192, 139, 0.75), rgba(226, 192, 139, 0));
+}
+
+
 
