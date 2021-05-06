@@ -44,10 +44,10 @@
                 <hr>
                 <form id="contact-form">
                     <fieldset>
-                        <label for="first_name">First Name:</label><br>
-                        <input id="first_name" type="text" name="firstName" required /><br>
-                        <label for="second_name">Surname:</label><br>
-                        <input id="second_name" type="text" name="secondName" required /><br>
+                        <label for="first-name">First Name:</label><br>
+                        <input id="first-name" type="text" name="firstName" required /><br>
+                        <label for="second-name">Surname:</label><br>
+                        <input id="second-name" type="text" name="secondName" required /><br>
                         <label for="email">Email Address:</label><br>
                         <input id="email" type="email" name="emailAddress" required /><br>
                     </fieldset>
@@ -66,7 +66,7 @@
                         <label for="rating4"><i class="fas fa-star"></i></label>
                         <input id="rating4" type="checkbox" name="rating">
                     </div>
-                    <button class="btn btn-lg submit hover-btn" type="submit" data-toggle="modal" data-target="#submit-modal"><strong>Send
+                    <button id="submit-button" class="btn btn-lg submit hover-btn" type="submit" data-toggle="modal" data-target="#submit-modal"><strong>Send
                         Form <i class="fas fa-envelope"></i></strong></button>
                 </form>
             </div>
@@ -103,14 +103,12 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="sentmodaltitle">Thanks, we'll be in touch. <i class="fas fa-envelope"></i></h3>
+                    <h3 class="modal-title" id="sentmodaltitle">Sent! <i class="fas fa-envelope"></i></h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
                     </button>
                 </div>
-                <div class="modal-content">
-                <h4>You sent:</h4>
-                <p id="senttext"></p>
+                <div id="response">
                 </div>
                 <button type="button" class="btn modal-btn" data-dismiss="modal">Close</button>
             </div>
@@ -141,10 +139,12 @@
     </div>
 
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/contact.js" type="text/javascript"></script>
+
+    </script>
 </body>
 
 </html>
