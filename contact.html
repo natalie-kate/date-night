@@ -46,27 +46,26 @@
                 <form id="contact-form">
                     <fieldset>
                         <label for="first-name">First Name:</label><br>
-                        <input id="first-name" type="text" name="firstName" required /><br>
+                        <input class="textbox" id="first-name" type="text" name="firstName" required /><br>
                         <label for="second-name">Surname:</label><br>
-                        <input id="second-name" type="text" name="secondName" required /><br>
+                        <input class="textbox" id="second-name" type="text" name="secondName" required /><br>
                         <label for="email">Email Address:</label><br>
-                        <input id="email" type="email" name="emailAddress" required /><br>
+                        <input class="textbox" id="email" type="email" name="emailAddress" required /><br>
                     </fieldset>
                     <label for="textarea">Comments:</label><br>
-                    <textarea id="textarea" type="text" name="comments" cols="30" rows="5" required></textarea>
+                    <textarea id="textarea" type="text" name="comments" cols="40" rows="5" required></textarea>
                     <div class="rating-stars">
                         <p>Rate us: </p>
                         <label for="rating"><i class="fas fa-star"></i></label>
-                        <input id="rating" type="checkbox" name="rating">
+                        <input id="rating" type="radio" name="rating" value="1 star">
                         <label for="rating1"><i class="fas fa-star"></i></label>
-                        <input id="rating1" type="checkbox" name="rating">
+                        <input id="rating1" type="radio" name="rating" value="2 stars">
                         <label for="rating2"><i class="fas fa-star"></i></label>
-                        <input id="rating2" type="checkbox" name="rating">
+                        <input id="rating2" type="radio" name="rating" value="3 stars" checked>
                         <label for="rating3"><i class="fas fa-star"></i></label>
-                        <input id="rating3" type="checkbox" name="rating">
+                        <input id="rating3" type="radio" name="rating" value="4 stars">
                         <label for="rating4"><i class="fas fa-star"></i></label>
-                        <input id="rating4" type="checkbox" name="rating">
-
+                        <input id="rating4" type="radio" name="rating" value="5 stars">
                     </div>
                     <button id="submit-button" class="btn btn-lg submit hover-btn" type="submit"><strong>Send
                         Form <i class="fas fa-envelope"></i></strong></button>
@@ -76,7 +75,7 @@
 
         <footer>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
                     <ul class="nav justify-content-center social-links">
                         <li>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener"><i
