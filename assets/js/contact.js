@@ -4,7 +4,6 @@ const response = document.getElementById("response");
 const submitbutton = document.getElementById("submit-button");
 const success = document.getElementById("submit-modal");
 
-
 function contactForm(event) {
     event.preventDefault();
     let firstName = sendForm.elements[1].value;
@@ -18,6 +17,21 @@ function contactForm(event) {
     Have an amazing Date night! <i class="fas fa-heart"</p>`;
     response.innerHTML = responseText;  
 
+   
+    let stars = document.getElementsByName("rating");
+    let rating;
+    if (stars[0].checked == true) {
+        rating = stars[0].value;
+    } else if (stars[1].checked == true) {
+        rating = stars[1].value;
+    } else if (stars[2].checked == true) {
+        rating = stars[2].value;
+    } else if (stars[3].checked == true) {
+        rating = stars[3].value;
+    } else {
+        rating = stars[4].value;
+    }
+
     submitbutton.innerText = "Sent!"
      
     $('#submit-modal').modal('show');
@@ -30,19 +44,9 @@ function contactForm(event) {
             "first-name" : firstName,
             "second-name" : secondName,
             "email-address" : email,
-            "comment" : comment
+            "comment" : comment,
+            "rating" : rating
         }); 
     }
-}  
-
-
-
-
-
-
-
-
-
-
-
+} 
 
