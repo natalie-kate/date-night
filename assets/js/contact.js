@@ -1,15 +1,20 @@
+// Declared constant variables.
 const sendForm = document.getElementById("contact-form");
-sendForm.addEventListener('submit', contactForm);
 const response = document.getElementById("response");
 const submitbutton = document.getElementById("submit-button");
-const success = document.getElementById("submit-modal");
 
+// Added event listener to submit button on form
+sendForm.addEventListener('submit', contactForm);
+
+// Event handler function
 function contactForm(event) {
     event.preventDefault();
     let firstName = sendForm.elements[1].value;
     let email = sendForm.elements[3].value;
     let comment = sendForm.elements[4].value;
     let secondName = sendForm.elements[2].value;
+
+// Assign personalised HTML to modal
     let responseText = `
     <h4>Thanks ${firstName}</h4>
     <p>The message submitted was: "${comment}"<br>
@@ -17,7 +22,7 @@ function contactForm(event) {
     Have an amazing Date night! <i class="fas fa-heart"</p>`;
     response.innerHTML = responseText;  
 
-   
+// Stars rating to be sent in emal
     let stars = document.getElementsByName("rating");
     let rating;
     if (stars[0].checked == true) {
@@ -32,10 +37,13 @@ function contactForm(event) {
         rating = stars[4].value;
     }
 
+// Change Submit to Sent on submit button
     submitbutton.innerText = "Sent!"
      
+// Show personalised modal
     $('#submit-modal').modal('show');
 
+// Send contact form info via emailJS
     return sendMail(this);
 
     function sendMail (sendForm) {
