@@ -1,26 +1,29 @@
 # Date Night 
 
 
-Here is a link to the live project. (https://natalie-kate.github.io/haunted/)
+Here is a link to the live project. (https://natalie-kate.github.io/date-night/)
 
-This website was created for Milestone 2- Interactive Frontend Development project, as part of the Code Institutes diploma in Software development.
-I wanted to create a fun quiz that helps indecisive people make a decision. Now when they are asked "What do you want to do tonight?" the answer isn't "I don't know! What do you want to do?" its " Give me a sec and I'll tell you!." The premise is that you subconsciously know what you want to do, so asking a series of questions with only two options each, and a limited time to answer (so you can't overthink it) the options will be narrowed down and leave you with what you actually want.
+This website was created for Milestone 2- Interactive Frontend Development project, as part of the Code Institutes diploma in Software development.<br>
+I was inspired by my partners group of friends who were complaining about how indecisive their partners were when it came to making decisions about what to do, where to go etc and so Date Night was born.<br>
+Now when they are asked "What do you want to do tonight?" the answer isn't "I don't know! What do you want to do?" its " Give me a minute and I'll tell you!."<br>
+The premise is that you subconsciously know what you want to do, so asking a series of questions with only two options each, and a limited time to answer (so you can't overthink it) the options will be narrowed down and leave you with what you actually want.
 
 ![Image showing the website displayed on different screen sizes](assets/readme-assets/readme-images/responsive.png)
 
 ## Contents 
 
 - [User Experience (UX)](#user-experience-(ux))
-   * [Site Goals](#site-goals)
+   * [Strategy](#strategy)
    * [User Stories](#user-stories) 
+   * [Scope](#scope)
+      + [Current Features](#current-features)
+      + [Features to implement in the future](#features-to-implement-in-the-future)
    * [Structure](#structure)
-   * [Design](#design)
-   * [Wireframes](#wireframes)
-
-- [Features](#features)
-   * [Current Features](#current-features)
-   * [Features to implement in the future](#features-to-implement-in-the-future)
-
+   * [Skeleton](#skeleton)
+   * [Surface](#surface)
+     + [Colour Scheme](#colour-scheme)
+     + [Typography](#typography)
+     + [Imagery](#imagery)
 - [Technologies](#technologies)
    * [Languages used](#languages-used)
    * [Frameworks, Libraries & Programs Used](#frameworks-,-libraries-&-programs-used)
@@ -28,13 +31,7 @@ I wanted to create a fun quiz that helps indecisive people make a decision. Now 
 - [Challenges](#challenges)
 
 - [Testing](#testing)
-   * [Automated Testing](#automated-testing)
-   * [Testing User Stories](#testing-user-stories)
-   * [Manual testing](#manual-testing)
-   * [Bugs](#bugs)
-      + [Found and Fixed](#found-and-fixed)
-      + [Existing](#existing)
-
+   
 - [Deployment](#deployment)
 
 - [Credits](#credits)
@@ -52,12 +49,10 @@ I wanted to create a fun quiz that helps indecisive people make a decision. Now 
      * As a user I want to have fun  
 
    - Site owner/ business goals
-     * I want this application to become popular so that there is a possibility of monetising 
-       it through sponsored links e.g restaurant chains.
      * As the site owner I want my site to be responsive to different screen sizes.
      * As the site owner I want my site to be accessible to my visitors.
      * As the site owner I want to build up a media presence so that future applications will
-       have footfall immediately.
+       have footfall immediately and with that, hopefully gain popularity and therefore could monetise future projects.
 
    ### User Stories
 
@@ -109,19 +104,19 @@ I wanted to create a fun quiz that helps indecisive people make a decision. Now 
 -   If users initial option is Go out. Then their result will have a google map showing them where the cinema,
     or restaurants or clubs etc are.
 
--   On successful submission of contact form there is a confirmation modal.
+-   On successful submission of contact form there is a personalised confirmation modal.
 
    #### Features to implement in the future
 
--   To add in another option on landing page to get help choosing what to eat. In addition when a users result is to    order takeaway or go to restaurant then there would also be a link to the What to Eat decision making game. Out with scope of initial launch due to time constraints.
--   If user gets Stay in and try new recipe then have another decision game and depending on that result a recipe api will come back with options to try. Not implementing for initaial launch due to time constraints.
+-   To add in another option on landing page to get help choosing what to eat. In addition when a users result is to order takeaway or go to restaurant then there would also be a link to the What to Eat decision making game. Out with scope of initial launch due to time constraints.
+-   If user gets Stay in and try new recipe then have another decision game and depending on that result a recipe api will come back with options to try. Not implementing for initial launch due to time constraints.
 -   To add in or remove options in the game depending on whats available in the users area. Would require to have result picture and result paragraph for most things which would be too time consuming for initial launch. Also think it is out of the developers skill level at the moment.
 
    ### Structure
 -  We start with a landing page with a start button, this then takes the user to the beginning of the options and the timer will start. The user goes through the options until only one is left. The result page is opened, displaying the result, with accompanying picture and short paragraph, some will also have accompanying links or map.<br>
 -  The About section is a modal outlining the premise of the game.
 -  The contact form I chose to put on its own page instead of a modal as I wanted a decently sized text area for people to write in and to have a confirmation modal to pop up on successful submission.<br>
--   All pages will have nav links to Home, About and Contact at the top and social links at the bottom as this is what users expect to see.<br>
+-  All pages will have nav links to Home, About and Contact at the top and social links at the bottom as this is what users expect to see. Decided not to put the social links at the bottom of the game pages as there is only limited time to choose, so unlikely that they'll stop mid game to go to instagram.<br>
 
   ### Skeleton 
 
@@ -136,18 +131,23 @@ Wireframes were created on Balsamiq (see links below)
  -   #### Colour Scheme
         
         Found a picture for the background image and used that to pick colours from. 
+        As its about finding your date night, I wanted the feel to be soft and romantic so I swapped out the default black for the dark warm brown.
+        The darker pink brings the romantic element.
+        The other two colours were picked to complement the main two colours, these were used where I needed contrast or to highlight.
 
-        ![Colour scheme](assets/)
+        ![Colour scheme](assets/images/colours.png)
 
 -   #### Typography
-    
-        
+         
+      Used [Google Fonts](https://fonts.google.com/) to import the fonts used for this site.
+      I picked Lobster for the headings as its a bit more ornate than the usual fonts, bringing a special feel, its not just any night its "Date Night". 
+      For the other text I used montserrat as it was among the popular pairings on the google fonts website. Montserrat looked the nicest with Lobster.
+      
 -   #### Imagery
       
        Picked the background image for its modern and simple design as I didn't want it to be distracting. The overlay muted the colours, so that the writing could still be clearly seen. 
        Used vectors for the result images. They have a fun aspect to them and they are all of similar design so they tie in together which would be harder to get with photos.
-  
--   #### Design choices
+
     
 ## Technologies 
 
@@ -155,7 +155,7 @@ Wireframes were created on Balsamiq (see links below)
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -177,17 +177,16 @@ Wireframes were created on Balsamiq (see links below)
     - TinyJPG was used to optimise the images I used on my site to minimise loading time.
 9. [Am I responsive](http://ami.responsivedesign.is/)
     - This was used to generate the image at the top of this README.
-10. [Codepen](https://codepen.io/your-work)
-       - Codepen was used to try out and edit the read more button.
-11. [Chrome devtools](https://developer.chrome.com/docs/devtools/)
+10. [Chrome devtools](https://developer.chrome.com/docs/devtools/)
     - This was used massively throughout development to troubleshoot, try out changes before 
    changing code, to test responsiveness and for testing performance of the final site with lighthouse. 
+11. [jQuery](https://jquery.com/)
+    - JavaScript Library making writing JavaScript quicker and easier.
 
 ## Challenges 
-   These are aspects of the development that took me a while to figure out due to inexperience with 
-   Javascript. 
-   -  hi<br> <span style="color: grey;">
-        Solution: </span>
+   These are aspects of the development that took me a while to figure out due to inexperience.
+   -  Had an issue with the submission modal popping up when the form wasn't completed properly and therefore not ready to submit. I had then taken what I thought I needed from code i'd used in MS1 for this issue and it wasn't working. Tried the code i'd used in my MS1 just changing id's to the variables i'd assigned which also didn't work.<br> 
+   <span style="color: grey;">Solution: Removed the data-toggle and data-target attributes from the submit button, so that the modal wouldn't be triggered. The modal is now only triggered to show by the $('#submit-modal').modal('show'); within the event handler function. Also as you can see I reverted to the id as the variable wasn't working, haven't figured out why yet. My guess is that the modal I assigned to const at the begining then was altered by changing the inner text in the event handler function and so the const i'd assigned didn't exist anymore.</span>
         
    
 ## Testing
