@@ -25,6 +25,7 @@ h1 {
   color:rgb(97, 74, 64);
 }
 h2 {
+  font-family: 'Lobster', cursive;
   margin-top: 5vh;
   line-height: 1;
   font-size: 2.2rem;
@@ -87,23 +88,26 @@ input[name=rating]{
 fieldset .textbox,
 textarea {
   width: 90%;
+  margin-left: 5%;
 }
-form {
-  padding-left: 10%;
+.form-label,
+.rating-stars {
+  margin-left: 5%;
 }
 label,
 form p {
   margin-top: 5px;
   margin-bottom: 0;
 }
-button.submit {
+button.submit,
+#options button {
   background-color: rgb(210 187 177);
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0,0,0,.5);
   font-size: 1rem;
   border: 4px solid rgb(210 187 177);
   width: 70%;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-top: 10px;
   margin-bottom: 10px;
   color:rgb(97, 74, 64);
@@ -111,7 +115,11 @@ button.submit {
 .contact-container h2,
 .contact-container a,
 .contact-container .nav-link,
-.contact-container label {
+.contact-container label,
+.decisions-container h2,
+.decisions-container a,
+.decisions-container .nav-link,
+.decisions-container label {
   color:rgb(97, 74, 64);
 }
 hr {
