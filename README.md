@@ -182,7 +182,10 @@ Wireframes were created on Balsamiq (see links below)
    changing code, to test responsiveness and for testing performance of the final site with lighthouse. 
 11. [jQuery](https://jquery.com/)
     - JavaScript Library making writing JavaScript quicker and easier.
-
+12. [Code pen](https://codepen.io/)
+    - Used to try out snippets of code prior to implementing.
+13. [Python tutor](http://pythontutor.com/visualize.html#mode=edit)
+    - Used to troubleshoot javascript.
 
 ## Challenges 
    These are aspects of the development that took me a while to figure out due to inexperience.
