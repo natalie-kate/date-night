@@ -183,10 +183,14 @@ Wireframes were created on Balsamiq (see links below)
 11. [jQuery](https://jquery.com/)
     - JavaScript Library making writing JavaScript quicker and easier.
 
+
 ## Challenges 
    These are aspects of the development that took me a while to figure out due to inexperience.
    -  Had an issue with the submission modal popping up when the form wasn't completed properly and therefore not ready to submit. I had then taken what I thought I needed from code i'd used in MS1 for this issue and it wasn't working. Tried the code i'd used in my MS1 just changing id's to the variables i'd assigned which also didn't work.<br> 
    <span style="color: grey;">Solution: Removed the data-toggle and data-target attributes from the submit button, so that the modal wouldn't be triggered. The modal is now only triggered to show by the $('#submit-modal').modal('show'); within the event handler function. Also as you can see I reverted to the id as the variable wasn't working, haven't figured out why yet. My guess is that the modal I assigned to const at the begining then was altered by changing the inner text in the event handler function and so the const i'd assigned didn't exist anymore.</span>
+    -  Creating the timer function I attempted to create a for loop that I could see was working/counting down in [Python Tutor](http://pythontutor.com/visualize.html#mode=edit). I then used setTimeout to introduce a 1000ms pause after changing the innertext to the value of my timeLeft variable. This just waited a second before changing time left from 5 in my div to 0. I then changed to setInterval which I came across while researching for answers and removed the for loop and instead added in timeleft -= 1. My timer now continued to count down below zero so I introduced an if statement. This initially didn't work as I had put it out with the setInterval function so my countdown then wasn't working at all. With some rejigging around and making it an if/else statement I got it working. <br> 
+   <span style="color: grey;">Solution: With the help of stack overflow, w3 and slack got it to work using setInterval, with if/else, -=1 (which seemed so obvious when I seen it) and using return to stop the function if my variables value was < 0.</span>
+        
         
    
 ## Testing
