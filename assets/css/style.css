@@ -151,6 +151,19 @@ hr {
   color: rgb(210 187 177);
   text-decoration: none;
 }
+#timer p {
+  font-size: 120px;
+  font-weight: 800;
+  color: green;
+  transition-duration: 2500ms;
+}
+
+@keyframes flash {
+  50% 
+  {opacity: 0.25; 
+  transition: ease-out}
+}
+
 
 
 
