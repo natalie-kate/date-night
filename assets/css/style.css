@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;800&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -21,7 +21,7 @@ body {
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
-  margin-top: 5vh;
+  margin-top: 10vh;
   color:rgb(97, 74, 64);
 }
 h2 {
@@ -29,17 +29,38 @@ h2 {
   margin-top: 5vh;
   line-height: 1;
   font-size: 2.2rem;
-  font-weight: 600;
   color:rgb(97, 74, 64);
+}
+#message {
+  margin-top: 2.5vh;
+}
+.btn {
+  background-color: rgb(210 187 177);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+  border: 4px solid rgb(210 187 177);
+  color:rgb(97, 74, 64);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .heading .btn,
 .error-message .btn {
-    background-color: rgb(210 187 177);
-    border-radius: 10px;
     margin-top: 5vh;
-    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
-    font-size: 1.4rem;
-    border: 4px solid rgb(210 187 177);
+}
+button.submit,
+#options button {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#options button {
+  font-weight: 600;
+}
+.modal-btn {
+  padding-bottom: 5px;
+  width: 50%;
+  margin-left: 25%;
 }
 .nav-item .nav-link {
   color: rgb(240 231 228);
@@ -59,14 +80,6 @@ h2 {
   color: rgb(240 231 228);
   font-size: 30px;
   padding: 10px;
-}
-.modal-btn {
-    background-color: rgb(210 187 177);
-    border-radius: 10px;
-    font-size: 1.5rem;
-    padding-bottom: 5px;
-    width: 50%;
-    margin-left: 25%;
 }
 .modal-content,
 .modal-content .modal-header {
@@ -98,19 +111,6 @@ label,
 form p {
   margin-top: 5px;
   margin-bottom: 0;
-}
-button.submit,
-#options button {
-  background-color: rgb(210 187 177);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px rgba(0,0,0,.5);
-  font-size: 1rem;
-  border: 4px solid rgb(210 187 177);
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color:rgb(97, 74, 64);
 }
 .contact-container h2,
 .contact-container a,
@@ -153,17 +153,24 @@ hr {
 }
 #timer p {
   font-size: 120px;
-  font-weight: 800;
+  font-weight: 600;
   color: green;
-  transition-duration: 2500ms;
+  transition: color 2500ms ease-in-out;
+  margin: 0;
 }
 
 @keyframes flash {
   50% 
-  {opacity: 0.25; 
-  transition: ease-out}
+  {opacity: 0.4; 
+  transition: ease-in-out}
 }
 
+.large-text {
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 2px 0;
+  font-weight: 600;
+}
 
 
 
