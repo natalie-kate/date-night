@@ -8,7 +8,7 @@
     },
 
     "option2": {
-        "optionName": "TV binge",
+        "optionName": "TV Binge",
         "picture": "assets/images/tv.jpg",
         "result": "You should binge a TV series!",
         "details": "Who doesn't love to binge watch a really good TV series. Check out the links below to help you choose, if you don't have a watchlist the length of your arm already that is.",
@@ -38,7 +38,7 @@
         "links": "<a href='https://www.delicious.com.au/recipes/collections/gallery/70-recipes-for-a-romantic-date-night-at-home/9d4s0yiz' target='_blank' rel='noopener'>&0 recipes to make together</a><br><a href='https://food.allwomenstalk.com/date-night-dinners-you-can-make-together/' target='_blank' rel='noopener'>Date Night Dinner</a><br>"
     },
     "option6": {
-        "optionName": "Video games",
+        "optionName": "Video Games",
         "picture": "assets/images/video.jpg",
         "result": "You should play on the game console together!",
         "details": "There are some brilliant games that you can play together without playing against each other. See the link below for awesome games that you need co-operation and communication to successfully complete.",
