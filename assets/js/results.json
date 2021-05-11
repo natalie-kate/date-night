@@ -1,0 +1,61 @@
+{
+    "option1": {
+        "optionName": "Movie Night",
+        "picture": "assets/images/film.jpg",
+        "result": "You should watch a film!",
+        "details": "Grab your snacks, lower the lights and snuggle up on the sofa with your fave. Why not flip a coin to see who's choice it is tonight if you can’t agree.",
+        "links": "<a href='https://www.netflix.com/gb/' target='_blank' rel='noopener'>Netflix</a><br><a href='https://www.imdb.com/search/title/?groups=top_100&sort=user_rating,desc' target='_blank' rel='noopener'>IMDB Top Movies</a><br><a href='https://www.amazon.co.uk/Movies/b?ie=UTF8&node=3046737031' target='_blank' rel='noopener'>Amazon Video Movies</a><br><a href='https://www.sky.com/watch' target='_blank' rel='noopener'>Sky Watch</a>"
+    },
+
+    "option2": {
+        "optionName": "TV binge",
+        "picture": "assets/images/tv.jpg",
+        "result": "You should binge a TV series!",
+        "details": "Who doesn't love to binge watch a really good TV series. Check out the links below to help you choose, if you don't have a watchlist the length of your arm already that is.",
+        "links": "`<a href='https://www.netflix.com/gb/' target='_blank' rel='noopener'>Netflix</a><br><a href='https://www.imdb.com/chart/toptv/' target='_blank' rel='noopener'>IMDB top TV shows</a><br><a href='https://www.amazon.co.uk/gp/video/storefront/ref=atv_cat_leftpanel_tv?node=3046738031' target='_blank' rel='noopener'>Amazon video TV shows</a><br><a href='https://www.sky.com/watch' target='_blank' rel='noopener'>Sky Watch</a>`"
+    },
+
+    "option3": {
+        "optionName": "Takeaway",
+        "picture": "assets/images/takeaway.jpg",
+        "result": "You should order a takeaway!",
+        "details": "Take a break from cooking tonight and get some food delivered. Check out the links below and see what you fancy, is your mouth watering already?",
+        "links": "<a href='https://deliveroo.co.uk/' target='_blank' rel='noopener'>Deliveroo</a><br><a href='https://www.ubereats.com/gb' target='_blank' rel='noopener'>Uber Eats</a><br><a href='https://www.just-eat.co.uk/' target='_blank' rel='noopener'>Just Eat</a><br><a href='https://foodhub.co.uk/' target='_blank' rel='noopener'>FoodHub</a>"
+    },
+
+    "option4": {
+        "optionName": "Game Night",
+        "picture": "assets/images/games.jpg",
+        "result": "You should have a games night!",
+        "details": "Practice your poker face as it’s time to get the cards out! Or do you have a pile of boardgames that you’ve not played for a while, well nows your chance, why not wager the chores to keep things interesting. Alternatively you can do an online escape room! See below links for games.",
+        "links": "<a href='https://blog.prepscholar.com/2-player-card-games' target='_blank' rel='noopener'>Two player card games</a><br><a href='https://www.womenshealthmag.com/sex-and-love/a32338336/romantic-couple-games/' target='_blank' rel='noopener'>25 Couple Games</a><br><a href='https://thepanicroomonline.net/' rel='noopener'>Online Panic Room Games</a>"
+    },
+    "option5": {
+        "optionName": "Cook Together",
+        "picture": "assets/images/cook.jpg",
+        "result": "You should make a meal together!",
+        "details": "Is there a recipe you’ve been dying to try out? Well grab the spatula and your date, its go time. Food is the language of love so what better way to express yourself than to cook something scrumptious together. If you’re not sure what to cook, here are some great recipe sites, from making your own pizzas to fondue, I’m sure you’ll find something that’s perfect for date night, for any level of chef.",
+        "links": "<a href='https://www.delicious.com.au/recipes/collections/gallery/70-recipes-for-a-romantic-date-night-at-home/9d4s0yiz' target='_blank' rel='noopener'>&0 recipes to make together</a><br><a href='https://food.allwomenstalk.com/date-night-dinners-you-can-make-together/' target='_blank' rel='noopener'>Date Night Dinner</a><br>"
+    },
+    "option6": {
+        "optionName": "Video games",
+        "picture": "assets/images/video.jpg",
+        "result": "You should play on the game console together!",
+        "details": "There are some brilliant games that you can play together without playing against each other. See the link below for awesome games that you need co-operation and communication to successfully complete.",
+        "links": "<a href='https://www.gamespew.com/2021/02/best-couch-co-op-games-on-ps4/' target='_blank' rel='noopener'>Sofa co op games</a><br>"
+    },
+    "option7": {
+        "optionName": "Cocktail Making",
+        "picture": "assets/images/cocktails.jpg",
+        "result": "You should make some cocktails",
+        "details": "Channel your inner mixologist and shake up a few cocktails. Raid the drinks cupboard and check out the link below and see what tasty drinks you can rustle up.",
+        "links": "<a href='https://www.cocktailbuilder.com/' target='_blank' rel='noopener'>Cocktail recipe finder</a><br>"
+    },
+    "option8": {
+        "optionName": "Pamper session",
+        "picture": "assets/images/pamper.jpg",
+        "result": "You should pamper each other",
+        "details": "Look out the tissue masks, hair masks and massage oil its time to chill. Light some incense, put on some relaxing music, pour a glass of wine and just breathe.",
+        "links": "<a href='https://dateniteideas.com/spa-night-at-home/' target='_blank' rel='noopener'>Cocktail recipe finder</a><br>"
+    }
+}
