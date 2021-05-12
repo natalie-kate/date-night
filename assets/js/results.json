@@ -57,5 +57,64 @@
         "result": "You should pamper each other",
         "details": "Look out the tissue masks, hair masks and massage oil its time to chill. Light some incense, put on some relaxing music, pour a glass of wine and just breathe.",
         "links": "<a href='https://dateniteideas.com/spa-night-at-home/' target='_blank' rel='noopener'>Cocktail recipe finder</a><br>"
+    },
+    "option9": {
+        "optionName": "Bowling",
+        "picture": "assets/images/bowling.jpg",
+        "result": "You should go Bowling",
+        "details":"Dust off your competitive streak and get ready to rock those shoes! Do you reckon you can get a strike, put your skills to the test and don't get the bumpers.",
+        "links": ""
+    },
+    "option10": {
+        "optionName": "Dinner",
+        "picture": "assets/images/restaurant.jpg",
+        "result": "You should go out for a romantic Dinner",
+        "details":"Dress up to the nines and make tonight special by treating yourselves to a lovely meal for two. Why not pick a cosy restaurant with low lighting to really set the mood.",
+        "links": ""
+    },
+    "option11": {
+        "optionName": "Club",
+        "picture": "assets/images/clubbing.jpg",
+        "result": "You should go Clubbing!",
+        "details":"Who doesnt love dancing the night away and getting home at dawn with a bag of chips. Get your glad rags on and boogie.",
+        "links": ""
+    },
+    "option12": {
+        "optionName": "Cinema",
+        "picture": "assets/images/cinema.jpg",
+        "result": "You should go to the Cinema!",
+        "details":"A night out at the movies is always exciting, get in the snacks and immerse yourself in the story, If you can't decide who's choice it is, make a night of it and see two!",
+        "links": ""
+    },
+    "option13": {
+        "optionName": "Bar",
+        "picture": "assets/images/bar.jpg",
+        "result": "You should go to a bar!",
+        "details":"So many cocktails to try and so little time. Have a bar crawl, partake in some karaoke and just have a good ol' knees up",
+        "links": ""
+    },
+    "option14": {
+        "optionName": "Escape room",
+        "picture": "assets/images/escape.jpg",
+        "result": "You should go do an Escape Room!",
+        "details":"Time to stretch your brain muscle and do some puzzle solving, code breaking and sleuthing. Perfect date night option for those that are bored of the usual.",
+        "links": ""
+    },
+    "option15": {
+        "optionName": "Live Music",
+        "picture": "assets/images/music.jpg",
+        "result": "You should go enjoy some live music",
+        "details":"Check out your local live music scene, you might find your new favourite band or start appreciating a new genre.",
+        "links": ""
+    },
+    "option16": {
+        "optionName": "Pool Hall",
+        "picture": "assets/images/pool.jpg",
+        "result": "You should go to a games hall",
+        "details":"Great for a casual night out. Play pool, snooker or darts, get a competition going to see who's buying the next round. ",
+        "links": ""
     }
 }
+
+
+
