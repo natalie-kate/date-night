@@ -29,8 +29,7 @@ $('#option1').click(function() {
     $("#option1").attr('id', 'option3');
     $("#option2").attr('id', 'option4');
     const stayInOptions = ["Movie Night", "TV Binge", "Takeaway", "Game Night", "Cook Together", "Video Games", "Cocktail Making", "Pamper Session"];
-
-    randomOptions();
+    randomOptions(); 
 
     function randomOptions() {
     let num1 = Math.floor(Math.random()*stayInOptions.length);
@@ -52,4 +51,34 @@ $('#option1').click(function() {
         randomOptions();
     });
     console.log(chosenOptions);
-}})
+}});
+
+$('#option2').click(function() {
+
+    $("#option1").attr('id', 'option5');
+    $("#option2").attr('id', 'option6');
+    
+    const goOutOptions = ["Bowling", "Dinner", "Club", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
+
+    randomOptions();
+
+    function randomOptions() {
+        let num1 = Math.floor(Math.random()*goOutOptions.length);
+        let button1 = goOutOptions.splice([num1],1);
+        let num2 = Math.floor(Math.random()*goOutOptions.length);
+        let button2 = goOutOptions.splice([num2],1);
+        let chosenOptions = [];
+        
+        $("#option5").text(button1);
+        $("#option6").text(button2);
+    
+        $("#option5").click(function() {
+            let chosenOption = $("#option5").text();
+            console.log(chosenOption);
+            randomOptions();
+        });
+        $("#option6").click(function() {
+            chosenOptions.push($("#option6").text())
+            randomOptions();
+        });
+}});
