@@ -1,6 +1,7 @@
 $('#start').on('click', timer());
 
 function timer() {
+
     let timeLeft = 7;
 
     setInterval(function () {
@@ -23,11 +24,11 @@ function timer() {
     }, 1000)
 }
 
-$("#option1").on("click", stayIn());
+$('#option1').click(function() {
 
-function stayIn() {
-    let stayInOptions = ["Movie Night", "TV Binge", "Takeaway", "Game Night", "Cook Together", "Video Games", "Cocktail Making", "Pamper Session"];
-    let pickedOptions = [];
+    $("#option1").attr('id', 'option3');
+    $("#option2").attr('id', 'option4');
+    const stayInOptions = ["Movie Night", "TV Binge", "Takeaway", "Game Night", "Cook Together", "Video Games", "Cocktail Making", "Pamper Session"];
 
     randomOptions();
 
@@ -36,27 +37,19 @@ function stayIn() {
     let button1 = stayInOptions.splice([num1],1);
     let num2 = Math.floor(Math.random()*stayInOptions.length);
     let button2 = stayInOptions.splice([num2],1);
+    let chosenOptions = [];
+    
+    $("#option3").text(button1);
+    $("#option4").text(button2);
 
-    if (stayInOptions.length <= 2) {
-        stayInOptions.push(pickedOptions.chosenOption);
-    } else if (stayInOptions.length = 1) {
-        document.location.href = "result.html";
-    }
-
-    $("#option1").text(button1);
-    $("#option2").text(button2);
-
-    $("#option1").click(function() {
-        let chosenOption = this.innerText;
-        pickedOptions.push(chosenOption);
+    $("#option3").click(function() {
+        let chosenOption = $("#option3").text();
+        console.log(chosenOption);
         randomOptions();
     });
-
-    $("#option2").click(function() {
-        let chosenOption = this.innerText;
-        pickedOptions.push(chosenOption)
-        randomOptions(); 
+    $("#option4").click(function() {
+        chosenOptions.push($("#option3").text())
+        randomOptions();
     });
-
-    console.log(pickedOptions);
-}};
+    console.log(chosenOptions);
+}})
