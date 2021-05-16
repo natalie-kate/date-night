@@ -159,6 +159,13 @@ hr {
   margin: 0;
 }
 
+.option3,
+.option4,
+.option5,
+.option6 {
+  display: none;
+}
+
 @keyframes flash {
   50% 
   {opacity: 0.4; 
