@@ -27,7 +27,7 @@ function timer() {
 
 $("#option1").click(function() {
     let stayingInOptions = ["Movie Night", "TV Binge", "Takeaway", "Game Night", "Cook Together", "Video Games", "Cocktail Making", "Pamper Session"];
-    $(this).hide();
+    $("#option1").hide();
     $("#option2").hide();
     $("#option3").show();
     $("#option4").show();
@@ -36,8 +36,8 @@ $("#option1").click(function() {
 
 $("#option2").click(function() {
     let goOutOptions = ["Bowling", "Dinner", "Club", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
-    $(this).hide();
     $("#option1").hide();
+    $("#option2").hide();
     $("#option3").show();
     $("#option4").show();
     game(goOutOptions);
@@ -69,16 +69,19 @@ function displayOptions (buttonText1, buttonText2) {
   $("#option3").text(buttonText1);
   $("#option4").text(buttonText2);
 };
+console.log(options);
+console.log(notChosen);
 }
+
 $("#option3").click(function() {
-    chosenOptions.push($(this).text());
+    chosenOptions.push($("#option3").text());
     notChosen.push($("#option4").text());
 
-    if (notChosen.length == 5) {
+    if ((notChosen.length >= 6) && ((options.length + chosenOptions.length) == 2)) {
         remainingChoices = options.concat(chosenOptions);
-        finalChoice(remainingChoices[0], remainingChoices[1],remainingChoices[2])
+        finalChoice(remainingChoices[0], remainingChoices[1])
 
-    } else if ((options.length == 2) && (chosenOptions.length > 2)) {
+    } else if ((options.length == 1) && (chosenOptions.length > 1)) {
         chosenOptions.forEach (function(i) {
             options.push(i)
         })
@@ -90,14 +93,14 @@ $("#option3").click(function() {
 
 
 $("#option4").click(function() {
-    chosenOptions.push($(this).text());
+    chosenOptions.push($("#option4").text());
     notChosen.push($("#option3").text());
     
-    if (notChosen.length == 6) {
+    if ((notChosen.length >= 6) && ((options.length + chosenOptions.length) == 2)) {
         remainingChoices = options.concat(chosenOptions);
         finalChoice(remainingChoices[0], remainingChoices[1])
 
-    } else if ((options.length == 2) && (chosenOptions.length > 2)) {
+    } else if ((options.length == 1) && (chosenOptions.length > 1)) {
         chosenOptions.forEach (function(i) {
             options.push(i)
         })
@@ -107,6 +110,7 @@ $("#option4").click(function() {
         randomChoice(options);  
 }}); 
 }
+
 
 
 
