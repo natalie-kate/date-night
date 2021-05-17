@@ -4,6 +4,7 @@ function timer() {
 
     let timeLeft = 7;
 
+
     setInterval(function () {
 
         if (timeLeft < 0) {
@@ -44,7 +45,7 @@ $("#option2").click(function() {
 
 function game(options) {
    let chosenOptions = [];
-
+   let notChosen = [];
 
    randomChoice(options)
 
@@ -70,13 +71,31 @@ function displayOptions (buttonText1, buttonText2) {
 };
 }
 $("#option3").click(function() {
-    chosenOptions.push($(this).text())
-    randomOptions();
-});
+    chosenOptions.push($(this).text());
+    notChosen.push($("#option4").text());
+
+    if ((options.length == 2) && (chosenOptions.length > 2)) {
+        chosenOptions.forEach (function(i) {
+            options.push(i)
+        });
+        chosenOptions.splice(0, chosenOptions.length)
+        randomChoice(options);
+    }});
+
 
 $("#option4").click(function() {
     chosenOptions.push($(this).text());
-    randomOptions();
-});
-};
+    notChosen.push($("#option3").text());
+    
+    if ((options.length == 2) && (chosenOptions.length > 2)) {
+        chosenOptions.forEach (function(i) {
+            options.push(i)
+        })
+        chosenOptions.splice(0, chosenOptions.length)
+        randomChoice(options);
+    } else {
+        randomChoice(options);  
+}}); 
+}
+
 
