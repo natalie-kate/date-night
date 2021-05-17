@@ -108,6 +108,16 @@ $("#option4").click(function() {
     } else {
         randomChoice(options);  
 }}); 
+function finalChoice(choice1, choice2) {
+    $("#option3, #option4").hide();
+    $("#option5").show().text(choice1);
+    $("#option6").show().text(choice2);
+
+    $("#option5, #option6").click(function() {
+        result = $(this).text();
+        showResults(result);
+    });
+}
 }
 
 
