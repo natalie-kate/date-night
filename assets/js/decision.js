@@ -51,8 +51,9 @@ function game(options) {
 
 function randomChoice(optionsArray){
   length = optionsArray.length;
+  adjustedLength = length -= 1
   randomNumber1 = Math.floor(Math.random()*length);
-  randomNumber2 = Math.floor(Math.random()*length);
+  randomNumber2 = Math.floor(Math.random()*adjustedLength);
 
   getOptions(randomNumber1, randomNumber2);
 
@@ -69,8 +70,6 @@ function displayOptions (buttonText1, buttonText2) {
   $("#option3").text(buttonText1);
   $("#option4").text(buttonText2);
 };
-console.log(options);
-console.log(notChosen);
 }
 
 $("#option3").click(function() {
@@ -81,7 +80,7 @@ $("#option3").click(function() {
         remainingChoices = options.concat(chosenOptions);
         finalChoice(remainingChoices[0], remainingChoices[1])
 
-    } else if ((options.length == 1) && (chosenOptions.length > 1)) {
+    } else if ((options.length == 0) && (chosenOptions.length > 1)) {
         chosenOptions.forEach (function(i) {
             options.push(i)
         })
@@ -100,7 +99,7 @@ $("#option4").click(function() {
         remainingChoices = options.concat(chosenOptions);
         finalChoice(remainingChoices[0], remainingChoices[1])
 
-    } else if ((options.length == 1) && (chosenOptions.length > 1)) {
+    } else if ((options.length == 0) && (chosenOptions.length > 1)) {
         chosenOptions.forEach (function(i) {
             options.push(i)
         })
@@ -110,6 +109,8 @@ $("#option4").click(function() {
         randomChoice(options);  
 }}); 
 }
+
+
 
 
 
