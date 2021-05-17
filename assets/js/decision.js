@@ -74,20 +74,30 @@ $("#option3").click(function() {
     chosenOptions.push($(this).text());
     notChosen.push($("#option4").text());
 
-    if ((options.length == 2) && (chosenOptions.length > 2)) {
+    if (notChosen.length == 5) {
+        remainingChoices = options.concat(chosenOptions);
+        finalChoice(remainingChoices[0], remainingChoices[1],remainingChoices[2])
+
+    } else if ((options.length == 2) && (chosenOptions.length > 2)) {
         chosenOptions.forEach (function(i) {
             options.push(i)
-        });
+        })
         chosenOptions.splice(0, chosenOptions.length)
         randomChoice(options);
-    }});
+    } else {
+        randomChoice(options);  
+}}); 
 
 
 $("#option4").click(function() {
     chosenOptions.push($(this).text());
     notChosen.push($("#option3").text());
     
-    if ((options.length == 2) && (chosenOptions.length > 2)) {
+    if (notChosen.length == 6) {
+        remainingChoices = options.concat(chosenOptions);
+        finalChoice(remainingChoices[0], remainingChoices[1])
+
+    } else if ((options.length == 2) && (chosenOptions.length > 2)) {
         chosenOptions.forEach (function(i) {
             options.push(i)
         })
@@ -97,5 +107,10 @@ $("#option4").click(function() {
         randomChoice(options);  
 }}); 
 }
+
+
+
+
+
 
 
