@@ -118,7 +118,11 @@ function finalChoice(choice1, choice2) {
         showResults(result);
     });
 }
-}
+function showResults(winningOption){
+    $(".game").hide();
+    $(".(winningOption)").show;
+}}
+
 
 
 
