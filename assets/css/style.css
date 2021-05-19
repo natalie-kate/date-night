@@ -179,5 +179,9 @@ hr {
   font-weight: 600;
 }
 
+.results {
+  display: none;
+}
+
 
 
