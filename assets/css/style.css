@@ -179,9 +179,30 @@ hr {
   font-weight: 600;
 }
 
-.results {
+.movie,
+.cinema,
+.club,
+.bar,
+.pool,
+.games,
+.takeaway,
+.cook,
+.video,
+.pamper,
+.escape,
+.club,
+.cocktail,
+.bowling,
+.restaurant,
+.tv,
+.live {
   display: none;
+  height: 30vh;
+  width: auto;
 }
 
+.results {
+  text-align: center;
+}
 
 
