@@ -1,8 +1,12 @@
-('#start').on('click', timer());
-function timer() {
-    let timeLeft = 7;
+let goOutOptions;
+let stayingInOptions;
 
-    setInterval(function () {
+$('#start').on('click', timer());
+
+function timer() {
+  let timeLeft = 7;
+
+  setInterval(function () {
             if (timeLeft < 0) {
         return;
     } else {
@@ -33,7 +37,7 @@ function timerStop() {
 
 $("#option1").click(function () {
     timerStop();
-    let stayingInOptions = ["Movie Night", "TV Binge", "Takeaway", "Game Night", "Cook Together", "Video Games", "Cocktail Making", "Pamper Session"];
+    stayingInOptions = ["Movie Night", "TV Binge", "Takeaway", "Game Night", "Cook Together", "Video Games", "Cocktail Making", "Pamper Session"];
     $("#option1").hide();
     $("#option2").hide();
     $("#option3").show();
@@ -43,7 +47,7 @@ $("#option1").click(function () {
 
 $("#option2").click(function () {
     timerStop();
-    let goOutOptions = ["Bowling", "Dinner", "Club", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
+    goOutOptions = ["Bowling", "Restaurant", "Club", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
     $("#option1").hide();
     $("#option2").hide();
     $("#option3").show();
@@ -138,6 +142,12 @@ function game(options) {
 
     function showResults(winningOption) {
         $(".game").hide();
-        $(".(winningOption)").show;
+        let findClass = winningOption.toLowerCase().split(" ");
+        resultClass = "." + findClass[0];
+        $(resultClass).show();
+
+        if (goOutOptions.includes(winningOption)) {
+           
+        }
     }
 }
