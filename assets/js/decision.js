@@ -162,33 +162,47 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 5,
         center: {
-            lat: 55.8642,
-            lng: 4.2518
+            lat: 55.8954,
+            lng: -4.2518
         }
     })};
 
     $("#locationButton").click(function () {
-        let userPosition = navigator.geolocation.getCurrentPosition();
-        let userLat = userPosition.coords.latitude;
-        let userLong = userPosition.coords.longitude;
+
+        navigator.geolocation.getCurrentPosition(yes, no);
+
+        function yes(position) {
+        let userLat = position.coords.latitude;
+        let userLong = position.coords.longitude;
         currentPosition = new google.maps.LatLng(userLat, userLong);
 
-     var request = {
+        var request = {
         location: currentPosition,
         radius: '1500',
         query: 'restaurant'
       };
 
-    service = new google.maps.places.PlacesService(map);
-    service.textSearch(request, callback);
-  });
+        service = new google.maps.places.PlacesService(map);
+        service.textSearch(request, callback);
+     }
+       function no() {
+           $("#map").html(`<h2>Sorry Your Device does not support geolocation.</h2>`)
+       }});
 
   function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       for (let i = 0; i < results.length; i++) {
-        var place = results[i];
-        createMarker(place);
+        createMarker(results[i]);
       }
-      map.setCenter(results[0].geometry.location);
-    }};
-
+      map.setCenter(currentPosition);
+      map.setZoom(12);
+  }};
+  function createMarker(place) {
+        if (!place.geometry || !place.geometry.location) {
+            return;
+        } else {
+        new google.maps.Marker({
+                map,
+                position: place.geometry.location,
+              })
+      }};
