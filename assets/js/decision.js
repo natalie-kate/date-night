@@ -165,10 +165,15 @@ function initMap() {
             lat: 55.8642,
             lng: 4.2518
         }
-    });
+    })};
 
+    $("#locationButton").click(function () {
+        let userPosition = navigator.geolocation.getCurrentPosition();
+        let userLat = userPosition.coords.latitude;
+        let userLong = userPosition.coords.longitude;
+        currentPosition = new google.maps.LatLng(userLat, userLong);
 
-    var request = {
+     var request = {
         location: currentPosition,
         radius: '1500',
         query: 'restaurant'
@@ -176,7 +181,7 @@ function initMap() {
 
     service = new google.maps.places.PlacesService(map);
     service.textSearch(request, callback);
-  };
+  });
 
   function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -184,5 +189,6 @@ function initMap() {
         var place = results[i];
         createMarker(place);
       }
+      map.setCenter(results[0].geometry.location);
     }};
 
