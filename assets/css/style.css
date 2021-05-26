@@ -49,8 +49,8 @@ h2 {
 }
 button.submit,
 #options button {
-  width: 80%;
-  margin-left: 10%;
+  width: 60%;
+  margin-left: 20%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -64,7 +64,7 @@ button.submit,
 }
 .nav-item .nav-link {
   color: rgb(240 231 228);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 .nav-item .nav-link:active,
@@ -158,30 +158,26 @@ hr {
   transition: color 2500ms ease-in-out;
   margin: 0;
 }
-
 .option3,
 .option4,
 .option5,
 .option6 {
   display: none;
 }
-
 @keyframes flash {
   50% 
   {opacity: 0.4; 
   transition: ease-in-out}
 }
-
 .large-text {
   font-size: 20px;
   text-decoration: underline;
   margin: 2px 0;
   font-weight: 600;
 }
-
 .movie,
 .cinema,
-.club,
+.nightclub,
 .bar,
 .pool,
 .games,
@@ -200,8 +196,9 @@ hr {
   display: none;
 }
 #picture img {
-  max-width: 95%;
-  height: auto;
+  height: 25vh;
+  width: 90%;
+  object-fit: fill;
 }
 .results {
   text-align: center;
@@ -218,9 +215,61 @@ hr {
   margin-top: 5vh;
 }
 #map {
-  min-height: 360px;
+  height: 25vh;
   width: 90%;
+  margin-left: 5%;
 }
+.going-out {
+  display: none;
+}
+.going-out.btn {
+  margin-left: 5%;
+  background-color: rgb(210 187 177);
+  border-radius: 10px;
+  border: 4px solid rgb(210 187 177);
+  color:rgb(97, 74, 64);
+  font-size: 0.8rem;
+  font-weight: 400;
+  box-shadow: none;
+  margin-bottom: 5px;
+}
+
+@media(max-width:400px){
+  button.submit,
+  #options button {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media(min-width:769px) {
+  #map {
+    height: 30vh;
+  }
+  #picture img {
+    height: 30vh;
+  }
+  .nav-item .nav-link {
+    font-size: 28px;
+    font-weight: 400;
+}
+.social-links a {
+  font-size: 36px;
+  padding-left: 30px;
+}
+.social-links i:hover {
+  font-size: 44px;
+  transition: font-size 1s ease-out;
+}
+h2 {
+  font-size: 44px;
+}
+button.submit,
+#options button {
+  width: 80%;
+  margin-left: 10%;
+}
+}
+
 
 
 
