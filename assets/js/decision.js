@@ -1,10 +1,15 @@
-let goOutOptions;
+const goOut = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
 let stayingInOptions;
-let decisionResult = "escape room";
+let decisionResult;
+let map;
+let service;
+let infoWindow;
+let currentPosition;
+let marker;
 
-$('#start').on('click', timer());
+$('#start').on('click', timerStart());
 
-function timer() {
+function timerStart() {
   let timeLeft = 7;
 
   setInterval(function () {
@@ -48,7 +53,7 @@ $("#option1").click(function () {
 
 $("#option2").click(function () {
     timerStop();
-    goOutOptions = ["Bowling Alley", "Restaurant", "Club", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
+    goOutOptions = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
     $("#option1").hide();
     $("#option2").hide();
     $("#option3").show();
@@ -147,18 +152,18 @@ function game(options) {
         resultClass = "." + findClass[0];
         $(resultClass).show();
 
-        if (goOutOptions.includes(winningOption)) {
-           $("#map").show();  
+        if (goOut.includes(winningOption)) {
+            console.log(winningOption);
+           let mapScript = document.createElement("script");
+           mapScript.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=AIzaSyBEXEhAnQ8U5GQFcn8zacPVJ9FFhiPMNMs&callback=initMap&libraries=places&v=weekly"
+           );
+           document.body.appendChild(mapScript);
+           $(".going-out").show();
         }
     }
 }
 
 // Map for those results that are for going out.
-var map;
-var service;
-var infoWindow;
-var currentPosition;
-var marker;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -196,7 +201,7 @@ function initMap() {
       for (let i = 0; i < results.length; i++) {
         createMarker(results[i]);
       }
-      map.setCenter(currentPosition);
+      map.setCenter(results[0].geometry.location);
       map.setZoom(12);
   }};
   function createMarker(place) {
@@ -213,8 +218,8 @@ function initMap() {
         let address = place.formatted_address;
         let name = place.name;
         let textInfo = 
-        `<h3>${name}</h3>
-        <p>${address}<br></p>`
+        `<div class=info-box><h3>${name}</h3>
+        <p>${address}</p></div>`
 
         infoWindow = new google.maps.InfoWindow();
 
@@ -222,5 +227,4 @@ function initMap() {
             infoWindow.close();
             infoWindow.open(map, this);
             infoWindow.setContent(textInfo);
-             console.log(place);
       })}};
