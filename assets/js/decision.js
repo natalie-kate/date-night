@@ -1,5 +1,6 @@
 let goOutOptions;
 let stayingInOptions;
+let decisionResult = "escape room";
 
 $('#start').on('click', timer());
 
@@ -47,7 +48,7 @@ $("#option1").click(function () {
 
 $("#option2").click(function () {
     timerStop();
-    goOutOptions = ["Bowling", "Restaurant", "Club", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
+    goOutOptions = ["Bowling Alley", "Restaurant", "Club", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
     $("#option1").hide();
     $("#option2").hide();
     $("#option3").show();
@@ -135,8 +136,8 @@ function game(options) {
 
         $("#option5, #option6").click(function () {
             timerStop();
-            result = $(this).text();
-            showResults(result);
+            decisionResult = $(this).text();
+            showResults(decisionResult);
         });
     }
 
@@ -155,8 +156,9 @@ function game(options) {
 // Map for those results that are for going out.
 var map;
 var service;
-var infowindow;
+var infoWindow;
 var currentPosition;
+var marker;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -179,7 +181,7 @@ function initMap() {
         var request = {
         location: currentPosition,
         radius: '1500',
-        query: 'restaurant'
+        query: decisionResult
       };
 
         service = new google.maps.places.PlacesService(map);
@@ -201,8 +203,24 @@ function initMap() {
         if (!place.geometry || !place.geometry.location) {
             return;
         } else {
-        new google.maps.Marker({
+        marker = new google.maps.Marker({
                 map,
                 position: place.geometry.location,
+                title: place.name,
+                optimized: false
               })
-      }};
+
+        let address = place.formatted_address;
+        let name = place.name;
+        let textInfo = 
+        `<h3>${name}</h3>
+        <p>${address}<br></p>`
+
+        infoWindow = new google.maps.InfoWindow();
+
+        marker.addListener("click", function() {
+            infoWindow.close();
+            infoWindow.open(map, this);
+            infoWindow.setContent(textInfo);
+             console.log(place);
+      })}};
