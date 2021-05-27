@@ -1,3 +1,4 @@
+// Declaring variables.
 const goOut = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
 let stayingInOptions;
 let decisionResult;
@@ -7,34 +8,43 @@ let infoWindow;
 let currentPosition;
 let marker;
 
-$('#start').on('click', timerStart());
+let start = function () {
+    let timeLeft = 7;
+    let timerInterval;
 
-function timerStart() {
-  let timeLeft = 7;
+    let startTimer = function () {
+        timerInterval = setInterval(timer, 1000);
+    };
+        let timer = function () {
+            if (timeLeft > 0) {
+                $("#timer p").text(timeLeft);
+                timeLeft -= 1;
 
-  setInterval(function () {
-            if (timeLeft < 0) {
-        return;
-    } else {
-        $("#timer p").text(timeLeft);
-        if (timeLeft >= 7) {
-            $("#timer p").css("color", "green");
-            $("#timer p").css("transition", "color 3000ms ease-out");
-        }
-        if (timeLeft == 5) {
-            $("#timer p").css("color", "orange");
-        }
-        if (timeLeft <= 3) {
-            $("#timer p").css("transition", "color 3000ms ease-in");
-            $("#timer p").css("color", "red");
-        }
-        if (timeLeft < 2) {
-            $("#timer p").css("animation", "flash 500ms 4");
-        }
-    }
-    timeLeft -= 1;
-}, 1000)
-};
+                if (timeLeft >= 7) {
+                    $("#timer p").css("color", "green");
+                    $("#timer p").css("transition", "color 3000ms ease-out");
+                }
+                if (timeLeft == 5) {
+                    $("#timer p").css("color", "orange");
+                }
+                if (timeLeft <= 3) {
+                    $("#timer p").css("transition", "color 3000ms ease-in");
+                    $("#timer p").css("color", "red");
+                }
+                if (timeLeft < 2) {
+                    $("#timer p").css("animation", "flash 500ms 4");
+                }
+            } else {
+                    clearInterval(timerInterval);
+                }
+            }
+        };
+        startTimer();
+    };
+
+// Event listener to start timer.
+$('#start').on('click',start());
+
 function timerStop() {
     clearInterval(timer);
     $("#timer p").css("color", "green");
@@ -52,7 +62,6 @@ $("#option1").click(function () {
 });
 
 $("#option2").click(function () {
-    timerStop();
     goOutOptions = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
     $("#option1").hide();
     $("#option2").hide();
@@ -88,11 +97,10 @@ function game(options) {
             $("#option3").text(buttonText1);
             $("#option4").text(buttonText2);
         };
-        timerStart();
+        start();
     }
 
     $("#option3").click(function () {
-        timerStop();
         chosenOptions.push($("#option3").text());
         notChosen.push($("#option4").text());
 
@@ -113,7 +121,6 @@ function game(options) {
 
 
     $("#option4").click(function () {
-        timerStop();
         chosenOptions.push($("#option4").text());
         notChosen.push($("#option3").text());
 
@@ -133,14 +140,12 @@ function game(options) {
     });
 
     function finalChoice(choice1, choice2) {
-        timerStop();
         $("#option3, #option4").hide();
         $("#option5").show().text(choice1);
         $("#option6").show().text(choice2);
-        timerStart();
+        start();
 
         $("#option5, #option6").click(function () {
-            timerStop();
             decisionResult = $(this).text();
             showResults(decisionResult);
         });
@@ -154,11 +159,10 @@ function game(options) {
 
         if (goOut.includes(winningOption)) {
             console.log(winningOption);
-           let mapScript = document.createElement("script");
-           mapScript.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=AIzaSyBEXEhAnQ8U5GQFcn8zacPVJ9FFhiPMNMs&callback=initMap&libraries=places&v=weekly"
-           );
-           document.body.appendChild(mapScript);
-           $(".going-out").show();
+            let mapScript = document.createElement("script");
+            mapScript.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=AIzaSyBEXEhAnQ8U5GQFcn8zacPVJ9FFhiPMNMs&callback=initMap&libraries=places&v=weekly");
+            document.body.appendChild(mapScript);
+            $(".going-out").show();
         }
     }
 }
@@ -172,59 +176,66 @@ function initMap() {
             lat: 55.8954,
             lng: -4.2518
         }
-    })};
+    })
+};
 
-    $("#locationButton").click(function () {
+$("#locationButton").click(function () {
 
-        navigator.geolocation.getCurrentPosition(yes, no);
+    navigator.geolocation.getCurrentPosition(yes, no);
 
-        function yes(position) {
+    function yes(position) {
         let userLat = position.coords.latitude;
         let userLong = position.coords.longitude;
         currentPosition = new google.maps.LatLng(userLat, userLong);
 
         var request = {
-        location: currentPosition,
-        radius: '1500',
-        query: decisionResult
-      };
+            location: currentPosition,
+            radius: '1500',
+            query: decisionResult
+        };
 
         service = new google.maps.places.PlacesService(map);
         service.textSearch(request, callback);
-     }
-       function no() {
-           $("#map").html(`<h2>Sorry Your Device does not support geolocation.</h2>`)
-       }});
+    }
 
-  function callback(results, status) {
+    function no() {
+        $("#map").html(`<h2>Sorry Your Device does not support geolocation.</h2>`)
+    }
+});
+
+function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
-      for (let i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-      map.setCenter(results[0].geometry.location);
-      map.setZoom(12);
-  }};
-  function createMarker(place) {
-        if (!place.geometry || !place.geometry.location) {
-            return;
-        } else {
+        for (let i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+        }
+        map.setCenter(results[0].geometry.location);
+        map.setZoom(12);
+    }
+};
+
+function createMarker(place) {
+    if (!place.geometry || !place.geometry.location) {
+        return;
+    } else {
         marker = new google.maps.Marker({
-                map,
-                position: place.geometry.location,
-                title: place.name,
-                optimized: false
-              })
+            map,
+            position: place.geometry.location,
+            title: place.name,
+            optimized: false
+        })
 
         let address = place.formatted_address;
         let name = place.name;
-        let textInfo = 
-        `<div class=info-box><h3>${name}</h3>
+        let textInfo =
+            `<div class=info-box><h3>${name}</h3>
         <p>${address}</p></div>`
 
         infoWindow = new google.maps.InfoWindow();
 
-        marker.addListener("click", function() {
+        marker.addListener("click", function () {
             infoWindow.close();
             infoWindow.open(map, this);
             infoWindow.setContent(textInfo);
-      })}};
+        })
+    }
+};
