@@ -8,45 +8,35 @@ let infoWindow;
 let currentPosition;
 let marker;
 
-let start = function () {
-    let timeLeft = 7;
-    let timerInterval;
+function timer(timeLeft) {
 
-    let startTimer = function () {
-        timerInterval = setInterval(timer, 1000);
-    };
-        let timer = function () {
-            if (timeLeft > 0) {
-                $("#timer p").text(timeLeft);
-                timeLeft -= 1;
+    timerInterval = setInterval(function () {
+        if (timeLeft < 0) {
+            $("#options").html(`<div class="text-center"><h2>You ran out of time!</h2>
+            <a id="restart" class="btn btn-lg hover-btn" href="decision.html">Start Again?</a></div>`);
+            return;
+        } else {
+            $("#timer p").text(timeLeft); 
 
-                if (timeLeft >= 7) {
-                    $("#timer p").css("color", "green");
-                    $("#timer p").css("transition", "color 3000ms ease-out");
-                }
-                if (timeLeft == 5) {
-                    $("#timer p").css("color", "orange");
-                }
-                if (timeLeft <= 3) {
-                    $("#timer p").css("transition", "color 3000ms ease-in");
-                    $("#timer p").css("color", "red");
-                }
-                if (timeLeft < 2) {
-                    $("#timer p").css("animation", "flash 500ms 4");
-                }
-            } else {
-                    clearInterval(timerInterval);
-                }
+            if (timeLeft == 5) {
+            $("#timer p").css("color", "orange");
             }
-        };
-        startTimer();
-    };
+            if (timeLeft == 3) {
+                $("#timer p").css("color", "red");
+            }
+            if (timeLeft == 0) {
+                $("#timer p").css("animation", "flash 500ms 2");
+            }
+        }
+        timeLeft -= 1;
+    }, 1000)
+};
 
 // Event listener to start timer.
-$('#start').on('click',start());
+$('#start').on('click',timer(7));
 
 function timerStop() {
-    clearInterval(timer);
+    clearInterval(timerInterval);
     $("#timer p").css("color", "green");
     $("#timer p").text("8");
 };
@@ -62,6 +52,7 @@ $("#option1").click(function () {
 });
 
 $("#option2").click(function () {
+    timerStop();
     goOutOptions = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
     $("#option1").hide();
     $("#option2").hide();
@@ -97,10 +88,11 @@ function game(options) {
             $("#option3").text(buttonText1);
             $("#option4").text(buttonText2);
         };
-        start();
+        timer(7);
     }
 
     $("#option3").click(function () {
+        timerStop();
         chosenOptions.push($("#option3").text());
         notChosen.push($("#option4").text());
 
@@ -121,6 +113,7 @@ function game(options) {
 
 
     $("#option4").click(function () {
+        timerStop();
         chosenOptions.push($("#option4").text());
         notChosen.push($("#option3").text());
 
@@ -143,7 +136,7 @@ function game(options) {
         $("#option3, #option4").hide();
         $("#option5").show().text(choice1);
         $("#option6").show().text(choice2);
-        start();
+        timer(7);
 
         $("#option5, #option6").click(function () {
             decisionResult = $(this).text();
