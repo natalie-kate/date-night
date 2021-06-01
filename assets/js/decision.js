@@ -7,6 +7,7 @@ let service;
 let infoWindow;
 let currentPosition;
 let marker;
+let optionNumber = 1;
 
 function timer(timeLeft) {
 
@@ -48,6 +49,8 @@ $("#option1").click(function () {
     $("#option2").hide();
     $("#option3").show();
     $("#option4").show();
+    $("#number").text(optionNumber);
+    optionNumber += 1;
     game(stayingInOptions);
 });
 
@@ -58,6 +61,8 @@ $("#option2").click(function () {
     $("#option2").hide();
     $("#option3").show();
     $("#option4").show();
+    $("#number").text(optionNumber);
+    optionNumber += 1;
     game(goOutOptions);
 });
 
@@ -87,6 +92,8 @@ function game(options) {
         function displayOptions(buttonText1, buttonText2) {
             $("#option3").text(buttonText1);
             $("#option4").text(buttonText2);
+            $("#number").text(optionNumber);
+            optionNumber += 1;
         };
         timer(7);
     }
@@ -136,6 +143,7 @@ function game(options) {
         $("#option3, #option4").hide();
         $("#option5").show().text(choice1);
         $("#option6").show().text(choice2);
+        $(".decision-number").text("Final Choice");
         timer(7);
 
         $("#option5, #option6").click(function () {
