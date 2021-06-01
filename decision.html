@@ -61,12 +61,13 @@
                     <button class="btn btn-lg option2" id="option2">Go out</button>
                     <button class="btn btn-lg option4" id="option4"></button>
                     <button class="btn btn-lg option6" id="option6"></button>
+                    <p class="decision-number large-text text-center">Decision <span id="number">1</span> of 8</p>
                 </div>
             </div>
         </div>
 
         <div class="row results">
-            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id="picture">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 picture">
                 <img class="movie" src="../assets/images/result-images/movie.jpg"
                     alt="cartoon couple watching a movie at home ">
                 <img class="tv" src="../assets/images/result-images/tv.jpg" alt="cartoon couple watching tv at home">
@@ -91,7 +92,7 @@
             </div>
         </div>
         <div class="row results">
-            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id="text-result">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 text-result">
                 <div class="movie">
                     <h2>You should watch a film!</h2>
                     <p> Grab your snacks, lower the lights and snuggle up on the sofa with your fave. Why not
@@ -182,7 +183,7 @@
             </div>
         </div>
         <div class="row results">
-            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3" id="additional-links">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 additional-links text-center">
                 <h3 class="movie tv takeaway games cook video cocktail pamper text-center">Resource Links</h3>
                 <div class="movie">
                     <a href='https://www.netflix.com/gb/' target='_blank' rel='noopener'>Netflix</a><br>
@@ -190,7 +191,7 @@
                         rel='noopener'>IMDB Top Movies</a><br>
                     <a href='https://www.amazon.co.uk/Movies/b?ie=UTF8&node=3046737031' target='_blank'
                         rel='noopener'>Amazon Video Movies</a><br>
-                    <a href='https://www.sky.com/watch' target='_blank' rel='noopener'>Sky Watch</a>"
+                    <a href='https://www.sky.com/watch' target='_blank' rel='noopener'>Sky Watch</a>
                 </div>
                 <div class="tv">
                     <a href='https://www.netflix.com/gb/' target='_blank' rel='noopener'>Netflix</a><br>
@@ -232,8 +233,11 @@
                         ideas</a>
                 </div>
             </div>
-            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-left going-out">
-                <button class="btn going-out" id="locationButton">Use my Location</button>
+            <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 text-left going-out">
+                <button class="btn btn-hover my-location" id="locationButton">My Location</button>
+                <span>OR</span>
+                <input type=text id="enter-location" name="location" placeholder="Enter Location">
+                <button class="search btn btn-hover">Search</button>
                 <div class="going-out" id="map"></div>
             </div>
         </div>
@@ -260,6 +264,7 @@
                     </ul>
                 </div>
             </footer>
+        </div>
 
             <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
                 aria-hidden="true">
@@ -276,17 +281,16 @@
                             you have a winner.<br>
                             The premise is that sub consciously we know what we want to do, but we over think it and
                             then hum an haw. <br>
-                            You have 5 seconds to choose between two options each time, meaning you'll have to
+                            You have 8 seconds to choose between two options each time, meaning you'll have to
                             answer
                             with your gut! <br>
-                            There are 8 decisions to make, so in only 40 seconds you'll have your plan for tonight.
+                            There are 8 decisions to make, so in only 64 seconds you'll have your plan for tonight.
                             Meaning you'll have more time to get ready. Win Win!</p>
                         <button type="button" class="btn modal-btn hover-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
