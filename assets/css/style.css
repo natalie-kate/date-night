@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;800&display=swap');
 
+/*---- General ----*/
 body {
   font-family: 'Montserrat', sans-serif;
 }
 .landing-page-container {
   height: 100vh;
-  background: url("../images/pic1.jpg") no-repeat center center;
+  background: url("../images/question.jpg") no-repeat center center;
   background-size: cover;
+}
+.contact-container, 
+.decisions-container {
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(204, 164, 145, 0.75), rgba(210, 187, 177, 0), rgba(226, 192, 139, 0.75));
 }
 .overlay {
   background-color: rgba(255, 255, 255, 0.75);
@@ -31,9 +37,14 @@ h2 {
   font-size: 2.2rem;
   color: rgb(97, 74, 64);
 }
-#message {
-  margin-top: 2.5vh;
+hr {
+  height: 5px;
+  width: 80%;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(226, 192, 139, 0), rgba(226, 192, 139, 0.75), rgba(226, 192, 139, 0));
 }
+
+/*---- Buttons ----*/
 .btn {
   background-color: rgb(210 187 177);
   border-radius: 10px;
@@ -46,6 +57,9 @@ h2 {
 #start {
   width: 50vw;
   font-size: 24px;
+}
+#restart {
+  margin-top: 20px;
 }
 .heading .btn,
 .error-message .btn {
@@ -66,6 +80,30 @@ button.submit,
   width: 50%;
   margin-left: 25%;
 }
+.my-location.btn,
+.search.btn {
+    margin-left: 5%;
+    background-color: rgb(210 187 177);
+    border-radius: 6px;
+    border: none;
+    color: rgb(97, 74, 64);
+    font-size: 0.8rem;
+    font-weight: 400;
+    box-shadow: none;
+    margin-bottom: 5px;
+    padding: 2px;
+    height: 25px;
+  }
+.search.btn {
+  margin-left: 2px;
+}
+.hover-btn:hover {
+  border: 4px solid rgb(210 187 177);
+  background-color: white;
+  transition-duration: 1000ms;
+  color: rgb(97, 74, 64);
+}
+/*---- Nav ----*/
 .nav-item .nav-link {
   color: rgb(240 231 228);
   font-size: 20px;
@@ -80,14 +118,20 @@ button.submit,
   background-color: rgb(240 231 228);
   color: rgb(97, 74, 64);
 }
+/*---- Footer ----*/
 .social-links a {
   color: rgb(240 231 228);
   font-size: 30px;
   padding: 10px;
 }
-.social-links {
+.social-links.index {
   background-image: linear-gradient(to right, rgba(226, 192, 139, 0), rgb(118 95 64), rgba(226, 192, 139, 0));
 }
+.social-links i:hover {
+  font-size: 40px;
+  transition: font-size 1s ease-out;
+}
+/*---- Modals ----*/
 .modal-content,
 .modal-content .modal-header {
   padding: 5px 8px;
@@ -95,6 +139,7 @@ button.submit,
 .modal-content span {
   background-color: rgb(210 187 177);
 }
+/*---- Contact Form ----*/
 input[name=rating] {
   display: none;
 }
@@ -119,32 +164,7 @@ form p {
   margin-top: 5px;
   margin-bottom: 0;
 }
-.contact-container h2,
-.contact-container a,
-.contact-container .nav-link,
-.contact-container label,
-.decisions-container h2,
-.decisions-container a,
-.decisions-container .nav-link,
-.decisions-container label {
-  color: rgb(97, 74, 64);
-}
-hr {
-  height: 5px;
-  width: 80%;
-  border: 0;
-  background-image: linear-gradient(to right, rgba(226, 192, 139, 0), rgba(226, 192, 139, 0.75), rgba(226, 192, 139, 0));
-}
-.hover-btn:hover {
-  border: 4px solid rgb(210 187 177);
-  background-color: white;
-  transition-duration: 1000ms;
-  color: rgb(97, 74, 64);
-}
-.social-links i:hover {
-  font-size: 40px;
-  transition: font-size 1s ease-out;
-}
+/*---- 404 page ----*/
 .error-message h1 {
   margin-top: 15vh;
 }
@@ -158,6 +178,25 @@ hr {
   color: rgb(210 187 177);
   text-decoration: none;
 }
+/*---- Colours ----*/
+.contact-container h2,
+.contact-container a,
+.contact-container .nav-link,
+.contact-container label,
+.decisions-container h2,
+.decisions-container a,
+.decisions-container .nav-link,
+.decisions-container label {
+  color: rgb(97, 74, 64);
+}
+
+/*---- Game ----*/
+.game h1 {
+  margin-top: 5vh;
+}
+#message {
+  margin-top: 2.5vh;
+}
 #timer p {
   font-size: 120px;
   font-weight: 600;
@@ -170,18 +209,16 @@ hr {
 .option6 {
   display: none;
 }
-@keyframes flash {
-  50% {
-    opacity: 0.4;
-    transition: ease-in-out
-  }
+.decision-number {
+  margin-top: 10px;
 }
 .large-text {
   font-size: 20px;
-  text-decoration: underline;
   margin: 2px 0;
   font-weight: 600;
 }
+
+/*---- Results ----*/
 .movie,
 .cinema,
 .nightclub,
@@ -199,16 +236,28 @@ hr {
 .restaurant,
 .tv,
 .live,
-.resources {
+.going-out {
   display: none;
 }
-#picture img {
+.picture {
+  text-align: center;
+}
+.picture img {
   height: 25vh;
-  width: 90%;
+  width: auto;
   object-fit: fill;
 }
-.results {
+.text-result {
   text-align: center;
+}
+.additional-links {
+  text-decoration: none;
+}
+.additional-links a:hover,
+.additional-links a:active {
+  text-decoration: underline;
+  color:rgb(134 57 23);
+  font-weight: 600;
 }
 .results h2 {
   margin: 10px 0;
@@ -216,30 +265,28 @@ hr {
 .results h3 {
   text-decoration: underline;
   font-family: "Lobster", cursive;
-  color: rgb(97, 74, 64);
-}
-.game h1 {
-  margin-top: 5vh;
+  color:rgb(97, 74, 64);
 }
 #map {
   height: 25vh;
   width: 90%;
   margin-left: 5%;
 }
-.going-out {
-  display: none;
-}
-.going-out.btn {
-  margin-left: 5%;
-  background-color: rgb(210 187 177);
-  border-radius: 10px;
-  border: 4px solid rgb(210 187 177);
-  color: rgb(97, 74, 64);
+#enter-location {
+  width: 35%;
   font-size: 0.8rem;
-  font-weight: 400;
-  box-shadow: none;
-  margin-bottom: 5px;
+  margin-left: 2px;
+  border-radius: 5px;
+} 
+
+/*---- Animation ----*/
+@keyframes flash {
+  50% {
+    opacity: 0.4;
+    transition: ease-in-out
+  }
 }
+
 /*---- Media Queries ----*/
 @media(max-width:350px) {
   h1 {
