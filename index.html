@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!-- Header with Nav-->
+    <!-- Header with Nav-->
     <div class="container-fluid landing-page-container">
         <header>
             <nav>
@@ -23,14 +23,15 @@
                     <div class="col-12" role="navigation">
                         <ul class="nav nav-pills justify-content-end">
                             <li class="nav-item">
-                                <a href="index.html" class="active nav-link">Home</a>
+                                <a href="index.html" class="active nav-link">Home<span class="sr-only">current
+                                        page</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#about-modal" class="nav-link" data-toggle="modal"
-                                    data-target="#about-modal">About</a>
+                                <a href="#about-modal" class="nav-link" data-toggle="modal" data-target="#about-modal"
+                                    aria-label="link opens about modal">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
+                                <a href="contact.html" class="nav-link" aria-label="link to contact page">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -38,65 +39,71 @@
             </nav>
         </header>
 
-<!-- Title and call to action button-->
+        <!-- Title and call to action button-->
         <div class="row text-center heading">
             <div class="col-12 col-md-8 offset-md-2 overlay">
                 <h1>Date Night<span> <i class="fas fa-heart"></i></span></h1>
                 <h2>Let us help you decide what to do!</h2>
-                <a id="start" class="btn btn-lg hover-btn" href="decision.html">Let's Start!</a>
+                <a id="start" class="btn btn-lg hover-btn" href="decision.html" aria-label="Will start game"></a>>Let's Start!</a>
             </div>
         </div>
 
-<!-- Footer and social links -->
+        <!-- Footer and social links -->
         <div class="row">
             <footer>
-                <div class="col-12"> 
+                <div class="col-12">
                     <ul class="nav justify-content-center fixed-bottom social-links index">
                         <li>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener"><i
-                                    class="fab fa-instagram" aria-hidden="true"></i></a>
+                                    class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Link will open
+                                    instagram in a new page.</span></a>
                         </li>
                         <li>
                             <a href="https://www.github.com" target="_blank" rel="noopener"><i class="fab fa-github"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i><span class="sr-only">Link will open github in a new
+                                    page.</span></a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i><span class="sr-only">Link will open youtube in a new
+                                    page.</span></a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i><span class="sr-only">Link will open linkedin in a new
+                                    page.</span></a>
                         </li>
                     </ul>
                 </div>
             </footer>
         </div>
 
-            <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content text-center">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="aboutmodaltitle">About</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
-                            </button>
-                        </div>
-                        <p class="text-left">This game is to help you quickly narrow down your date night choices until
-                            you have a winner.<br>
-                            The premise is that sub consciously we know what we want to do, but we over think it and
-                            then hum an haw. <br>
-                            You have 8 seconds to choose between two options each time, meaning you'll have to answer
-                            with your gut! <br>
-                            There are 8 decisions to make, so in only 64 seconds you'll have your plan for tonight.
-                            Meaning you'll have more time to get ready. Win Win!</p>
-                        <button type="button" class="btn modal-btn hover-btn" data-dismiss="modal">Close</button>
+        <!-- About modal, modified bootstrap example. -->
+        <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="aboutmodaltitle">About</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span> <i class="fas fa-times" aria-hidden="true"></i></span>
+                        </button>
                     </div>
+                    <p class="text-left">This game is to help you quickly narrow down your date night choices until
+                        you have a winner.<br>
+                        The premise is that sub consciously we know what we want to do, but we over think it and
+                        then hum an haw. <br>
+                        You have 8 seconds to choose between two options each time, meaning you'll have to answer
+                        with your gut! <br>
+                        There are 8 decisions to make, so in only 64 seconds you'll have your plan for tonight.
+                        Meaning you'll have more time to get ready. Win Win!</p>
+                    <button type="button" class="btn modal-btn hover-btn" data-dismiss="modal">Close</button>
                 </div>
             </div>
+        </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
