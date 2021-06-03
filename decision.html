@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    <!-- Header with Nav -->
     <div class="container-fluid decisions-container">
         <header>
             <nav>
@@ -38,11 +38,14 @@
             </nav>
         </header>
 
+        <!-- Page title -->
         <div class="row game">
             <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 text-center">
                 <h1>Lets Play</h1>
             </div>
         </div>
+
+        <!-- Timer -->
         <div class="row game">
             <div class="col-12 col-md-4 offset-md-4">
                 <div class="text-center" id="timer" role="timer" aria-label="time left">
@@ -50,6 +53,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Option buttons and decision number tracker -->
         <div class="row game">
             <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
                 <div id="options">
@@ -66,6 +71,7 @@
             </div>
         </div>
 
+        <!-- Result images with attributes, hidden until required -->
         <div class="row results">
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 picture">
                 <div class="movie">
@@ -171,6 +177,7 @@
             </div>
         </div>
 
+        <!-- Result text heading with accompanying text, hidden until required -->
         <div class="row results">
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 text-result">
                 <div class="movie">
@@ -262,6 +269,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Staying in resources, hidden until required -->
         <div class="row results">
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 additional-links text-center">
                 <h3 class="movie tv takeaway games cook video cocktail pamper text-center">Resource Links</h3>
@@ -329,6 +338,8 @@
                         ideas</a>
                 </div>
             </div>
+
+            <!-- Going out map div with location button, search box with button, hidden until required -->
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 text-left going-out">
                 <button class="btn btn-hover my-location" id="locationButton">My Location</button>
                 <span>OR</span>
@@ -337,6 +348,8 @@
                 <div class="going-out" id="map"></div>
             </div>
         </div>
+
+        <!-- Footer and social links -->
         <div class="row">
             <footer>
                 <div class="col-12">
@@ -344,28 +357,29 @@
                         <li>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener"><i
                                     class="fab fa-instagram" aria-hidden="true"></i>
-                                    <span class="sr-only">Link will open Instagram in a new page</span></a>
+                                <span class="sr-only">Link will open Instagram in a new page</span></a>
                         </li>
                         <li>
                             <a href="https://www.github.com" target="_blank" rel="noopener"><i class="fab fa-github"
                                     aria-hidden="true"></i>
-                                    <span class="sr-only">Link will open github in a new page</span></a>
+                                <span class="sr-only">Link will open github in a new page</span></a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"
                                     aria-hidden="true"></i>
-                                    <span class="sr-only">Link will open youtube in a new page</span></a>
+                                <span class="sr-only">Link will open youtube in a new page</span></a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"
                                     aria-hidden="true"></i>
-                                    <span class="sr-only">Link will open linkedin in a new page</span></a>
+                                <span class="sr-only">Link will open linkedin in a new page</span></a>
                         </li>
                     </ul>
                 </div>
             </footer>
         </div>
 
+        <!-- About Modal, modified bootstrap example. -->
         <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -380,7 +394,7 @@
                         until
                         you have a winner.<br>
                         The premise is that sub consciously we know what we want to do, but we over think it and
-                        then hum an haw. <br>
+                        then hum and haw. <br>
                         You have 8 seconds to choose between two options each time, meaning you'll have to
                         answer
                         with your gut! <br>
@@ -392,6 +406,7 @@
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
