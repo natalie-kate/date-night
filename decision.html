@@ -23,14 +23,14 @@
                     <div class="col-12" role="navigation">
                         <ul class="nav nav-pills justify-content-end">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link">Home</a>
+                                <a href="index.html" class="nav-link" aria-label="link to home page">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#about-modal" class="nav-link" data-toggle="modal"
-                                    data-target="#about-modal">About</a>
+                                <a href="#about-modal" class="nav-link" data-toggle="modal" data-target="#about-modal"
+                                    aria-label="link opens about modal">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
+                                <a href="contact.html" class="nav-link" aria-label="link to contact page">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +45,7 @@
         </div>
         <div class="row game">
             <div class="col-12 col-md-4 offset-md-4">
-                <div class="text-center" id="timer">
+                <div class="text-center" id="timer" role="timer" aria-label="time left">
                     <p>8</p>
                 </div>
             </div>
@@ -54,13 +54,13 @@
             <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
                 <div id="options">
                     <h2 id="message" class="text-center">Select one and fast!</h2>
-                    <button class="btn btn-lg option1" id="option1">Stay In</button>
-                    <button class="btn btn-lg option3" id="option3"></button>
-                    <button class="btn btn-lg option5" id="option5"></button>
+                    <button class="btn btn-lg option1 hover-btn" id="option1">Stay In</button>
+                    <button class="btn btn-lg option3 hover-btn" id="option3"></button>
+                    <button class="btn btn-lg option5 hover-btn" id="option5"></button>
                     <p class="text-center large-text">OR</p>
-                    <button class="btn btn-lg option2" id="option2">Go out</button>
-                    <button class="btn btn-lg option4" id="option4"></button>
-                    <button class="btn btn-lg option6" id="option6"></button>
+                    <button class="btn btn-lg option2 hover-btn" id="option2">Go out</button>
+                    <button class="btn btn-lg option4 hover-btn" id="option4"></button>
+                    <button class="btn btn-lg option6 hover-btn" id="option6"></button>
                     <p class="decision-number large-text text-center">Decision <span id="number">1</span> of 8</p>
                 </div>
             </div>
@@ -68,29 +68,109 @@
 
         <div class="row results">
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 picture">
-                <img class="movie" src="../assets/images/result-images/movie.jpg"
-                    alt="cartoon couple watching a movie at home ">
-                <img class="tv" src="../assets/images/result-images/tv.jpg" alt="cartoon couple watching tv at home">
-                <img class="takeaway" src="../assets/images/result-images/takeaway.jpg" alt="cartoon delivery driver">
-                <img class="games" src="../assets/images/result-images/games.jpg"
-                    alt="an assortment of different board games">
-                <img class="cook" src="../assets/images/result-images/cook.jpg" alt="cartoon couple cooking together">
-                <img class="video" src="../assets/images/result-images/video.jpg"
-                    alt="cartoon couple playing video games">
-                <img class="cocktail" src="../assets/images/result-images/cocktail.jpg"
-                    alt="cartoon girl standing beside a large cocktail">
-                <img class="pamper" src="../assets/images/result-images/pamper.jpg"
-                    alt="cartoon showing a man giving the woman a shoulder massage">
-                <img class="bowling" src="assets/images/result-images/bowling.jpg" alt="cartoon bowling alley">
-                <img class="restaurant" src="assets/images/result-images/restaurant.jpg" alt="">
-                <img class="nightclub" src="assets/images/result-images/club.jpg" alt="">
-                <img class="cinema" src="assets/images/result-images/cinema.jpg" alt="">
-                <img class="bar" src="assets/images/result-images/bar.jpg" alt="">
-                <img class="escape" src="assets/images/result-images/escape.jpg" alt="cartoon couple in an escape room">
-                <img class="live" src="assets/images/result-images/live.jpg" alt="cartoon jazz band">
-                <img class="pool" src="assets/images/result-images/pool.jpg" alt="cartoon couple playing pool">
+                <div class="movie">
+                    <img src="/assets/images/result-images/movie.jpg"
+                        alt="cartoon couple watching a movie at home "><br>
+                    <a href="https://www.freepik.com/vectors/house" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">House vector created by freepik -
+                        www.freepik.com</a>
+                </div>
+                <div class="tv">
+                    <img src="/assets/images/result-images/tv.jpg" alt="cartoon couple watching tv at home">
+                    <a href="https://www.freepik.com/vectors/people" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">People vector created by freepik -
+                        www.freepik.com</a>
+                </div>
+                <div class="takeaway">
+                    <img src="/assets/images/result-images/takeaway.jpg" alt="cartoon delivery driver">
+                    <a href="https://www.freepik.com/vectors/man" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Man vector created by stories -
+                        www.freepik.com</a>
+                </div>
+                <div class="games">
+                    <img src="/assets/images/result-images/games.jpg" alt="an assortment of different board games">
+                    <a href="https://www.freepik.com/vectors/table" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Table vector created by freepik -
+                        www.freepik.com</a>
+                </div>
+                <div class="cook">
+                    <img src="/assets/images/result-images/cook.jpg" alt="cartoon couple cooking together">
+                    <a href="https://www.freepik.com/vectors/food" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Food vector created by freepik -
+                        www.freepik.com</a>
+                </div>
+                <div class="video">
+                    <img src="/assets/images/result-images/video.jpg" alt="cartoon couple playing video games">
+                    <a href="https://www.freepik.com/vectors/background" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Background vector created by vectorpouch -
+                        www.freepik.com</a>
+                </div>
+                <div class="cocktail">
+                    <img src="/assets/images/result-images/cocktail.jpg"
+                        alt="cartoon girl standing beside a large cocktail">
+                    <a href="https://www.freepik.com/vectors/menu" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Menu vector created by pch.vector -
+                        www.freepik.com</a>
+                </div>
+                <div class="pamper">
+                    <img src="/assets/images/result-images/pamper.jpg"
+                        alt="cartoon showing a man giving the woman a shoulder massage">
+                    <a href="https://www.freepik.com/vectors/people" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">People vector created by pch.vector -
+                        www.freepik.com</a>
+                </div>
+                <div class="bowling">
+                    <img src="assets/images/result-images/bowling.jpg" alt="cartoon bowling alley">
+                    <a href="https://www.freepik.com/vectors/sports" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Sports vector created by vectorpouch -
+                        www.freepik.com</a>
+                </div>
+                <div class="restaurant">
+                    <img src="assets/images/result-images/restaurant.jpg" alt="cartoon couple sitting in a restaurant">
+                    <a href="https://www.freepik.com/vectors/food" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Food vector created by freepik -
+                        www.freepik.com</a>
+                </div>
+                <div class="nightclub">
+                    <img src="assets/images/result-images/club.jpg" alt="people dancing in a club">
+                    <a href="https://www.freepik.com/vectors/music" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Music vector created by pch.vector -
+                        www.freepik.com</a>
+                </div>
+                <div class="cinema">
+                    <img src="assets/images/result-images/cinema.jpg"
+                        alt="cartoon film reel and two woman picking seats on a large mobile phone.">
+                    <a href="https://www.freepik.com/vectors/star" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Star vector created by macrovector -
+                        www.freepik.com</a>
+                </div>
+                <div class="bar">
+                    <img src="assets/images/result-images/bar.jpg" alt="a cartoon couple sitting at a bar">
+                    <a href="https://www.freepik.com/vectors/people" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">People vector created by pch.vector -
+                        www.freepik.com</a>
+                </div>
+                <div class="escape">
+                    <img src="assets/images/result-images/escape.jpg" alt="cartoon couple in an escape room">
+                    <a href="https://www.freepik.com/vectors/people" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">People vector created by vectorpouch -
+                        www.freepik.com</a>
+                </div>
+                <div class="live">
+                    <img src="assets/images/result-images/live.jpg" alt="cartoon jazz band">
+                    <a href="https://www.freepik.com/vectors/music" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">Music vector created by macrovector -
+                        www.freepik.com</a>
+                </div>
+                <div class="pool">
+                    <img src="assets/images/result-images/pool.jpg" alt="cartoon couple playing pool">
+                    <a href="https://www.freepik.com/vectors/people" target="_blank" rel="noopener"
+                        aria-label="This link will open freepik in a new tab">People vector created by freepik -
+                        www.freepik.com</a>
+                </div>
             </div>
         </div>
+
         <div class="row results">
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 text-result">
                 <div class="movie">
@@ -186,58 +266,74 @@
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 additional-links text-center">
                 <h3 class="movie tv takeaway games cook video cocktail pamper text-center">Resource Links</h3>
                 <div class="movie">
-                    <a href='https://www.netflix.com/gb/' target='_blank' rel='noopener'>Netflix</a><br>
-                    <a href='https://www.imdb.com/search/title/?groups=top_100&sort=user_rating,desc' target='_blank'
-                        rel='noopener'>IMDB Top Movies</a><br>
-                    <a href='https://www.amazon.co.uk/Movies/b?ie=UTF8&node=3046737031' target='_blank'
-                        rel='noopener'>Amazon Video Movies</a><br>
-                    <a href='https://www.sky.com/watch' target='_blank' rel='noopener'>Sky Watch</a>
+                    <a href="https://www.netflix.com/gb/" target="_blank" rel="noopener"
+                        aria-label="This link will open netflix in a new tab">Netflix</a><br>
+                    <a href="https://www.imdb.com/search/title/?groups=top_100&sort=user_rating,desc" target="_blank"
+                        rel="noopener" aria-label="This link will open IMDB in a new tab">IMDB Top Movies</a><br>
+                    <a href="https://www.amazon.co.uk/Movies/b?ie=UTF8&node=3046737031" target="_blank" rel="noopener"
+                        aria-label="This link will open amazon prime movies in a new tab">Amazon Prime Movies</a><br>
+                    <a href="https://www.sky.com/watch" target="_blank" rel="noopener">Sky Watch</a>
                 </div>
                 <div class="tv">
-                    <a href='https://www.netflix.com/gb/' target='_blank' rel='noopener'>Netflix</a><br>
-                    <a href='https://www.imdb.com/chart/toptv/' target='_blank' rel='noopener'>IMDB top TV
+                    <a href="https://www.netflix.com/gb/" target="_blank" rel="noopener"
+                        aria-label="This link will open netflix in a new tab">Netflix</a><br>
+                    <a href="https://www.imdb.com/chart/toptv/" target="_blank" rel="noopener"
+                        aria-label="This link will open IMDB in a new tab">IMDB top TV
                         shows</a><br>
-                    <a href='https://www.amazon.co.uk/gp/video/storefront/ref=atv_cat_leftpanel_tv?node=3046738031'
-                        target='_blank' rel='noopener'>Amazon video TV shows</a><br>
-                    <a href='https://www.sky.com/watch' target='_blank' rel='noopener'>Sky Watch</a>
+                    <a href="https://www.amazon.co.uk/gp/video/storefront/ref=atv_cat_leftpanel_tv?node=3046738031"
+                        target="_blank" rel="noopener"
+                        aria-label="This link will open amazon prime tv in a new tab">Amazon Prime TV shows</a><br>
+                    <a href="https://www.sky.com/watch" target="_blank" rel="noopener"
+                        aria-label="This link will open sky watch in a new tab">Sky Watch</a>
                 </div>
                 <div class="takeaway">
-                    <a href='https://deliveroo.co.uk/' target='_blank' rel='noopener'>Deliveroo</a><br>
-                    <a href='https://www.ubereats.com/gb' target='_blank' rel='noopener'>Uber Eats</a><br>
-                    <a href='https://www.just-eat.co.uk/' target='_blank' rel='noopener'>Just Eat</a><br>
-                    <a href='https://foodhub.co.uk/' target='_blank' rel='noopener'>FoodHub</a>
+                    <a href="https://deliveroo.co.uk/" target="_blank" rel="noopener"
+                        aria-label="This link will open deliveroo in a new tab">Deliveroo</a><br>
+                    <a href="https://www.ubereats.com/gb" target="_blank" rel="noopener"
+                        aria-label="This link will open uber eats in a new tab">Uber Eats</a><br>
+                    <a href="https://www.just-eat.co.uk/" target="_blank" rel="noopener"
+                        aria-label="This link will open Just eat in a new tab">Just Eat</a><br>
+                    <a href="https://foodhub.co.uk/" target="_blank" rel="noopener"
+                        aria-label="This link will open foodhub in a new tab">FoodHub</a>
                 </div>
                 <div class="games">
-                    <a href='https://blog.prepscholar.com/2-player-card-games' target='_blank' rel='noopener'>Two
+                    <a href="https://blog.prepscholar.com/2-player-card-games" target="_blank" rel="noopener"
+                        aria-label="This link will open an article in a new tab">Two
                         player card games</a><br>
-                    <a href='https://www.womenshealthmag.com/sex-and-love/a32338336/romantic-couple-games/'
-                        target='_blank' rel='noopener'>25 Couple Games</a><br>
-                    <a href='https://thepanicroomonline.net/' rel='noopener'>Online Panic Room Games</a>
+                    <a href="https://www.womenshealthmag.com/sex-and-love/a32338336/romantic-couple-games/"
+                        target="_blank" rel="noopener" aria-label="This link will open an article in a new tab">25
+                        Couple Games</a><br>
+                    <a href="https://thepanicroomonline.net/" target="_blank" rel="noopener"
+                        aria-label="This link will open the panic room website in a new tab">Online Panic Room Games</a>
                 </div>
                 <div class="cook">
-                    <a href='https://www.delicious.com.au/recipes/collections/gallery/70-recipes-for-a-romantic-date-night-at-home/9d4s0yiz'
-                        target='_blank' rel='noopener'>70 recipes to make together</a><br>
-                    <a href='https://food.allwomenstalk.com/date-night-dinners-you-can-make-together/' target='_blank'
-                        rel='noopener'>Date Night Dinner</a><br>
+                    <a href="https://www.delicious.com.au/recipes/collections/gallery/70-recipes-for-a-romantic-date-night-at-home/9d4s0yiz"
+                        target="_blank" rel="noopener" aria-label="This link will open the article in a new tab">70
+                        recipes to make together</a><br>
+                    <a href="https://food.allwomenstalk.com/date-night-dinners-you-can-make-together/" target="_blank"
+                        rel="noopener" aria-label="This link will open the article in a new tab">Date Night
+                        Dinner</a><br>
                 </div>
                 <div class="video">
-                    <a href='https://www.gamespew.com/2021/02/best-couch-co-op-games-on-ps4/' target='_blank'
-                        rel='noopener'>Sofa co op games</a>
+                    <a href="https://www.gamespew.com/2021/02/best-couch-co-op-games-on-ps4/" target="_blank"
+                        rel="noopener" aria-label="This link will open the article in a new tab">Sofa co op games</a>
                 </div>
                 <div class="cocktail">
-                    <a href='https://www.cocktailbuilder.com/' target='_blank' rel='noopener'>Cocktail recipe
+                    <a href="https://www.cocktailbuilder.com/" target="_blank" rel="noopener"
+                        aria-label="This link will open the cocktail maker website in a new tab">Cocktail recipe
                         finder</a>
                 </div>
                 <div class="pamper">
-                    <a href='https://dateniteideas.com/spa-night-at-home/' target='_blank' rel='noopener'>Home Spa
+                    <a href="https://dateniteideas.com/spa-night-at-home/" target="_blank" rel="noopener"
+                        aria-label="This link will open the article in a new tab">Home Spa
                         ideas</a>
                 </div>
             </div>
             <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 text-left going-out">
                 <button class="btn btn-hover my-location" id="locationButton">My Location</button>
                 <span>OR</span>
-                <input type=text id="enter-location" name="location" placeholder="Enter Location">
-                <button class="search btn btn-hover">Search</button>
+                <input type=text name="location" id="enter-location" placeholder="Enter Location">
+                <button class="search btn btn-hover" id="search-location">Search</button>
                 <div class="going-out" id="map"></div>
             </div>
         </div>
@@ -247,50 +343,54 @@
                     <ul class="nav justify-content-center fixed-bottom social-links">
                         <li>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener"><i
-                                    class="fab fa-instagram" aria-hidden="true"></i></a>
+                                    class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Link will open Instagram in a new page</span></a>
                         </li>
                         <li>
                             <a href="https://www.github.com" target="_blank" rel="noopener"><i class="fab fa-github"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i>
+                                    <span class="sr-only">Link will open github in a new page</span></a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i>
+                                    <span class="sr-only">Link will open youtube in a new page</span></a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i>
+                                    <span class="sr-only">Link will open linkedin in a new page</span></a>
                         </li>
                     </ul>
                 </div>
             </footer>
         </div>
 
-            <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content text-center">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="aboutmodaltitle">About</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
-                            </button>
-                        </div>
-                        <p class="text-left">This game is to help you quickly narrow down your date night choices
-                            until
-                            you have a winner.<br>
-                            The premise is that sub consciously we know what we want to do, but we over think it and
-                            then hum an haw. <br>
-                            You have 8 seconds to choose between two options each time, meaning you'll have to
-                            answer
-                            with your gut! <br>
-                            There are 8 decisions to make, so in only 64 seconds you'll have your plan for tonight.
-                            Meaning you'll have more time to get ready. Win Win!</p>
-                        <button type="button" class="btn modal-btn hover-btn" data-dismiss="modal">Close</button>
+        <div class="modal" id="about-modal" role="dialog" tabindex="-1" aria-labelledby="aboutmodaltitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="aboutmodaltitle">About</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span> <i class="fas fa-times" aria-hidden="true"></i> </span>
+                        </button>
                     </div>
+                    <p class="text-left">This game is to help you quickly narrow down your date night choices
+                        until
+                        you have a winner.<br>
+                        The premise is that sub consciously we know what we want to do, but we over think it and
+                        then hum an haw. <br>
+                        You have 8 seconds to choose between two options each time, meaning you'll have to
+                        answer
+                        with your gut! <br>
+                        There are 8 decisions to make, so in only 64 seconds you'll have your plan for tonight.
+                        Meaning you'll have more time to get ready. Win Win!</p>
+                    <button type="button" class="btn modal-btn hover-btn" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
