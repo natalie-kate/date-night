@@ -12,7 +12,7 @@ body {
 .contact-container, 
 .decisions-container {
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(204, 164, 145, 0.75), rgba(210, 187, 177, 0), rgba(226, 192, 139, 0.75));
+  background-image: linear-gradient(to right, rgba(226, 192, 139, 0.25), rgba(210, 187, 177, 0), rgba(226, 192, 139, 0.25));
 }
 .overlay {
   background-color: rgba(255, 255, 255, 0.75);
@@ -249,23 +249,34 @@ form p {
 }
 .text-result {
   text-align: center;
+  color:rgb(97, 74, 64);
 }
-.additional-links {
+.additional-links,
+.results a {
   text-decoration: none;
 }
 .additional-links a:hover,
-.additional-links a:active {
+.additional-links a:active,
+.results a:hover,
+.results a:active {
   text-decoration: underline;
   color:rgb(134 57 23);
   font-weight: 600;
 }
 .results h2 {
   margin: 10px 0;
+  color:rgb(236 168 60);
 }
 .results h3 {
   text-decoration: underline;
   font-family: "Lobster", cursive;
-  color:rgb(97, 74, 64);
+  color:rgb(236 168 60);
+}
+.results a {
+  font-size: 12px;
+}
+.additional-links a {
+  font-size: 16px;
 }
 #map {
   height: 25vh;
@@ -277,6 +288,7 @@ form p {
   font-size: 0.8rem;
   margin-left: 2px;
   border-radius: 5px;
+  margin-bottom: 5px;
 } 
 
 /*---- Animation ----*/
