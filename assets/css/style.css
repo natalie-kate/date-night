@@ -3,6 +3,7 @@
 /*---- General ----*/
 body {
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.25;
 }
 .landing-page-container {
   height: 100vh;
@@ -52,7 +53,7 @@ hr {
   border: 4px solid rgb(210 187 177);
   color: rgb(97, 74, 64);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 #start {
   width: 50vw;
@@ -71,6 +72,9 @@ button.submit,
   margin-left: 20%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+button.submit {
+  margin-top: 20px;
 }
 #options button {
   font-weight: 600;
@@ -266,14 +270,16 @@ form p {
 .results h2 {
   margin: 10px 0;
   color:rgb(236 168 60);
+  font-size: 1.8rem;
 }
 .results h3 {
   text-decoration: underline;
   font-family: "Lobster", cursive;
   color:rgb(236 168 60);
 }
-.results a {
+a.attribute {
   font-size: 12px;
+  line-height: 0.8;
 }
 .additional-links a {
   font-size: 16px;
