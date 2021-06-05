@@ -17,71 +17,73 @@
 
 <body>
     <!-- Header with Nav-->
-    <div class="container-fluid contact-container">
-        <header>
-            <nav>
-                <div class="row">
-                    <div class="col-12" role="navigation">
-                        <ul class="nav nav-pills justify-content-end">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link" aria-label="link to home page">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.html/#about-modal" class="nav-link" data-toggle="modal"
-                                    data-target="#about-modal" aria-label="link opens about modal">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="active nav-link">Contact<span class="sr-only">current
-                                        page</span></a></a>
-                            </li>
-                        </ul>
+    <div class="container-fluid">
+        <div class="contact-container">
+            <header>
+                <nav>
+                    <div class="row">
+                        <div class="col-12" role="navigation">
+                            <ul class="nav nav-pills justify-content-end">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link" aria-label="link to home page">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html/#about-modal" class="nav-link" data-toggle="modal"
+                                        data-target="#about-modal" aria-label="link opens about modal">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="active nav-link">Contact<span class="sr-only">current
+                                            page</span></a></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
 
-        <!-- Contact Form-->
-        <div class="row">
-            <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 form-container">
-                <h2 class="text-center"> Contact Us</h2>
-                <hr>
-                <form id="contact-form">
-                    <fieldset>
-                        <label class="form-label" for="first-name">First Name:</label><br>
-                        <input class="textbox" id="first-name" type="text" name="firstName" required /><br>
-                        <label class="form-label" for="second-name">Surname:</label><br>
-                        <input class="textbox" id="second-name" type="text" name="secondName" required /><br>
-                        <label class="form-label" for="email">Email Address:</label><br>
-                        <input class="textbox" id="email" type="email" name="emailAddress" required /><br>
-                    </fieldset>
-                    <label class="form-label" for="textarea">Comments:</label><br>
-                    <textarea id="textarea" type="text" name="comments" cols="40" rows="5" required></textarea>
-                    <div role="radiogroup" class="rating-stars">
-                        <p>Rate us: </p>
-                        <label for="rating" role="radio" aria-checked="false" tabindex="0" aria-label="1 star"><i
-                                class="fas fa-star"></i></label>
-                        <input id="rating" type="radio" name="rating" value="1 star">
-                        <label for="rating1" role="radio" aria-checked="false" tabindex="0" aria-label="2 stars"><i
-                                class="fas fa-star"></i></label>
-                        <input id="rating1" type="radio" name="rating" value="2 stars">
-                        <label for="rating2" role="radio" aria-checked="false" tabindex="0" aria-label="3 stars"><i
-                                class="fas fa-star"></i></label>
-                        <input id="rating2" type="radio" name="rating" value="3 stars" checked>
-                        <label for="rating3" role="radio" aria-checked="false" tabindex="0" aria-label="4 stars"><i
-                                class="fas fa-star"></i></label>
-                        <input id="rating3" type="radio" name="rating" value="4 stars">
-                        <label for="rating4" role="radio" aria-checked="false" tabindex="0" aria-label="5 stars"><i
-                                class="fas fa-star"></i></label>
-                        <input id="rating4" type="radio" name="rating" value="5 stars">
-                    </div>
-                    <button id="submit-button" class="btn btn-lg submit hover-btn" type="submit">Send
-                        Form <i class="fas fa-envelope"></i></button>
-                </form>
+            <!-- Contact Form-->
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3 col-xl-4 offset-xl-4 form-container">
+                    <h2 class="text-center"> Contact Us</h2>
+                    <hr>
+                    <form id="contact-form">
+                        <fieldset>
+                            <label class="form-label" for="first-name">First Name:</label><br>
+                            <input class="textbox" id="first-name" type="text" name="firstName" required /><br>
+                            <label class="form-label" for="second-name">Surname:</label><br>
+                            <input class="textbox" id="second-name" type="text" name="secondName" required /><br>
+                            <label class="form-label" for="email">Email Address:</label><br>
+                            <input class="textbox" id="email" type="email" name="emailAddress" required /><br>
+                        </fieldset>
+                        <label class="form-label" for="textarea">Comments:</label><br>
+                        <textarea id="textarea" type="text" name="comments" cols="40" rows="5" required></textarea>
+                        <div role="radiogroup" class="rating-stars">
+                            <p>Rate us: </p>
+                            <label for="rating" role="radio" aria-checked="false" tabindex="0" aria-label="1 star"><i
+                                    class="fas fa-star"></i></label>
+                            <input id="rating" type="radio" name="rating" value="1 star">
+                            <label for="rating1" role="radio" aria-checked="false" tabindex="0" aria-label="2 stars"><i
+                                    class="fas fa-star"></i></label>
+                            <input id="rating1" type="radio" name="rating" value="2 stars">
+                            <label for="rating2" role="radio" aria-checked="false" tabindex="0" aria-label="3 stars"><i
+                                    class="fas fa-star"></i></label>
+                            <input id="rating2" type="radio" name="rating" value="3 stars" checked>
+                            <label for="rating3" role="radio" aria-checked="false" tabindex="0" aria-label="4 stars"><i
+                                    class="fas fa-star"></i></label>
+                            <input id="rating3" type="radio" name="rating" value="4 stars">
+                            <label for="rating4" role="radio" aria-checked="false" tabindex="0" aria-label="5 stars"><i
+                                    class="fas fa-star"></i></label>
+                            <input id="rating4" type="radio" name="rating" value="5 stars">
+                        </div>
+                        <button id="submit-button" class="btn btn-lg submit hover-btn" type="submit">Send Form <i
+                                class="fas fa-envelope"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
 
         <!-- Footer and social links -->
-        <footer>
+        <footer class="footer">
             <div class="row">
                 <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
                     <ul class="nav justify-content-center social-links">
