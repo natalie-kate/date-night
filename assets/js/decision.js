@@ -159,7 +159,6 @@ function game(options) {
         $(resultClass).show();
 
         if (goOut.includes(winningOption)) {
-            console.log(winningOption);
             let mapScript = document.createElement("script");
             mapScript.setAttribute("src", "https://maps.googleapis.com/maps/api/js?key=AIzaSyBEXEhAnQ8U5GQFcn8zacPVJ9FFhiPMNMs&callback=initMap&libraries=places&v=weekly");
             document.body.appendChild(mapScript);
@@ -177,8 +176,28 @@ function initMap() {
             lat: 55.8954,
             lng: -4.2518
         }
-    })
-};
+    });
+  const input = document.getElementById("enter-location");
+  const searchBox = new google.maps.places.SearchBox(input); 
+ 
+  searchBox.addListener("places_changed", () => {
+    const places = searchBox.getPlaces();
+    let searchLat = places[0].geometry.location.lat()
+    let searchLng = places[0].geometry.location.lng()
+    
+    searchPosition = new google.maps.LatLng(searchLat, searchLng);
+
+    var request = {
+        location: searchPosition,
+        radius: '1500',
+        query: decisionResult
+    };
+
+    service = new google.maps.places.PlacesService(map);
+    service.textSearch(request, callback);
+
+});
+}
 
 $("#locationButton").click(function () {
 
