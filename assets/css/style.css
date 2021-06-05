@@ -10,11 +10,6 @@ body {
   background: url("../images/question.jpg") no-repeat center center;
   background-size: cover;
 }
-.contact-container, 
-.decisions-container {
-  height: 100vh;
-  background-image: linear-gradient(to right, rgba(226, 192, 139, 0.25), rgba(210, 187, 177, 0), rgba(226, 192, 139, 0.25));
-}
 .overlay {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 18px;
@@ -312,6 +307,12 @@ a.attribute {
   }
   h2 {
     font-size: 1.6rem;
+  }
+  .form-container h2{
+    margin-top: 3vh;
+  }
+  button.submit {
+    margin-top: 10px;
   }
   .nav-item .nav-link {
     font-size: 14px;
