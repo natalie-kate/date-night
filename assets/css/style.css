@@ -6,9 +6,14 @@ body {
   line-height: 1.25;
 }
 .landing-page-container {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../images/question.jpg") no-repeat center center;
   background-size: cover;
+}
+.contact-container,
+.decisions-container,
+.home-container {
+  min-height: 90vh;
 }
 .overlay {
   background-color: rgba(255, 255, 255, 0.75);
@@ -23,7 +28,7 @@ body {
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
-  margin-top: 10vh;
+  margin-top: 5vh;
   color: rgb(97, 74, 64);
 }
 h2 {
@@ -119,17 +124,21 @@ button.submit {
 }
 /*---- Footer ----*/
 .social-links a {
-  color: rgb(240 231 228);
   font-size: 30px;
   padding: 10px;
 }
-.social-links.index {
+.footer.index {
   background-image: linear-gradient(to right, rgba(226, 192, 139, 0), rgb(118 95 64), rgba(226, 192, 139, 0));
 }
 .social-links i:hover {
   font-size: 40px;
   transition: font-size 1s ease-out;
 }
+.footer{
+  margin-top: 5px;
+  height: 10vh;
+}
+
 /*---- Modals ----*/
 .modal-content,
 .modal-content .modal-header {
@@ -179,14 +188,17 @@ form p {
 }
 /*---- Colours ----*/
 .contact-container h2,
-.contact-container a,
 .contact-container .nav-link,
 .contact-container label,
+.footer a,
 .decisions-container h2,
 .decisions-container a,
 .decisions-container .nav-link,
 .decisions-container label {
   color: rgb(97, 74, 64);
+}
+.index a {
+  color: rgb(240 231 228);
 }
 
 /*---- Game ----*/
@@ -208,8 +220,8 @@ form p {
 .option6 {
   display: none;
 }
-.decision-number {
-  margin-top: 10px;
+p.decision-number {
+  margin-top: 15px;
 }
 .large-text {
   font-size: 20px;
@@ -242,9 +254,9 @@ form p {
   text-align: center;
 }
 .picture img {
-  height: 25vh;
-  width: auto;
-  object-fit: fill;
+  max-width: 90%;
+  height:auto;
+  margin-top: 10px;
 }
 .text-result {
   text-align: center;
@@ -263,7 +275,7 @@ form p {
   font-weight: 600;
 }
 .results h2 {
-  margin: 10px 0;
+  margin: 20px 0;
   color:rgb(236 168 60);
   font-size: 1.8rem;
 }
@@ -366,5 +378,11 @@ a.attribute {
     width: 30vw;
     font-size: 28px;
     margin-bottom: 20px;
+  }
+  .nav-item .nav-link {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 5vh;
   }
 }
