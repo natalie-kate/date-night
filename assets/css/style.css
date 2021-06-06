@@ -303,6 +303,13 @@ a.attribute {
   border-radius: 5px;
   margin-bottom: 5px;
 } 
+.alert {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 18px;
+  display: none;
+}
 
 /*---- Animation ----*/
 @keyframes flash {
@@ -383,6 +390,6 @@ a.attribute {
     font-size: 30px;
     font-weight: 800;
     margin-top: 10px;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
   }
 }
