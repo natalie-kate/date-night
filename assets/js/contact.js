@@ -38,7 +38,7 @@ function contactForm(event) {
     }
 
 // Change Submit to Sent on submit button
-    submitbutton.innerText = "Sent!"
+    submitbutton.innerText = "Sent!";
      
 // Show personalised modal
     $('#submit-modal').modal('show');
