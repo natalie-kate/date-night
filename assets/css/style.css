@@ -291,7 +291,7 @@ a.attribute {
   font-size: 16px;
 }
 #map {
-  height: 25vh;
+  height: auto;
   width: 90%;
   margin-left: 5%;
   margin-top: 3px;
