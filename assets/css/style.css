@@ -73,12 +73,10 @@ button.submit,
   margin-left: 20%;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 800;
 }
 button.submit {
   margin-top: 20px;
-}
-#options button {
-  font-weight: 600;
 }
 .modal-btn {
   padding-bottom: 5px;
