@@ -3,7 +3,6 @@ const goOut = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Esc
 let decisionResult;
 let map;
 let service;
-let infoWindow;
 let currentPosition;
 let optionNumber = 1;
 
