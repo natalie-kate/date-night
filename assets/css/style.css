@@ -134,8 +134,7 @@ button.submit {
   transition: font-size 1s ease-out;
 }
 .footer{
-  margin-top: 5px;
-  height: 10vh;
+  margin-top: 10px;
 }
 
 /*---- Modals ----*/
@@ -275,13 +274,13 @@ p.decision-number {
 }
 .results h2 {
   margin: 20px 0;
-  color:rgb(236 168 60);
+  color:rgb(169 101 0);
   font-size: 1.8rem;
 }
 .results h3 {
   text-decoration: underline;
   font-family: "Lobster", cursive;
-  color:rgb(236 168 60);
+  color:rgb(169 101 0);
 }
 a.attribute {
   font-size: 12px;
@@ -291,7 +290,7 @@ a.attribute {
   font-size: 16px;
 }
 #map {
-  height: auto;
+  height: 35vh;
   width: 90%;
   margin-left: 5%;
   margin-top: 3px;
