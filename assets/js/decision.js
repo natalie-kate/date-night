@@ -29,8 +29,8 @@ function timer(timeLeft) {
         }
         // -=1 I seen on slack, it was the reminder I needed.
         timeLeft -= 1;
-    }, 1000)
-};
+    }, 1000);
+}
 
 // Event listener to start timer.
 $('#start').on('click',timer(7));
@@ -40,7 +40,7 @@ function timerStop() {
     clearInterval(timerInterval);
     $("#timer p").css("color", "green");
     $("#timer p").text("8");
-};
+}
 
 // Event listener for staying in button being selected.
 // Timer is stopped
@@ -66,19 +66,19 @@ function startChosenGame(array) {
     $("#number").text(optionNumber);
     optionNumber += 1;
     game(array);
-};
+}
 
 // Game functions
 function game(options) {
     let chosenOptions = [];
     // Not chosen array was proposed by Jo in tutor support.
     let notChosen = [];
-    randomChoice(options)
+    randomChoice(options);
 
     // Two random numbers are picked 1 with array length, one with array length minus 1.
     function randomChoice(optionsArray) {
-        length = optionsArray.length;
-        adjustedLength = length -= 1
+        arrayLength = optionsArray.length;
+        adjustedLength = arrayLength -= 1;
         randomNumber1 = Math.floor(Math.random() * length);
         randomNumber2 = Math.floor(Math.random() * adjustedLength);
         getOptions(randomNumber1, randomNumber2);
@@ -87,7 +87,7 @@ function game(options) {
             button1 = options[num1];
             options.splice([num1], 1);
             button2 = options[num2];
-            options.splice([num2], 1)
+            options.splice([num2], 1);
             displayOptions(button1, button2);
         }
         // The options are then displayed and decision counter amended and incremented.
@@ -96,7 +96,7 @@ function game(options) {
             $("#option4").text(buttonText2);
             $("#number").text(optionNumber);
             optionNumber += 1;
-        };
+        }
         // Timer restarted.
         timer(7);
     }
@@ -106,26 +106,26 @@ function game(options) {
         timerStop();
         chosenOptions.push($("#option3").text());
         notChosen.push($("#option4").text());
-        arrayChecking()
+        arrayChecking();
     });
     $("#option4").click(function () {
         timerStop();
         chosenOptions.push($("#option4").text());
         notChosen.push($("#option3").text());
-        arrayChecking()
+        arrayChecking();
     });
 
     // Checks progress of the game by array length, concating arrays when appropriate
     function arrayChecking() {
         if ((notChosen.length >= 6) && ((options.length + chosenOptions.length) == 2)) {
             remainingChoices = options.concat(chosenOptions);
-            finalChoice(remainingChoices[0], remainingChoices[1])
+            finalChoice(remainingChoices[0], remainingChoices[1]);
         } else if ((options.length == 0) && (chosenOptions.length > 1)) {
             chosenOptions.forEach(function (i) {
-                options.push(i)
+                options.push(i);
             });
             // Emptying of array from Anthony on stack overflow.
-            chosenOptions.splice(0, chosenOptions.length)
+            chosenOptions.splice(0, chosenOptions.length);
             randomChoice(options);
         } else {
             randomChoice(options);
@@ -182,8 +182,8 @@ function initMap() {
   searchBox.addListener("places_changed", () => {
     const places = searchBox.getPlaces();
     // lat lng methods - Avinav Stack Overflow
-    let searchLat = places[0].geometry.location.lat()
-    let searchLng = places[0].geometry.location.lng()
+    let searchLat = places[0].geometry.location.lat();
+    let searchLng = places[0].geometry.location.lng();
     searchPosition = new google.maps.LatLng(searchLat, searchLng);
 
     // Request to get winning option places in area input by user
@@ -231,7 +231,7 @@ function callback(results, status) {
         map.setCenter(results[0].geometry.location);
         map.setZoom(12);
     }
-};
+}
 
 // If place doesn't have geometry or location, function ends.
 // If place does have these then create a marker. 
@@ -244,13 +244,13 @@ function createMarker(place) {
             position: place.geometry.location,
             title: place.name,
             optimized: false
-        })
+        });
         // Get info for info window
         let address = place.formatted_address;
         let name = place.name;
         let textInfo =
             `<div class=info-box><h3>${name}</h3>
-        <p>${address}</p></div>`
+        <p>${address}</p></div>`;
 
         let infoWindow = new google.maps.InfoWindow();
 
@@ -259,6 +259,7 @@ function createMarker(place) {
             infoWindow.close();
             infoWindow.open(map, this);
             infoWindow.setContent(textInfo);
-        })
+        });
     }
-};
+}
+
