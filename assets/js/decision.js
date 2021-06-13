@@ -15,10 +15,10 @@ function timer(timeLeft) {
             <a id="restart" class="btn btn-lg hover-btn" href="decision.html">Start Again?</a></div>`);
             return;
         } else {
-            $("#timer p").text(timeLeft); 
+            $("#timer p").text(timeLeft);
 
             if (timeLeft == 5) {
-            $("#timer p").css("color", "orange");
+                $("#timer p").css("color", "orange");
             }
             if (timeLeft == 3) {
                 $("#timer p").css("color", "red");
@@ -33,7 +33,7 @@ function timer(timeLeft) {
 }
 
 // Event listener to start timer.
-$('#start').on('click',timer(7));
+$('#start').on('click', timer(7));
 
 // Timer stop function to reset timer.
 function timerStop() {
@@ -54,7 +54,7 @@ $("#option1").click(function () {
 // Timer is stopped
 $("#option2").click(function () {
     timerStop();
-    let goOutOptions= ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
+    let goOutOptions = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
     startChosenGame(goOutOptions);
 });
 
@@ -145,7 +145,7 @@ function game(options) {
             showResults(decisionResult);
         });
     }
-    
+
     // Results displayed by getting class name from winning option
     function showResults(winningOption) {
         $(".game").hide();
@@ -176,30 +176,31 @@ function initMap() {
         },
         mapTypeControl: true,
         mapTypeControlOptions: {
-        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-        mapTypeIds: ["roadmap", "terrain"],
-    }});
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            mapTypeIds: ["roadmap", "terrain"],
+        }
+    });
     const input = document.getElementById("enter-location");
     const searchBox = new google.maps.places.SearchBox(input);
-  
-  // Event listener for search box, gets latlng for request
-  searchBox.addListener("places_changed", () => {
-    const places = searchBox.getPlaces();
-    // lat lng methods - Avinav Stack Overflow
-    let searchLat = places[0].geometry.location.lat();
-    let searchLng = places[0].geometry.location.lng();
-    searchPosition = new google.maps.LatLng(searchLat, searchLng);
 
-    // Request to get winning option places in area input by user
-    var request = {
-        location: searchPosition,
-        radius: '1500',
-        query: decisionResult
-    };
+    // Event listener for search box, gets latlng for request
+    searchBox.addListener("places_changed", () => {
+        const places = searchBox.getPlaces();
+        // lat lng methods - Avinav Stack Overflow
+        let searchLat = places[0].geometry.location.lat();
+        let searchLng = places[0].geometry.location.lng();
+        searchPosition = new google.maps.LatLng(searchLat, searchLng);
 
-    service = new google.maps.places.PlacesService(map);
-    service.textSearch(request, callback);
-});
+        // Request to get winning option places in area input by user
+        var request = {
+            location: searchPosition,
+            radius: '1500',
+            query: decisionResult
+        };
+
+        service = new google.maps.places.PlacesService(map);
+        service.textSearch(request, callback);
+    });
 }
 
 // Event listener for users location button, gets latlng for request
@@ -258,7 +259,7 @@ function createMarker(place) {
 
         let infoWindow = new google.maps.InfoWindow();
 
-         // Event listener for markers, opens info window and sets the content
+        // Event listener for markers, opens info window and sets the content
         marker.addListener("click", function () {
             infoWindow.close();
             infoWindow.open(map, this);
@@ -266,4 +267,3 @@ function createMarker(place) {
         });
     }
 }
-
