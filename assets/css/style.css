@@ -38,6 +38,7 @@ h2 {
   font-size: 2.2rem;
   color: rgb(97, 74, 64);
 }
+/*----CSS tricks for gradient effect----*/
 hr {
   height: 5px;
   width: 80%;
@@ -129,6 +130,7 @@ button.submit {
 .footer.index {
   background-image: linear-gradient(to right, rgba(226, 192, 139, 0), rgb(118 95 64), rgba(226, 192, 139, 0));
 }
+/*----CSS tricks for ease-out idea----*/
 .social-links i:hover {
   font-size: 40px;
   transition: font-size 1s ease-out;
@@ -314,7 +316,7 @@ a.attribute {
   display: none;
 }
 
-/*---- Animation ----*/
+/*---- Animation idea from Kevin Powell on youtube ----*/
 @keyframes flash {
   50% {
     opacity: 0.4;
