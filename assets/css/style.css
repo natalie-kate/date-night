@@ -13,7 +13,7 @@ body {
 .contact-container,
 .decisions-container,
 .home-container {
-  min-height: 90vh;
+  min-height: 80vh;
 }
 .overlay {
   background-color: rgba(255, 255, 255, 0.75);
