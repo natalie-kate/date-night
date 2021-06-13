@@ -173,8 +173,12 @@ function initMap() {
         center: {
             lat: 55.8954,
             lng: -4.2518
-        }
-    });
+        },
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+        mapTypeIds: ["roadmap", "terrain"],
+    }});
     const input = document.getElementById("enter-location");
     const searchBox = new google.maps.places.SearchBox(input);
   
