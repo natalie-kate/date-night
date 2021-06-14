@@ -358,6 +358,10 @@ a.attribute {
     margin: 10vh 15px;
     height: 50vh;
   }
+  .additional-links,
+  .results a {
+  text-decoration: underline;
+  }
 }
 @media(min-width:750px) {
   .heading {
@@ -415,7 +419,7 @@ a.attribute {
    }
    .results p,
    .additional-links a {
-     line-height: 1.75;
+     line-height: 1.5;
      font-size: 1.5rem;
    }
 }
