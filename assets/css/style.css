@@ -260,10 +260,6 @@ p.decision-number {
   text-align: center;
   color:rgb(97, 74, 64);
 }
-.additional-links,
-.results a {
-  text-decoration: none;
-}
 .additional-links a:hover,
 .additional-links a:active,
 .results a:hover,
@@ -358,10 +354,6 @@ a.attribute {
     margin: 10vh 15px;
     height: 50vh;
   }
-  .additional-links,
-  .results a {
-  text-decoration: underline;
-  }
 }
 @media(min-width:750px) {
   .heading {
@@ -409,6 +401,10 @@ a.attribute {
   .result h2 {
     margin-top: 30px;
   }
+  .additional-links,
+  .results a {
+  text-decoration: none;
+}
 }
 @media(min-width:1000px) {
    .results h2 {
