@@ -352,10 +352,15 @@ a.attribute {
     width: 80%;
     margin-left: 10%;
   }
+  .heading {
+    margin: 10vh 15px;
+    height: 50vh;
+  }
 }
 @media(min-width:750px) {
-  #map {
-    height: 30vh;
+  .heading {
+    margin: 10vh 15px;
+    height: 60vh;
   }
   #picture img {
     height: 30vh;
@@ -379,9 +384,6 @@ a.attribute {
   #options button {
     width: 80%;
     margin-left: 10%;
-  }
-  .heading {
-    height: 50vh;
   }
   #start {
     width: 30vw;
