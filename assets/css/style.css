@@ -273,7 +273,7 @@ p.decision-number {
   font-weight: 600;
 }
 .results h2 {
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   color:rgb(169 101 0);
   font-size: 1.8rem;
 }
@@ -286,8 +286,9 @@ a.attribute {
   font-size: 12px;
   line-height: 0.8;
 }
-.additional-links a {
-  font-size: 16px;
+.additional-links a,
+.results p {
+  font-size: 20px;
 }
 #map {
   height: 35vh;
@@ -304,6 +305,7 @@ a.attribute {
   height: 25px;
   width: 35%;
   margin-left: 2px;
+  margin-top: 20px;
 } 
 .alert {
   text-align: center;
@@ -372,6 +374,7 @@ a.attribute {
   .social-links a {
     font-size: 36px;
     padding-left: 30px;
+    margin-top: 30px;
   }
   .social-links i:hover {
     font-size: 44px;
@@ -396,4 +399,23 @@ a.attribute {
     margin-top: 10px;
     margin-bottom: 1vh;
   }
+  #enter-location {
+    margin-top: 30px;
+  }
+  .result h2 {
+    margin-top: 30px;
+  }
+}
+@media(min-width:1000px) {
+   .results h2 {
+     font-size: 2.2rem;
+   }
+   .results h3 {
+     font-size: 2rem
+   }
+   .results p,
+   .additional-links a {
+     line-height: 1.75;
+     font-size: 1.5rem;
+   }
 }
