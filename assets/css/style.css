@@ -283,6 +283,10 @@ a.attribute {
   font-size: 12px;
   line-height: 0.8;
 }
+a.attribute,
+.additional-links a {
+  text-decoration: underline;
+}
 .additional-links a,
 .results p {
   font-size: 20px;
