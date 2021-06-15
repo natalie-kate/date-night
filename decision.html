@@ -396,17 +396,17 @@
 
 
                 <!-- Going out map div with location button, search box, hidden until required -->
-                <div class="alert alert-warning alert-dismissable" id="sorry" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <p>Sorry Your Device does not support geolocation. Try using the search box. <i
-                            class="fas fa-smile-beam"></i></p>
-                </div>
                 <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-left going-out">
                     <button class="btn hover-btn my-location" id="locationButton">My Location</button>
                     <span>OR</span>
                     <input type=text name="location" id="enter-location" placeholder="Enter Location">
+                    <div class="alert alert-warning alert-dismissable" id="sorry" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p>Sorry Your Device does not support geolocation. Try using the search box. <i
+                                class="fas fa-smile-beam"></i></p>
+                    </div>
                     <div class="going-out" id="map"></div>
                 </div>
             </div>
