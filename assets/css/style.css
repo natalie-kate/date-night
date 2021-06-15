@@ -123,7 +123,7 @@ button.submit {
 /*---- Footer ----*/
 .social-links a {
   font-size: 30px;
-  padding: 10px;
+  padding: 0 10px;
 }
 .footer.index {
   background-image: linear-gradient(to right, rgba(226, 192, 139, 0), rgb(118 95 64), rgba(226, 192, 139, 0));
@@ -134,7 +134,7 @@ button.submit {
   transition: font-size 1s ease-out;
 }
 .footer{
-  margin-top: 10px;
+  padding-top: 10px;
   height: 10vh;
 }
 
