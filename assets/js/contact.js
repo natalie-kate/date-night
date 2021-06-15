@@ -22,7 +22,7 @@ function contactForm(event) {
     Have an amazing Date night! <i class="fas fa-heart"</p>`;
     response.innerHTML = responseText;  
 
-// Stars rating to be sent in emal
+// Stars rating to be sent in email
     let stars = document.getElementsByName("rating");
     let rating;
     if (stars[0].checked == true) {
