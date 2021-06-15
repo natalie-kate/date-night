@@ -13,7 +13,7 @@ body {
 .contact-container,
 .decisions-container,
 .home-container {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 .overlay {
   background-color: rgba(255, 255, 255, 0.75);
@@ -135,6 +135,7 @@ button.submit {
 }
 .footer{
   margin-top: 10px;
+  min-height: 5vh;
 }
 
 /*---- Modals ----*/
@@ -351,8 +352,12 @@ a.attribute {
     margin-left: 10%;
   }
   .heading {
-    margin: 10vh 15px;
+    margin: 5vh 15px;
     height: 50vh;
+  }
+  #start {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
 }
 @media(min-width:750px) {
