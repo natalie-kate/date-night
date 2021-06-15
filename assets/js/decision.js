@@ -2,6 +2,7 @@
 const goOut = ["Bowling Alley", "Restaurant", "Nightclub", "Cinema", "Bar", "Escape Room", "Live Music", "Pool Hall"];
 let decisionResult;
 let map;
+let infoWindow;
 let service;
 let currentPosition;
 let optionNumber = 1;
@@ -257,7 +258,7 @@ function createMarker(place) {
             `<div class=info-box><h3>${name}</h3>
         <p>${address}</p></div>`;
 
-        let infoWindow = new google.maps.InfoWindow();
+        infoWindow = new google.maps.InfoWindow();
 
         // Event listener for markers, opens info window and sets the content
         marker.addListener("click", function () {
