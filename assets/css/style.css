@@ -135,7 +135,7 @@ button.submit {
 }
 .footer{
   margin-top: 10px;
-  min-height: 5vh;
+  height: 10vh;
 }
 
 /*---- Modals ----*/
@@ -420,7 +420,6 @@ a.attribute {
    }
    .results p,
    .additional-links a {
-     line-height: 1.5;
      font-size: 1.5rem;
    }
 }
