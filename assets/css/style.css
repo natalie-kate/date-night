@@ -312,8 +312,13 @@ a.attribute,
   text-align: center;
   width: 90%;
   margin-left: 5%;
-  font-size: 18px;
-  display: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+.alert p {
+  font-size: 14px;
+  margin: 0;
 }
 
 /*---- Animation idea from Kevin Powell on youtube ----*/
@@ -426,4 +431,7 @@ a.attribute,
    .additional-links a {
      font-size: 1.5rem;
    }
+   .alert p {
+    font-size: 18px;
+  }
 }
