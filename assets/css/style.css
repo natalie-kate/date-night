@@ -29,14 +29,12 @@ h1 {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
   margin-top: 5vh;
-  color: rgb(97, 74, 64);
 }
 h2 {
   font-family: 'Lobster', cursive;
   margin-top: 5vh;
   line-height: 1;
   font-size: 2.2rem;
-  color: rgb(97, 74, 64);
 }
 /*----CSS tricks for gradient effect----*/
 hr {
@@ -48,11 +46,9 @@ hr {
 
 /*---- Buttons ----*/
 .btn {
-  background-color: rgb(210 187 177);
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
   border: 4px solid rgb(210 187 177);
-  color: rgb(97, 74, 64);
   font-size: 1.2rem;
   font-weight: 800;
 }
@@ -73,7 +69,6 @@ button.submit,
   margin-left: 20%;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight: 800;
 }
 button.submit {
   margin-top: 20px;
@@ -84,13 +79,9 @@ button.submit {
   margin-left: 25%;
 }
 .my-location.btn {
-    margin-left: 5%;
-    background-color: rgb(210 187 177);
+    margin-left: 5%;;
     border-radius: 6px;
-    border: 4px solid rgb(210 187 177);
-    color: rgb(97, 74, 64);
     font-size: 0.8rem;
-    font-weight: 800;
     box-shadow: none;
     padding: 0 2px;
     height: 25px;
@@ -98,28 +89,14 @@ button.submit {
 .hover-btn:hover {
     background-color: white;
     transition-duration: 1000ms;
-    color: rgb(97, 74, 64);
 }
-.my-location.btn:hover {
-   background-color: white;
-   transition-duration: 1000ms;
-   color: rgb(97, 74, 64);
-}
+
 /*---- Nav ----*/
 .nav-item .nav-link {
-  color: rgb(240 231 228);
   font-size: 20px;
   font-weight: 600;
 }
-.nav-item .nav-link:active,
-.nav-item .nav-link:hover {
-  background-color: rgb(240 231 228);
-  color: rgb(97, 74, 64);
-}
-.nav-pills .nav-link.active {
-  background-color: rgb(240 231 228);
-  color: rgb(97, 74, 64);
-}
+
 /*---- Footer ----*/
 .social-links a {
   font-size: 30px;
@@ -143,19 +120,13 @@ button.submit {
 .modal-content .modal-header {
   padding: 5px 8px;
 }
-.modal-content span {
-  background-color: rgb(210 187 177);
-}
+
 /*---- Contact Form ----*/
 input[name=rating] {
   display: none;
 }
 .rating-stars label {
   font-size: 20px;
-  color: rgb(240 231 228);
-}
-.rating-stars input:checked~label {
-  color: rgba(210 187 177);
 }
 fieldset .textbox,
 textarea {
@@ -178,26 +149,53 @@ form p {
 .issue-link {
   margin-top: 15px;
 }
-.issue-link a {
-  color: rgb(97, 74, 64);
-}
 .issue-link a:hover {
   color: rgb(210 187 177);
   text-decoration: none;
 }
 /*---- Colours ----*/
+.index a,
+.nav-item .nav-link,
+.rating-stars label {
+  color: rgb(240 231 228);
+}
+h1,
+h2,
+.btn,
+.hover-btn:hover,
 .contact-container h2,
 .contact-container .nav-link,
 .contact-container label,
-.footer a,
+.brown-footer a,
 .decisions-container h2,
 .decisions-container a,
 .decisions-container .nav-link,
-.decisions-container label {
+.decisions-container label,
+.issue-link a,
+.text-result,
+#enter-location {
   color: rgb(97, 74, 64);
 }
-.index a {
-  color: rgb(240 231 228);
+.nav-item .nav-link:active,
+.nav-item .nav-link:hover,
+.nav-pills .nav-link.active {
+  background-color: rgb(240 231 228);
+  color: rgb(97, 74, 64);
+}
+.modal-content span,
+.btn {
+  background-color: rgb(210 187 177);
+}
+.rating-stars input:checked~label {
+  color: rgba(210 187 177);
+}
+.additional-links a:hover,
+.additional-links a:active,
+.results a:hover,
+.results a:active,
+.results h2,
+.results h3 {
+  color:rgb(169 101 0);
 }
 
 /*---- Game ----*/
@@ -259,25 +257,21 @@ p.decision-number {
 }
 .text-result {
   text-align: center;
-  color:rgb(97, 74, 64);
 }
 .additional-links a:hover,
 .additional-links a:active,
 .results a:hover,
 .results a:active {
   text-decoration: underline;
-  color:rgb(134 57 23);
   font-weight: 600;
 }
 .results h2 {
   margin: 20px 0 10px 0;
-  color:rgb(169 101 0);
   font-size: 1.8rem;
 }
 .results h3 {
   text-decoration: underline;
   font-family: "Lobster", cursive;
-  color:rgb(169 101 0);
 }
 a.attribute {
   font-size: 12px;
@@ -300,7 +294,6 @@ a.attribute,
 #enter-location {
   border-radius: 6px;
   border: 4px solid rgb(210 187 177);
-  color: rgb(97, 74, 64);
   font-size: 0.8rem;
   padding: 0 2px;
   height: 25px;
@@ -436,3 +429,4 @@ a.attribute,
     font-size: 18px;
   }
 }
+
