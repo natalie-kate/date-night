@@ -197,6 +197,13 @@ h2,
 .results h3 {
   color:rgb(169 101 0);
 }
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible,
+label:focus-visible,
+textarea:focus-visible {
+  outline: 3px dotted purple;
+}
 
 /*---- Game ----*/
 .game h1 {
