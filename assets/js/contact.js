@@ -48,7 +48,7 @@ function contactForm(event) {
 
     function sendMail (sendForm) {
         emailjs.init("user_wAOlLN2zYLGpP3C5ZlKTc");
-        emailjs.send("service_i1srpob","date-night", {
+        emailjs.send("service_vk0diqa","date-night", {
             "first-name" : firstName,
             "second-name" : secondName,
             "email-address" : email,
