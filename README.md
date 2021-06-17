@@ -67,20 +67,22 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 
    - #### Returning Visitor Goals
 
-        1. As a returning visitor, if my result is to go out to do something e.g cinema, I want to see where      the   cinemas are on google maps.
-        2. As a returning visitor, I want to see social media links so that I can follow on my chosen platforms.
+        1. As a returning visitor, if my result is to go out to do something e.g cinema, I want to see where the cinemas are on google maps.
+        2. As a returning visitor, if I have a going out result I want to be able to choose what area to search for my resulting place.
         3. As a returning visitor, I want to be able to contact the owner with comments or questions.
+        4. As a returning visitor, I want to see social media links so that I can follow on my chosen platforms.
 
    - #### Frequent Visitor Goals
 
         1. As a frequent visitor I don't want to be choosing between the same two options each time e.g restaurant vs club. 
-        2. As a returning visitor, I want to be able to contact the owner with suggestions of more options.
-        3. As a returning visitor I want to use links to food delivery services if the result is takeaway.
+        2. As a frequent visitor, I want to be able to contact the owner with suggestions of more options.
+        3. As a frequent visitor I want to use links to food delivery services if the result is takeaway.
+        4. As a frequent visitor I want to see information about the markers on the map.
 
    ### Scope
 
    Within project conception, a list of features were compiled, these were the scored 
-   between 1 & 5 for importance and feasbility/ viability which then decided which features 
+   between 1 & 5 for importance and feasibility/ viability which then decided which features 
    could be included for initial launch.    
 
    #### Current features 
@@ -97,14 +99,20 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 
 -   Ability to contact owner 
 
--   Timer to ensure user answers the question instinctively and not overthinking it.
+-   Timer to ensure user answers the question    instinctively and not overthinking it.
 
--   If user gets result of getting food delivered there are links to Uber Eats, Deliveroo and Just Eat.
+-  Timer changes colour as time goes down and flashes at 0 to warn user they are nearly out of time.
+
+- When timer stops flashing 0, time is up, the user gets the option to start again.
+
+-   If user gets result of getting food delivered there are links to Uber Eats, Deliveroo and Just Eat. Likewise with the other staying in results, there are useful links too.
 
 -   If users initial option is Go out. Then their result will have a google map showing them where the cinema,
-    or restaurants or clubs etc are.
+    or restaurants or clubs etc are. This can either be via the use my location button or by area of their choice via the input box.
 
--   On successful submission of contact form there is a personalised confirmation modal.
+-  On the map, the markers will show name and address of place when clicked and when another is clicked will close the current info and open the new one.
+
+-   On successful submission of contact form there is a personalised confirmation modal and submit button changes to sent.
 
    #### Features to implement in the future
 
@@ -116,7 +124,7 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 -  We start with a landing page with a start button, this then takes the user to the beginning of the options and the timer will start. The user goes through the options until only one is left. The result page is opened, displaying the result, with accompanying picture and short paragraph, some will also have accompanying links or map.<br>
 -  The About section is a modal outlining the premise of the game.
 -  The contact form I chose to put on its own page instead of a modal as I wanted a decently sized text area for people to write in and to have a confirmation modal to pop up on successful submission.<br>
--  All pages will have nav links to Home, About and Contact at the top and social links at the bottom as this is what users expect to see. Decided not to put the social links at the bottom of the game pages as there is only limited time to choose, so unlikely that they'll stop mid game to go to instagram.<br>
+-  All pages will have nav links to Home, About and Contact at the top and social links at the bottom as this is what users expect to see.<br>
 
   ### Skeleton 
 
@@ -186,12 +194,17 @@ Wireframes were created on Balsamiq (see links below)
     - Used to try out snippets of code prior to implementing.
 13. [Python tutor](http://pythontutor.com/visualize.html#mode=edit)
     - Used to troubleshoot javascript.
+14. [Google maps api](https://developers.google.com/maps)
+    - For the map seen in the results for the going out game.
+15. [Emailjs](https://www.emailjs.com/)
+    - Used to link the contact form to my emails
 
 ## Challenges 
    These are aspects of the development that took me a while to figure out due to inexperience.
    -  Had an issue with the submission modal popping up when the form wasn't completed properly and therefore not ready to submit. I had then taken what I thought I needed from code i'd used in MS1 for this issue and it wasn't working. Tried the code i'd used in my MS1 just changing id's to the variables i'd assigned which also didn't work.<br> 
    <span style="color: grey;">Solution: Removed the data-toggle and data-target attributes from the submit button, so that the modal wouldn't be triggered. The modal is now only triggered to show by the $('#submit-modal').modal('show'); within the event handler function. Also as you can see I reverted to the id as the variable wasn't working, haven't figured out why yet. My guess is that the modal I assigned to const at the begining then was altered by changing the inner text in the event handler function and so the const i'd assigned didn't exist anymore.</span>
-    -  Creating the timer function I attempted to create a for loop that I could see was working/counting down in [Python Tutor](http://pythontutor.com/visualize.html#mode=edit). I then used setTimeout to introduce a 1000ms pause after changing the innertext to the value of my timeLeft variable. This just waited a second before changing time left from 5 in my div to 0. I then changed to setInterval which I came across while researching for answers and removed the for loop and instead added in timeleft -= 1. My timer now continued to count down below zero so I introduced an if statement. This initially didn't work as I had put it out with the setInterval function so my countdown then wasn't working at all. With some rejigging around and making it an if/else statement I got it working. <br> 
+    -  Creating the timer function I attempted to create a for loop that I could see was working/counting down in [Python Tutor](http://pythontutor.com/visualize.html#mode=edit). I then used setTimeout to introduce a 1000ms pause after changing the innertext to the value of my timeLeft variable. This just waited a second before changing time left from 5 in my div to 0. I then changed to setInterval which I came across while researching for answers and removed the for loop and instead added in timeleft -= 1. My timer now continued to count down below zero so I introduced an if statement. This initially didn't work as I had put it out with the setInterval function so my countdown then wasn't working at all. With some rejigging around and making it an if/else statement I got it working.<br> 
+
    <span style="color: grey;">Solution: With the help of stack overflow, w3 and slack got it to work using setInterval, with if/else, -=1 (which seemed so obvious when I seen it) and using return to stop the function if my variables value was < 0.</span>
         
         
