@@ -6,6 +6,7 @@ let infoWindow;
 let service;
 let currentPosition;
 let optionNumber = 1;
+let timerInterval;
 
 // Timer function.
 function timer(timeLeft) {
@@ -78,16 +79,16 @@ function game(options) {
 
     // Two random numbers are picked 1 with array length, one with array length minus 1.
     function randomChoice(optionsArray) {
-        arrayLength = optionsArray.length;
-        adjustedLength = arrayLength -= 1;
-        randomNumber1 = Math.floor(Math.random() * length);
-        randomNumber2 = Math.floor(Math.random() * adjustedLength);
+        let arrayLength = optionsArray.length;
+        let adjustedLength = arrayLength -= 1;
+        let randomNumber1 = Math.floor(Math.random() * length);
+        let randomNumber2 = Math.floor(Math.random() * adjustedLength);
         getOptions(randomNumber1, randomNumber2);
         // The random numbers then used to pick and splice options from the array.
         function getOptions(num1, num2) {
-            button1 = options[num1];
+            let button1 = options[num1];
             options.splice([num1], 1);
-            button2 = options[num2];
+            let button2 = options[num2];
             options.splice([num2], 1);
             displayOptions(button1, button2);
         }
@@ -119,7 +120,7 @@ function game(options) {
     // Checks progress of the game by array length, concating arrays when appropriate
     function arrayChecking() {
         if ((notChosen.length >= 6) && ((options.length + chosenOptions.length) == 2)) {
-            remainingChoices = options.concat(chosenOptions);
+            let remainingChoices = options.concat(chosenOptions);
             finalChoice(remainingChoices[0], remainingChoices[1]);
         } else if ((options.length == 0) && (chosenOptions.length > 1)) {
             chosenOptions.forEach(function (i) {
@@ -152,7 +153,7 @@ function game(options) {
         $(".game").hide();
         // Getting first word from string- ComFreek StackOverlow.
         let findClass = winningOption.toLowerCase().split(" ");
-        resultClass = "." + findClass[0];
+        let resultClass = "." + findClass[0];
         $(resultClass).show();
         // If winning option is going out then create script for map - Josh Johnson Stack Overflow.
         if (goOut.includes(winningOption)) {
@@ -190,7 +191,7 @@ function initMap() {
         // lat lng methods - Avinav Stack Overflow
         let searchLat = places[0].geometry.location.lat();
         let searchLng = places[0].geometry.location.lng();
-        searchPosition = new google.maps.LatLng(searchLat, searchLng);
+        let searchPosition = new google.maps.LatLng(searchLat, searchLng);
 
         // Request to get winning option places in area input by user
         var request = {
