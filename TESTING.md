@@ -78,7 +78,7 @@ syntax errors in the project.
 
      Fixed all the semi-colons. I had two read only warnings. This was due to me using length as a variable name so I renamed it which did the trick. Again $ for jquery was being flagged aswell as google (for google maps) for being undefined so I added in /*globals $:false */ and /*globals google:false */ to stop them being flagged.
      The other undefined variables I went though and declared them all.
-     It was flagging initMap as unused. This is due to its not called in my JS file but by the google maps API when a going out result creates the script for it. So its been left as is.
+     It was flagging initMap as unused, this is due to it not being called in my JS file. It is called however by the google maps API when a going out result creates the script for it. So it has been left as is.
 
     ### Final testing
 
