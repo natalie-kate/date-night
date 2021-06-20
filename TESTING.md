@@ -123,6 +123,7 @@ syntax errors in the project.
     - The contrast between the brown writing and pink background of the buttons wasn't passing and so increased font-weight of all the buttons.
     - The result images were causing performance score to be low. As only one image is required for the result, added lazy loading to them.
     - Script loading was also impacting the lighthouse scores so added defer to them.
+    - Changed cloudfare CDN's for font-awesome and bootstrap to the regular CDN's.
 
     ### Final test 
 
@@ -193,16 +194,16 @@ syntax errors in the project.
 	◦	For going out results, map shows instead of resources links
 	◦	Map shows pins of results when location is either input in the search box or use my location button is used.
 	◦	If geolocation not supported or blocked by users, alert box shows.
-       + <span style="color: grey;">Alert box appearing below the map and so on mobile screens this wasn't obvious to the user and so moved it to pop up between the input box and map.</span>
+              + <span style="color: grey;">Alert box appearing below the map and so on mobile screens this wasn't obvious to the user and so moved it to pop up between the input box and map.</span>
 	◦	When pin is clicked open info window with Name of place and address.
-       + <span style="color: grey;">When clicking on a second marker the original info window didn't close. It had done previously, realised when I was tidying up my code I had declared the infoWindow variable in the function where previously I had declared it at the top of my JS and so I changed it back.</span>
+              + <span style="color: grey;">When clicking on a second marker the original info window didn't close. It had done previously, realised when I was tidying up my code I had declared the infoWindow variable in the function where previously I had declared it at the top of my JS and so I changed it back.</span>
 	◦	The pictures that required an attribute had links that opened in a new tab to the correct places.
 	◦	Hover effects work on social icons and all links and buttons.
-       + <span style="color: grey;"> I had given one of my buttons a btn-hover instead of hover-btn class so fixed that. Had also not given the modal button the hover-btn class in contact.html so added that in too.</span>
+              + <span style="color: grey;"> I had given one of my buttons a btn-hover instead of hover-btn class so fixed that. Had also not given the modal button the hover-btn class in contact.html so added that in too.</span>
 	◦	Form will not submit without all three required personal details being completed and comment box. Can type in text area, On successful form submission, personalised modal appears and can be closed by both close buttons, star rating works.
-       <span style="color: grey;">Realised that the star ratings were being skipped over by keyboard control and screen reader and so added in a tab-index</span>
+              + <span style="color: grey;">Realised that the star ratings were being skipped over by keyboard control and screen reader and so added in a tab-index</span>
 	◦	Upon successful submission, receive an email with details taken from the form by email.js and send button has changed to sent.
-       <span style="color: grey;">I was getting a 412 error, when I went to my JS account it said I needed to reconnect my google account which as far as I coud tell hadn't disconnected, created a new service which fixed the issue.</span>
+              + <span style="color: grey;">I was getting a 412 error, when I went to my JS account it said I needed to reconnect my google account which as far as I coud tell hadn't disconnected, created a new service which fixed the issue.</span>
 	◦	404.html back to home button works.
 	◦	404 report issue link takes user to contact form.
 	◦	About modal close buttons work.
