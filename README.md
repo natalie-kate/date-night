@@ -130,8 +130,8 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 
 Wireframes were created on Balsamiq (see links below)
 
-* [Mobile](assets/readme-assets/wireframes/ms2-mobile.pdf)
-* [Tablet](assets/readme-assets/wireframes/ms2-tablet.pdf)
+* [Mobile](assets/readme-assets/wireframes/wireframe-mobile.png)
+* [Tablet](assets/readme-assets/wireframes/wireframe-tablet.png)
 * [Desktop](assets/readme-assets/wireframes/ms2-desktop.pdf)
 
  ### Surface
@@ -234,19 +234,20 @@ Testing and results can be found [here](TESTING.md)
     (b) This took me to the page below. I selected the code institute template, input a repository name and clicked the 
     green create repository button.<br>
 
-    ![Image showing the create repository page](assets/readme-assets/readme-images/create.png)
+    ![image showing green new button](assets/readme-assets/readme-images/new.png)
+    ![Image showing the create repository page](assets/readme-assets/readme-images/new-repo.png)
 
     (c) Opened new repository and clicked green Gitpod button to create a workspace in Gitpod for editing.
 
  - ### Github pages
     I deployed my project to Gihub pages by:
 
-    (a) Logged in to Github and opened my [repository](https://github.com/natalie-kate/haunted)<br>
-    (b) From here clicked settings, see picture below.
+    (a) Logged in to Github and opened my [repository](https://github.com/natalie-kate/date-night)<br>
+    (b) From here clicked settings, see picture below and selected pages.
 
-    ![Image showing where settings is in repository](assets/readme-assets/readme-images/settings.png)
+    ![Image showing where pages is in settings](assets/readme-assets/readme-images/pages.png)
 
-    (c) In settings scrolled down to Github pages, here under source branch I selected Master 
+    (c) In pages under source branch I selected Master 
            and kept the default root and then clicked save.
 
     ![Image showing the Github pages options](assets/readme-assets/readme-images/source.png) <br>
@@ -256,13 +257,13 @@ Testing and results can be found [here](TESTING.md)
     ![Image showing that the site has been successfully published](assets/readme-assets/readme-images/published.png)
 
  - ### Forking
-   (a) To fork my project sign in to Github and go to my [repository](https://github.com/natalie-kate/haunted)<br>
+   (a) To fork my project sign in to Github and go to my [repository](https://github.com/natalie-kate/date-night)<br>
    (b) Above and to the right of the settings there are three options and the far right one says Fork, select this.<br>
    (c) The fork is now in your repositories.
 
 
  - ### Clone
-   To clone my project sign in to Github and go to my [repository](https://github.com/natalie-kate/haunted)<br>
+   To clone my project sign in to Github and go to my [repository](https://github.com/natalie-kate/date-night)<br>
    * Clone using command line
      + Next to the green Gitpod button is a button that says code, select this. There is a few options as to how you 
        would like to clone, if you choose https, SSH or Github CLI, select the clipboard icon to copy the URL.
@@ -279,22 +280,28 @@ For more information or troubleshooting see the Github documentation
 
 ### Code
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.1/getting-started/introduction/): Bootstrap Library used for the layout and styling. 
+-   [Bootstrap4](https://getbootstrap.com/docs/4.1/getting-started/introduction/): Bootstrap Library used for the layout and styling and modals.
+-   [Google maps api](https://developers.google.com/maps): For their code examples in the documentation for implementing different features.
+
 
 ### Content
 
 -   Content was created by Natalie Alexander.
     
--   README and TESTING took ideas and inspiration for layout and content from these excellent examples:
-    
+-   README and TESTING layout and content from my MS1 which took inspirations and ideas from these excellent examples
+    * [Code institute](https://github.com/Code-Institute-Solutions/SampleREADME)
+    * [Daisy McGirr](https://github.com/Daisy-McG/MilestoneProject-1/blob/master/README.md)
+    * [Richard Henyash](https://github.com/richardhenyash/artofnht/blob/darktheme/README.md)
+    * [byllsa](https://github.com/byIlsa/Aloy-from-outcast-to-heroine)
 
 ### Media
 
- - 
+ - Olya Kobruseva from Pexels for landing page background pictures.
 
 
 ### Acknowledgements
 
--   Code institute. 
--   My mentor Victor Miclovich
--   My mini feb 2021 team on slack for their feedback
+-   Code institute.
+-   My mentor Spencer Barriball
+-   My mini feb 2021 team on slack for their feedback and support.
+-   The slack community.
