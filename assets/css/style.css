@@ -107,7 +107,7 @@ button.submit {
 }
 /*----CSS tricks for ease-out idea----*/
 .social-links i:hover {
-  font-size: 40px;
+  font-size: 36px;
   transition: font-size 1s ease-out;
 }
 .footer{
@@ -384,12 +384,11 @@ a.attribute,
     font-weight: 400;
   }
   .social-links a {
-    font-size: 36px;
-    padding-left: 30px;
+    font-size: 40px;
     margin-top: 30px;
   }
   .social-links i:hover {
-    font-size: 44px;
+    font-size: 46px;
     transition: font-size 1s ease-out;
   }
   h2 {
@@ -430,6 +429,7 @@ a.attribute,
      font-size: 2rem
    }
    .results p,
+   p,
    .additional-links a {
      font-size: 1.5rem;
    }
