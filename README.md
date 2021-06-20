@@ -155,6 +155,7 @@ Wireframes were created on Balsamiq (see links below)
       
        Picked the background image for its modern and simple design as I didn't want it to be distracting. The overlay muted the colours, so that the writing could still be clearly seen. 
        Used vectors for the result images. They have a fun aspect to them and they are all of similar design so they tie in together which would be harder to get with photos.
+       Also tried to pick vectors that weren't just of same sex couples where I could.
 
     
 ## Technologies 
@@ -221,6 +222,7 @@ Wireframes were created on Balsamiq (see links below)
    <span style="color: grey;">Solution: lat() and lng() </span>
 
 
+
 ## Testing
 
 Testing and results can be found [here](TESTING.md)
@@ -282,6 +284,19 @@ For more information or troubleshooting see the Github documentation
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.1/getting-started/introduction/): Bootstrap Library used for the layout and styling and modals.
 -   [Google maps api](https://developers.google.com/maps): For their code examples in the documentation for implementing different features.
+-   [CSS-tricks](https://css-tricks.com/simple-styles-for-horizontal-rules/): Gradient effect idea on my horizontal rule and background on index.html footer.
+-   [CSS-tricks](https://css-tricks.com/almanac/properties/t/transition/): Transition on social links, in particular the ease-out.
+-   [Anthony on Stack Overflow](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript): Emptying my array after I had pushed the contents to my other array.
+-   [ComFreek on Stack Overflow](https://stackoverflow.com/questions/18558417/get-first-word-of-string/18558427): Get the first word from a string for getting my class name from the option. i.e if winning option was TV binge then i wanted to show those elements with a class of tv.
+-   [Josh Johnson on Stack Overflow](https://stackoverflow.com/questions/3248384/document-createelementscript-synchronously): To create the script containing the googlemaps only in the event of a going out result, as it will only be used half the time so didn't want to load it everytime.
+-   [Avinav on Stack Overflow](https://stackoverflow.com/questions/3926836/using-google-maps-api-v3-how-do-i-get-latlng-with-a-given-address): For reminding me to put () after lat and lng for it to work.
+-   [Stephen Booher on Stack Overflow](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined): Code to put at top of JSHint so that it doesn't flag google and $ as undefined.
+-   [Sherif on Stack Overflow](https://stackoverflow.com/questions/49425137/how-to-stop-timer-in-javascript/49425211): Assign a variable the setInterval function so you can use it to stop the function.
+-   [W3 Schools](https://www.w3schools.com/js/js_timing.asp): setInterval method.
+-   [Jamie on Slack](https://code-institute-room.slack.com/archives/C7HD37Q1F/p1620300631425700): Using -= 1 to get the timer to count down, had been trying to do it in an overly complicated way.
+-   [Professor Steve Griffith](https://www.youtube.com/playlist?list=PLyuRouwmQCjkYdv4VjuIbvcMZVWSdOm58): Videos on functions that really helped me understand the concept of passing variable between functions.
+-   [Kevin Powell](https://www.youtube.com/watch?v=CBw9-K6hYVA): Keyframes pulse idea for my timer when at 0.
+-   Jo in Student Support: Made me realise that having an array for the not chosen options could be useful.
 
 
 ### Content
@@ -296,12 +311,28 @@ For more information or troubleshooting see the Github documentation
 
 ### Media
 
- - Olya Kobruseva from Pexels for landing page background pictures.
-
+ - [Olya Kobruseva](https://www.pexels.com/@olyakobruseva?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from Pexels for landing page background pictures.
+ - [Freepik vectors](https://www.freepik.com/free-vector/young-couple-having-dinner-restaurant_1239556.htm#page=1&query=romantic%20dinner&position=36): Image for restaurant result.
+ - [Freepik vectors](https://www.freepik.com/free-vector/couple-eating-popcorn-watching-tv_8356071.htm#page=1&query=couple%20watching%20tv&position=27): Image for tv result.
+ - [Freepik vectors](https://www.freepik.com/free-vector/couple-eating-popcorn-watching-movie_8620588.htm#page=1&query=couple%20watching%20tv&position=9): Image for movie result.
+ - [Freepik vectors](https://www.freepik.com/free-vector/modern-people-doing-cultural-activities_9156582.htm#page=1&query=pool%20hall&position=28): Image for pool hall result.
+ - [Freepik vectors](https://www.freepik.com/free-vector/couple-cooking-together-house_7870433.htm#page=1&query=couple%20cooking&position=0): Image for cook together result.
+ - [Freepik vectors](https://www.freepik.com/free-vector/board-game-collection_10258859.htm#page=1&query=board%20games&position=4): Image for games night result.
+ - [pch vectors on freepik](https://www.freepik.com/free-vector/dating-couple-enjoying-romantic-dinner_7732606.htm#page=1&query=restaurant&position=25): Image for bar result.
+ - [pch vectors on freepik](https://www.freepik.com/free-vector/smiling-tiny-woman-drinking-alcohol-happy-hours-flat-illustration_11235862.htm#page=1&query=cocktail%20menu&position=29): Image for cocktails result.
+ - [pch vectors on freepik](https://www.freepik.com/free-vector/happy-young-people-dancing-club-isolated-flat-vector-illustration-cartoon-characters-enjoying-dance-disco-night-party-dj-scene-perform): Image for clubbing result
+ - [pch vectors on freepik](https://www.freepik.com/free-vector/happy-young-couple-home_12291118.htm#page=1&query=couple%20massage&position=0): Image for pamper night.
+ - [VectorPouch on Freepik](https://www.freepik.com/free-vector/bowling-alleys-with-balls-pins-scoreboards_6198139.htm#page=1&query=bowling&position=7): Image for bowling result.
+ - [VectorPouch on Freepik](https://www.freepik.com/free-vector/quest-escape-asylum-room-with-people-searching-exit_5901244.htm#page=1&query=escape%20room&position=13): Image for escape room result.
+ - [VectorPouch on Freepik](https://www.freepik.com/free-vector/vector-game-room-with-people-playing-digital-entertainment-modern-esports-concept_4015271.htm#page=1&query=video%20games&position=7): Image for video games result.
+ - [Macrovector on Freepik](https://www.freepik.com/free-vector/jazz-horizontal-composition-with-flat-cartoon-style-characters-musicians-with-shadows-silhouettes-stage_6800093.htm#page=1&query=jazz%20band&position=19): Image for live music result.
+ - [Macrovector on Freepik](https://www.freepik.com/free-vector/cinema-design-concept-with-set-square-compositions-with-female-characters-reels-camera-with-smartphone-illustration_13916940.htm#page=1&query=movies&position=42): Image for cinema result.
+ - [Stories on Freepik](https://www.freepik.com/free-vector/way-concept-illustration_6982750.htm#page=1&query=takeaway&position=16): Image for takeaway result.
 
 ### Acknowledgements
 
 -   Code institute.
+-   Student Support
 -   My mentor Spencer Barriball
 -   My mini feb 2021 team on slack for their feedback and support.
 -   The slack community.
