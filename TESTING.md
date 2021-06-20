@@ -170,16 +170,28 @@ syntax errors in the project.
 ## Testing User Stories 
 
 - ### First Time Visitor 
+   1. As a first time visitor, I want to easily understand the main purpose of the site. 
+   
+      ![Contact page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-404.png)
 
- 
+   2. As a first time visitor, I want to be able to intuitively use the site.
+   3. As a first time visitor, I expect to see an attractive, visually appealing site.
+   4. As a first time visitor, I expect an accessible site.
+   5. As a first time visitor, I expect the site to look good on my mobile device.
+   6. As a first time visitor, I want a quick and fun way to choose what to do for date night.
 
 - ### Returning Visitor Goals
 
-
+   1. As a returning visitor, if my result is to go out to do something e.g cinema, I want to see where the cinemas are on google maps.
+   2. As a returning visitor, if I have a going out result I want to be able to choose what area to search for my resulting place.
+   3. As a returning visitor, I want to be able to contact the owner with comments or questions.
+   4. As a returning visitor, I want to see social media links so that I can follow on my chosen platforms.
 
 - ### Frequent Visitor Goals
-
-
+   1. As a frequent visitor I don't want to be choosing between the same two options each time e.g restaurant vs club. 
+   2. As a frequent visitor, I want to be able to contact the owner with suggestions of more options.
+   3. As a frequent visitor I want to use links to food delivery services if the result is takeaway.
+   4. As a frequent visitor I want to see information about the markers on the map.
 
 ## Manual Testing
 
@@ -200,7 +212,7 @@ syntax errors in the project.
 	- The pictures that required an attribute had links that opened in a new tab to the correct places.
 	- Hover effects work on social icons and all links and buttons.
          + <span style="color: grey;"> I had given one of my buttons a btn-hover instead of hover-btn class so fixed that. Had also not given the modal button the hover-btn class in contact.html so added that in too.</span>
-	- Form will not submit without all three required personal details being completed and comment box. Can type in text area, On successful form submission, personalised modal appears and can be closed by both close buttons, star rating works.
+	- Form will not submit without all three required personal details being completed and comment box. Can type in text area, On successful form submission, personalised modal appears, both close buttons take user back to home page and star rating works.
          + <span style="color: grey;">Realised that the star ratings were being skipped over by keyboard control and screen reader and so added in a tab-index</span>
 	- Upon successful submission, receive an email with details taken from the form by email.js and send button has changed to sent.
          + <span style="color: grey;">I was getting a 412 error, when I went to my JS account it said I needed to reconnect my google account which as far as I coud tell hadn't disconnected, created a new service which fixed the issue.</span>
