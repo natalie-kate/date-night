@@ -99,65 +99,72 @@ syntax errors in the project.
 
     + Initial mobile
 
-    ![Initial landing page scores for mobile]()
-
-    + Initial desktop
+    ![Initial landing page scores for mobile](assets/readme-assets/lighthouse-testing/initial-mobile-index.png)
 
     #### Game page
 
-    + Initial desktop
-
-    ![Initial game page scores for desktop]()
-
     + Initial mobile
 
-    ![Initial game page scores for mobile]()
+    ![Initial game page scores for mobile](assets/readme-assets/lighthouse-testing/initial-mobile-decision.png)
 
     #### Contact Page
 
-    + Initial desktop
+    - Initial mobile
+      + No issues to work on.
 
-    ![Initial game page scores for desktop]()
+    #### 404 page
 
-    + Initial mobile
+    - Initial mobile
+      + Scores were all fine, best practices wasn't 100% though so added in meta description.
 
-    ![Initial game page scores for mobile]()
+    ### Actions taken from initial test.
 
-    ### Actions taken
-
-   
+    - One of the image file paths was wrong affecting best practice scores. Amended.
+    - The contrast between the brown writing and pink background of the buttons wasn't passing and so increased font-weight of all the buttons.
+    - The result images were causing performance score to be low. As only one image is required for the result, added lazy loading to them.
+    - Script loading was also impacting the lighthouse scores so added defer to them.
 
     ### Final test 
 
     #### Landing page
 
-    + Final Desktop (see report [here]())
+    + Final mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-landing-report.pdf))
 
-    ![Final landing page scores for desktop]()
+    ![Final landing page scores for mobile](assets/readme-assets/lighthouse-testing/mobile-index.png)
 
-    + Final mobile (see report [here]())
+    + Final Desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-index-report.pdf))
 
-    ![Final landing page scores for mobile]()
+    ![Final landing page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-index.png)
 
     #### Game page
 
-    + Final desktop (see report [here]())
+    + Final mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-decision-report.pdf))
 
-    ![Final evidence page scores for desktop]()
+    ![Final evidence page scores for mobile](assets/readme-assets/lighthouse-testing/mobile-decision.png)
 
-    + Final mobile (see report [here]())
+    + Final desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-decision-report.pdf))
 
-    ![Final evidence page scores for mobile]()
+    ![Final evidence page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-decision.png)
 
     #### Contact Page
 
-    + Final Desktop (see report [here]())
+    + Final Mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-contact-report.pdf)))
 
-    ![Contact page scores for desktop]()
+    ![Contact page scores for mobile](assets/readme-assets/lighthouse-testing/mobile-contact.png)
 
-    + Final Mobile (see report [here]())
+    + Final Desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-contact-report.pdf)))
 
-    ![Contact page scores for mobile]()
+    ![Contact page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-contact.png)
+
+    #### 404 Page
+
+    + Final Mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-404-report.pdf)))
+
+    ![Contact page scores for mobile](assets/readme-assets/lighthouse-testing/mobile-404.png)
+
+    + Final Desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-404-report.pdf)))
+
+    ![Contact page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-404.png)
 
 ## Testing User Stories 
 
