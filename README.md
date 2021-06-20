@@ -215,14 +215,12 @@ Wireframes were created on Balsamiq (see links below)
    <span style="color: grey;">Solution: Smaller individual functions calling the next one and passing in the variables required. I also removed even more repetition when tidying up my final code, replacing it with two more functions. </span>
    - Was having an issue with my arrays, options that hadn't been getting chosen were coming up again, console.log of the array was giving me 2,3, 4 arrays, so figured this was due to the event listener for my buttons passing in the full array again. 
     <span style="color: grey;">Solution: Once the game was started the buttons with id 1 & 2 were hidden and buttons 3 and 4 were shown this stops the event listener on buttons 1 & 2 starting another game when one is still in progress. </span>
-   - Was getting buttons not changing text even when it hadn't been chosen so shouldn't have still been available in the array to be displayed and sometimes no option on the button at all. Console.log showed that the array length was sometimes only going down by one, which as the buttons are both assigned values before the console.log the array should always be reduced by two. When a choice is made, that option is pushed to the chosen options array and the other goes to the unchosen array so the unchosen is essentially discarded. I also used the length of the arrays to determine when the game was at a certain stage i.e down to last two options and I was finding that I was making way more choices than I should have been. Using console.log found that where the lengths of the 3 arrays should always equal 8 there were more due to blanks and duplicates of options.  
+   - Was getting buttons not changing text even when it hadn't been chosen so shouldn't have still been available in the array to be displayed and sometimes no option on the button at all. Console.log showed that the array length was sometimes only going down by one, which as the buttons are both assigned values before the console.log the array should always be reduced by two. When a choice is made, that option is pushed to the chosen options array and the other goes to the unchosen array so the unchosen is essentially discarded. I also used the length of the arrays to determine when the game was at a certain stage i.e down to last two options and I was finding that I was making way more choices than I should have been. Using console.log found that where the lengths of the 3 arrays should always equal 8 there were more due to blanks and duplicates of options. When selecting random options from array to be displayed a random number is generated using array length. I then splice it out the array before the second number is generated so that both buttons can't display the same option. Where the issue was arising was when I spliced the first option out, the array length is no longer the same so if the second random number was the last position in the array that position no longer exists when the first number is spliced out and so button 2 stayed the same introducing duplicates. If this occurred for the first two options displayed, this is where blanks where introduced.
+   <span style="color: grey;">Solution: Second option random number generated from the array length variable minus 1. </span>
+   - Google maps api, when trying to get the latitude and longitude of the input box area so that i could use it in the request for places. Tried let searchLat = places[0].geometry.location.lat; which didn't work took stack overflow to remind me to use ().
+   <span style="color: grey;">Solution: lat() and lng() </span>
 
 
-
-
-        
-        
-   
 ## Testing
 
 Testing and results can be found [here](TESTING.md)
