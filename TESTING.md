@@ -175,7 +175,35 @@ syntax errors in the project.
 
 ## Manual Testing
 
--  
+-  The website was viewed with browsers: Google chrome, Safari, Microsoft Edge, Firefox, Opera and Internet Explorer. Viewed all pages on each and checked the following:
+	◦	Nav links work from all three pages to all links.
+	◦	Clicking on social links from all pages work, opening in a new tab
+	◦	Clicking the start button loads the decisions.html and starts the timer.
+	◦	When the time runs out the start again button reloads decisions.html and timer starts.
+	◦	Timer colour change and pulse effect at 0 works
+	◦	For each result, correct information is shown.
+	◦	All resource links open the correct page in a new tab.
+	◦	For going out results, map shows instead of resources links
+	◦	Map shows pins of results when location is either input in the search box or use my location button is used.
+	◦	If geolocation not supported or blocked by users, alert box shows.
+       + <span style="color: grey;">Alert box appearing below the map and so on mobile screens this wasn't obvious to the user and so moved it to pop up between the input box and map.</span>
+	◦	When pin is clicked open info window with Name of place and address.
+       + <span style="color: grey;">When clicking on a second marker the original info window didn't close. It had done previously, realised when I was tidying up my code I had declared the infoWindow variable in the function where previously I had declared it at the top of my JS and so I changed it back.</span>
+	◦	The pictures that required an attribute had links that opened in a new tab to the correct places.
+	◦	Hover effects work on social icons and all links and buttons.
+       + <span style="color: grey;"> I had given one of my buttons a btn-hover instead of hover-btn class so fixed that. Had also not given the modal button the hover-btn class in contact.html so added that in too.</span>
+	◦	Form will not submit without all three required personal details being completed and comment box. Can type in text area, On successful form submission, personalised modal appears and can be closed by both close buttons, star rating works.
+       <span style="color: grey;">Realised that the star ratings were being skipped over by keyboard control and screen reader and so added in a tab-index</span>
+	◦	Upon successful submission, receive an email with details taken from the form by email.js and send button has changed to sent.
+       <span style="color: grey;">I was getting a 412 error, when I went to my JS account it said I needed to reconnect my google account which as far as I coud tell hadn't disconnected, created a new service which fixed the issue.</span>
+	◦	404.html back to home button works.
+	◦	404 report issue link takes user to contact form.
+	◦	About modal close buttons work.
+       
+-	 Chrome devtools used to test responsiveness throughout the development process see bugs found below. Viewed all pages on all of the available devices at the end of the project to ensure everything still looked good.
+-  	Viewed physically on Macbook air 13", Huawei tablet, HP Chrome book, Dell 21" HD screen, iphone 11, Dell 17" laptop and Pixel 4XL phone to ensure that after all issues found and resolved that there was nothing else appearing
+
+
   
 ## Bugs
 
@@ -185,4 +213,4 @@ syntax errors in the project.
 
    ### Existing
 
-   - 
+   -  Colours not supported on internet explorer so everything is pretty much white. Looked into fixes for this but the slack community advised against it due Internet explorer no longer being supported.
