@@ -220,8 +220,8 @@ Wireframes were created on Balsamiq (see links below)
    <span style="color: grey;">Solution: Second option random number generated from the array length variable minus 1. </span>
    - Google maps api, when trying to get the latitude and longitude of the input box area so that i could use it in the request for places. Tried let searchLat = places[0].geometry.location.lat; which didn't work took stack overflow to remind me to use ().
    <span style="color: grey;">Solution: lat() and lng() </span>
-
-
+   - Wireframes links were coming up as blank in Github. Checked the file path, which was fine, deleted them all and re-ecported incase I had done something wrong the first time around. Upon uploading an error was coming up saying: "Detected unusual line terminators. This file contains one or more unusual line terminator characters, like Line Separator (LS) or Paragraph Separator (PS).It is recommended to remove them from the file. This can be configured via `editor.unusualLineTerminators`." This gave the option to fix which I did but didn't appear to do anything as was still not working in Github. Sean Young on slack pointed out that he could get the mobile one to work, it occurred to me that I may not have clicked the fix button on all of them.
+   <span style="color: grey;">Solution: Re-uploaded the files again, this time not "fixing" them did the trick.</span>
 
 ## Testing
 
