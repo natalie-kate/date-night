@@ -173,7 +173,8 @@ h2,
 .decisions-container label,
 .issue-link a,
 .text-result,
-#enter-location {
+#enter-location,
+p {
   color: rgb(97, 74, 64);
 }
 .nav-item .nav-link:active,
