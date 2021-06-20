@@ -130,8 +130,8 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 
 Wireframes were created on Balsamiq (see links below)
 
-* [Mobile](assets/readme-assets/wireframes/wireframe-mobile.png)
-* [Tablet](assets/readme-assets/wireframes/wireframe-tablet.png)
+* [Mobile](assets/readme-assets/wireframes/ms2-mobile.pdf)
+* [Tablet](assets/readme-assets/wireframes/ms2-tablet.pdf)
 * [Desktop](assets/readme-assets/wireframes/ms2-desktop.pdf)
 
  ### Surface
