@@ -4,7 +4,7 @@
    - [Automated Testing](#automated-testing)
       * [HTML validation](#w3c-markup-validator)
       * [CSS validation](#w3c-css-validator)
-      * [JS validation](#jshint-javaScript-validator)
+      * [JS validation](#jshint-javascript-validator)
       * [Lighthouse testing](#lighthouse-in-devtools)
    - [Testing User Stories](#testing-user-stories)
    - [Manual testing](#manual-testing)
@@ -33,7 +33,7 @@ syntax errors in the project.
 
      ![Initial contact html test](assets/readme-assets/validations/contact-html-validation.png)
 
-     Removed type attributes from scripts on all my pages which prevented me getting html errors on them as this was the first page I validated. 
+     Removed type attributes from scripts on all my pages which prevented me getting html errors on them as well as this was the first page I validated. 
      Removed type attribute from text-box and the extra anchor closing tag that was present.
 
      ![Initial contact html test, second picture](assets/readme-assets/validations/contact-html-validation.png)
@@ -76,7 +76,7 @@ syntax errors in the project.
      ![Initial decision javascript test](assets/readme-assets/validations/decisionjs-validation2.png)
      ![Initial decision javascript test](assets/readme-assets/validations/decisionjs-validation3.png)
 
-     Fixed all the semi-colons. I had two read only warnings. This was due to me using length as a variable name so I renamed it which did the trick. Again $ for jquery was being flagged aswell as google (for google maps) for being undefined so I added in /*globals $:false */ and /*globals google:false */ to stop them being flagged.
+     Fixed all the semi-colons. I had two read only warnings. This was due to me using length as a variable name so I renamed it which did the trick. Again $ for jquery was being flagged as well as google (for google maps) for being undefined so I added in /*globals $:false */ and /*globals google:false */ to stop them being flagged.
      The other undefined variables I went though and declared them all.
      It was flagging initMap as unused, this is due to it not being called in my JS file. It is called however by the google maps API when a going out result creates the script for it. So it has been left as is.
 
@@ -177,11 +177,12 @@ syntax errors in the project.
       ![Picture showing About modal](assets/readme-assets/testing-images/about-modal.png)
 
    2. As a first time visitor, I want to be able to intuitively use the site.
-      - The layout is what users expect to see, nav menu at the top of all pages and social links at the bottom. In the event of an error the 404.html page has links back to home page and another to report error which takes them to the contact page.
+      - The layout is what users expect to see, nav menu at the top of all pages and social links at the bottom. In the event of an error the 404.html page has links back to home page and another to report error which takes them to the contact page. If the timer runs out there is a start again button that reloads the decision.html so the user doesn't have to go back to the home page to then restart the game.
 
       ![Picture showing nav menu](assets/readme-assets/testing-images/nav.png)
       ![Picture showing social links](assets/readme-assets/testing-images/social.png)
       ![Picture showing error message links](assets/readme-assets/testing-images/404.png)
+      ![Picture showing start again button](assets/readme-assets/testing-images/time-out.png)
 
    3. As a first time visitor, I expect to see an attractive, visually appealing site.
       - Used landing page image to pick colours from to ensure a pleasing colour palette. Hover effects draw attention to links and call to action buttons. Hover effects being size increase for social links, colour change on the result links, nav links, image attribute links and main buttons. The same colours were consistently used across the site for predictability and doesn't look too busy which can be off putting. 
@@ -214,7 +215,7 @@ syntax errors in the project.
       ![Picture showing contact page on desktop](assets/readme-assets/testing-images/desktop-contact.png)
       
    6. As a first time visitor, I want a quick and fun way to choose what to do for date night.
-   - The about modal explains that there is only 8 decisions and 8 seconds for each so its definitely quick and the timer with the colour change adds a bit of excitement and more fun to it, the cartoon type result pictures add to the lightheartedness aswell.
+   - The about modal explains that there is only 8 decisions and 8 seconds for each so its definitely quick and the timer with the colour change adds a bit of excitement and more fun to it, the cartoon type result pictures add to the lightheartedness as well.
 
      ![Picture showing a result image](assets/readme-assets/testing-images/result-image.png)
      ![Picture showing timer](assets/readme-assets/testing-images/timer.png)
@@ -241,13 +242,13 @@ syntax errors in the project.
      ![Picture showing the submit button text change](assets/readme-assets/testing-images/submit-modal.png)
 
    4. As a returning visitor, I want to see social media links so that I can follow on my chosen platforms.
-    - These are found at the bottom of the page througout and they all open in their own tab.
+    - These are found at the bottom of the page throughout and they all open in their own tab.
 
     ![Picture showing social links](assets/readme-assets/testing-images/social.png)
 
 - ### Frequent Visitor
-   1. As a frequent visitor I don't want to be choosing between the same two options each time e.g restaurant vs club. 
-    - It was written in the function to use two random numbers each time, this is so that after the initial stay in or go out decision they aren't getting cinema or restaurant as decision 2 and then club or bar as decision 3 etc each time. This is so the game isn't predictable and boring. Below are images of 3 games showing the second decision of each. Staying in being the first decison that was made.
+   1. As a frequent visitor I don't want to be choosing between the same two options each time e.g restaurant vs. club. 
+    - It was written in the function to use two random numbers each time, this is so that after the initial stay in or go out decision they aren't getting cinema or restaurant as decision 2 and then club or bar as decision 3 etc each time. This is so the game isn't predictable and boring. Below are images of 3 games showing the second decision of each. Staying in being the first decision that was made.
 
     ![Picture showing decision 2 example](assets/readme-assets/testing-images/game1.png)
     ![Picture showing decision 2 example 2](assets/readme-assets/testing-images/game2.png)
@@ -256,7 +257,7 @@ syntax errors in the project.
    2. As a frequent visitor, I want to be able to contact the owner with suggestions of more options.
     - As previously covered in story 3 of frequent visitor, link to contact page is at the top throughout. In addition to what has already been covered, the information from the contact form is linked to my email and so any suggestions would come straight to me and with the email address completed by the user I could respond to them.
   
-    ![Picture showing email recieved with the information from the contact form](assets/readme-assets/testing-images/email.js.png)
+    ![Picture showing email received with the information from the contact form](assets/readme-assets/testing-images/email.js.png)
 
    3. As a frequent visitor I want to use links to food delivery services if the result is takeaway.
 
@@ -275,6 +276,7 @@ syntax errors in the project.
 	- Nav links work from all three pages to all links.
 	- Clicking on social links from all pages work, opening in a new tab
 	- Clicking the start button loads the decisions.html and starts the timer.
+   - Decision counter works correctly.
 	- When the time runs out the start again button reloads decisions.html and timer starts.
 	- Timer colour change and pulse effect at 0 works
 	- For each result, correct information is shown.
@@ -283,8 +285,6 @@ syntax errors in the project.
 	- Map shows pins of results when location is either input in the search box or use my location button is used.
 	- If geolocation not supported or blocked by users, alert box shows.
          + <span style="color: grey;">Alert box appearing below the map and so on mobile screens this wasn't obvious to the user and so moved it to pop up between the input box and map.</span>
-
-         ![Picture showing a result image](assets/readme-assets/testing-images/alert.png)
 	- When pin is clicked open info window with Name of place and address.
          + <span style="color: grey;">When clicking on a second marker the original info window didn't close. It had done previously, realised when I was tidying up my code I had declared the infoWindow variable in the function where previously I had declared it at the top of my JS and so I changed it back.</span>
 	- The pictures that required an attribute had links that opened in a new tab to the correct places.
@@ -293,22 +293,32 @@ syntax errors in the project.
 	- Form will not submit without all three required personal details being completed and comment box. Can type in text area, On successful form submission, personalised modal appears, both close buttons take user back to home page and star rating works.
          + <span style="color: grey;">Realised that the star ratings were being skipped over by keyboard control and screen reader and so added in a tab-index</span>
 	- Upon successful submission, receive an email with details taken from the form by email.js and send button has changed to sent.
-         + <span style="color: grey;">I was getting a 412 error, when I went to my JS account it said I needed to reconnect my google account which as far as I coud tell hadn't disconnected, created a new service which fixed the issue.</span>
+         + <span style="color: grey;">I was getting a 412 error, when I went to my JS account it said I needed to reconnect my google account which as far as I could tell hadn't disconnected, created a new service which fixed the issue.</span>
 	- 404.html back to home button works.
 	- 404 report issue link takes user to contact form.
 	- About modal close buttons work.
-       
--	 Chrome devtools used to test responsiveness throughout the development process see bugs found below. Viewed all pages on all of the available devices at the end of the project to ensure everything still looked good.
--  	Viewed physically on Macbook air 13", Huawei tablet, HP Chrome book, Dell 21" HD screen, iphone 11, Dell 17" laptop and Pixel 4XL phone to ensure that after all issues found and resolved that there was nothing else appearing
-
-
+   - Friends, family and slack peer review used. Devices and browsers were iphone 11: Safari (x3), iphone XS Max: Safari, iphone 6: Chrome, iphone XR: safari, iphone 11 Pro: Safari, iphone 10: Safari, Samsung S20 FE: Chrome, Samsung S10 and Sony Xperia I3: Chrome. 
+        + There was a few comments about seeing the same option more than once, once I explained you start with 8, choose 4, then from those 4 you choose 2 and then pick from those 2, so the max you'll see one option is 3 times, they then understood what was going on. So I put a note on the landing page so people would know to expect to see some options more than once.
+        + Another comment was that when the hover effect was transitioning it affected the neighbouring social link icons. I changed the structure of the footer so that the individual links were in individual columns and so the other icons weren't jostled about when another was hovered over.
+        + Comment that tissue mask in pamper night result text was a typo. This highlighted that this isn't a well known beauty product so changed the wording to be clearer
+   - Chrome devtools used to test responsiveness throughout the development process see bugs found below. Viewed all pages on all of the available devices at the end of the project to ensure everything still looked good.
+   - Viewed physically on Macbook air 13", Huawei tablet, HP Chrome book, Dell 21" HD screen, iphone 11, Dell 17" laptop and Pixel 4XL phone to ensure that after all issues found and resolved that there was nothing else appearing
   
 ## Bugs
 
    ### Found and Fixed 
 
-  
+   In addition to the issues found in manual testing, I also found the below.
+
+   -  On iphone 11 had a massive gap between content and footer, played about with margins, trying to fix it. Realised I had put margin of 10vh on both top and bottom, when I just wanted it on the top. 
+   -  Footer was taking up more room that it should, it was escaping the container. Because I had changed the footer to put the icons in their own columns (see manual testing) bootstrap padding had been introduced, removed this.
+   -  Realised that once I'd picked going out or staying in the top button was coming up with the same option every time. When I looked at the function, realised that when I had changed a variable name from length to arrayLength after it been flagged by the JSHint, I had only changed two out of three of the placed it had been used.
+   -  On mobile the map obviously being smaller meant that the default satellite/ terrain options at the top left of the map were taking up alot of room and when an info window was opened, the information was being overlapped. Changed map type options to a dropdown menu using the Google Maps API documentation.
 
    ### Existing
 
-   -  Colours not supported on internet explorer so everything is pretty much white. Looked into fixes for this but the slack community advised against it due Internet explorer no longer being supported.
+   -  Colours not supported on internet explorer so everything is pretty much white. Looked into fixes for this but the slack community advised against it due to Internet explorer no longer being supported.
+   -  Still not happy with the view on mobile. On dev tools all the mobile views look fine, no scrolling required. I have everything bar the footer in a container, min-height: 90vh and footer being 10vh. But on my phone I'm not seeing the social icons in the same view as the nav menu. I don't know if its because newer mobiles have full size screens but have overlays at the top and bottom. and thats why I'm not seeing everything, because they are included in the 100vh maybe? I tried changing heights in dev tools which just gives gaps. So i thought it best to stick with a bit of vertical scrolling than gaps.
+
+    ![iphone11 view](assets/readme-assets/testing-images/iphone.png)
+    ![Second iphone11 view](assets/readme-assets/testing-images/iphone2.png)
