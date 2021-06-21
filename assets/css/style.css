@@ -101,6 +101,9 @@ button.submit {
 }
 
 /*---- Footer ----*/
+.social-links{
+  padding:0;
+}
 .social-links a {
   font-size: 30px;
   padding: 0 10px;
@@ -217,7 +220,7 @@ textarea:focus-visible {
   margin-top: 2.5vh;
 }
 #timer p {
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 600;
   color: green;
   margin: 0;
@@ -375,6 +378,13 @@ a.attribute,
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
+  h1,
+  .game h1 {
+    margin-top: 3vh;
+  }
+  h2 {
+    margin-top: 2vh;
+  }
 }
 @media(min-width:750px) {
   #picture img {
@@ -383,6 +393,12 @@ a.attribute,
   .nav-item .nav-link {
     font-size: 28px;
     font-weight: 400;
+  }
+  #timer p {
+    font-size: 120px;
+    font-weight: 600;
+    color: green;
+    margin: 0;
   }
   .social-links a {
     font-size: 40px;
