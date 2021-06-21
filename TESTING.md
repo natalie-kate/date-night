@@ -177,10 +177,11 @@ syntax errors in the project.
       ![Picture showing About modal](assets/readme-assets/testing-images/about-modal.png)
 
    2. As a first time visitor, I want to be able to intuitively use the site.
-      - The layout is what users expect to see, nav menu at the top of all pages and social links at the bottom. 
+      - The layout is what users expect to see, nav menu at the top of all pages and social links at the bottom. In the event of an error the 404.html page has links back to home page and another to report error which takes them to the contact page.
 
       ![Picture showing nav menu](assets/readme-assets/testing-images/nav.png)
       ![Picture showing social links](assets/readme-assets/testing-images/social.png)
+      ![Picture showing error message links](assets/readme-assets/testing-images/404.png)
 
    3. As a first time visitor, I expect to see an attractive, visually appealing site.
       - Used landing page image to pick colours from to ensure a pleasing colour palette. Hover effects draw attention to links and call to action buttons. Hover effects being size increase for social links, colour change on the result links, nav links, image attribute links and main buttons. The same colours were consistently used across the site for predictability and doesn't look too busy which can be off putting. 
@@ -221,9 +222,28 @@ syntax errors in the project.
 - ### Returning Visitor Goals
 
    1. As a returning visitor, if my result is to go out to do something e.g cinema, I want to see where the cinemas are on google maps.
+    - There is a use my location button or the user has another option of putting in another location in the search box and markers will appear to show them their options.
+    - If geolocation is not supported or is blocked by their device settings then an alert box will appear.
+
+     ![Picture showing a result image](assets/readme-assets/testing-images/markers.png)
+     ![Picture showing the alert image](assets/readme-assets/testing-images/alert.png)
+
    2. As a returning visitor, if I have a going out result I want to be able to choose what area to search for my resulting place.
+    - User can use the search box to search any area for their resulting activity.
+
+     ![Picture showing search box](assets/readme-assets/testing-images/search-box.png)
+
    3. As a returning visitor, I want to be able to contact the owner with comments or questions.
+     - The link to the contact form is in the nav menu at the top of the page throughout. There is a text area for any comments and questions. The contact form will not send without the required information being filled out. On successful submission a personalised modal will pop up, the send form button changes to Sent! and upon closing the modal the user will be taken back to the home page. So their is plenty of feedback that the form has sent.
+
+     ![Picture showing form prompts](assets/readme-assets/testing-images/form-prompts.png)
+     ![Picture showing the submit button text change](assets/readme-assets/testing-images/submit-button.png)
+     ![Picture showing the submit button text change](assets/readme-assets/testing-images/submit-modal.png)
+
    4. As a returning visitor, I want to see social media links so that I can follow on my chosen platforms.
+    - These are found at the bottom of the page througout and they all open in their own tab.
+
+    ![Picture showing social links](assets/readme-assets/testing-images/social.png)
 
 - ### Frequent Visitor Goals
    1. As a frequent visitor I don't want to be choosing between the same two options each time e.g restaurant vs club. 
@@ -245,6 +265,8 @@ syntax errors in the project.
 	- Map shows pins of results when location is either input in the search box or use my location button is used.
 	- If geolocation not supported or blocked by users, alert box shows.
          + <span style="color: grey;">Alert box appearing below the map and so on mobile screens this wasn't obvious to the user and so moved it to pop up between the input box and map.</span>
+
+         ![Picture showing a result image](assets/readme-assets/testing-images/alert.png)
 	- When pin is clicked open info window with Name of place and address.
          + <span style="color: grey;">When clicking on a second marker the original info window didn't close. It had done previously, realised when I was tidying up my code I had declared the infoWindow variable in the function where previously I had declared it at the top of my JS and so I changed it back.</span>
 	- The pictures that required an attribute had links that opened in a new tab to the correct places.
