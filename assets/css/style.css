@@ -23,7 +23,7 @@ body {
   margin: 10vh 15px 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 h1 {
   font-family: 'Lobster', cursive;
@@ -32,7 +32,7 @@ h1 {
 }
 h2 {
   font-family: 'Lobster', cursive;
-  margin-top: 5vh;
+  margin-top: 3vh;
   line-height: 1;
   font-size: 2.2rem;
 }
@@ -359,7 +359,13 @@ a.attribute,
     padding: 0 5px;
   }
 }
-@media(max-width:400px) {
+@media(max-width:450px) {
+  .heading {
+    margin: 5vh 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 60vh;
+  }
   button.submit,
   #options button {
     width: 80%;
