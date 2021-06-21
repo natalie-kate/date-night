@@ -219,7 +219,7 @@ syntax errors in the project.
      ![Picture showing a result image](assets/readme-assets/testing-images/result-image.png)
      ![Picture showing timer](assets/readme-assets/testing-images/timer.png)
 
-- ### Returning Visitor Goals
+- ### Returning Visitor
 
    1. As a returning visitor, if my result is to go out to do something e.g cinema, I want to see where the cinemas are on google maps.
     - There is a use my location button or the user has another option of putting in another location in the search box and markers will appear to show them their options.
@@ -245,11 +245,29 @@ syntax errors in the project.
 
     ![Picture showing social links](assets/readme-assets/testing-images/social.png)
 
-- ### Frequent Visitor Goals
+- ### Frequent Visitor
    1. As a frequent visitor I don't want to be choosing between the same two options each time e.g restaurant vs club. 
+    - It was written in the function to use two random numbers each time, this is so that after the initial stay in or go out decision they aren't getting cinema or restaurant as decision 2 and then club or bar as decision 3 etc each time. This is so the game isn't predictable and boring. Below are images of 3 games showing the second decision of each. Staying in being the first decison that was made.
+
+    ![Picture showing decision 2 example](assets/readme-assets/testing-images/game1.png)
+    ![Picture showing decision 2 example 2](assets/readme-assets/testing-images/game2.png)
+    ![Picture showing decision 2 example 3](assets/readme-assets/testing-images/game3.png)
+
    2. As a frequent visitor, I want to be able to contact the owner with suggestions of more options.
+    - As previously covered in story 3 of frequent visitor, link to contact page is at the top throughout. In addition to what has already been covered, the information from the contact form is linked to my email and so any suggestions would come straight to me and with the email address completed by the user I could respond to them.
+  
+    ![Picture showing email recieved with the information from the contact form](assets/readme-assets/testing-images/email.js.png)
+
    3. As a frequent visitor I want to use links to food delivery services if the result is takeaway.
+
+    - As with all the staying in results, there are useful links to get your date night going. These all open in their own tab.
+
+    ![Picture showing the useful links for the staying in results](assets/readme-assets/testing-images/tablet-in-result.png)
+
    4. As a frequent visitor I want to see information about the markers on the map.
+    - When a marker is clicked on the map an info window pops up with the place name and address. When another marker is clicked the first window will close and the new information will appear.
+
+    ![Picture showing the marker information](assets/readme-assets/testing-images/info-window.png)
 
 ## Manual Testing
 
