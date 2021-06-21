@@ -209,7 +209,7 @@ a:focus-visible,
 input:focus-visible,
 label:focus-visible,
 textarea:focus-visible {
-  outline: 3px dotted purple;
+  outline: 3px dotted orange;
 }
 
 /*---- Game ----*/
@@ -433,10 +433,6 @@ a.attribute,
   .result h2 {
     margin-top: 30px;
   }
-  .additional-links,
-  .results a {
-  text-decoration: none;
-}
 }
 @media(min-width:1000px) {
    .results h2 {
@@ -453,5 +449,25 @@ a.attribute,
    .alert p {
     font-size: 18px;
   }
+  .additional-links,
+  .results a {
+  text-decoration: none;
+  }
+}
+@media(prefers-reduced-motion: reduce) {
+  .social-links i:hover {
+    transition: none;
+    color: rgb(169 101 0);
+  }
+  @keyframes flash {
+    50% {
+      opacity: 1;
+      transition: none;
+    }
+  }
+  .hover-btn:hover {
+    background-color: white;
+    transition-duration: 0;
+   }
 }
 
