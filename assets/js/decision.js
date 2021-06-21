@@ -81,8 +81,9 @@ function game(options) {
     function randomChoice(optionsArray) {
         let arrayLength = optionsArray.length;
         let adjustedLength = arrayLength -= 1;
-        let randomNumber1 = Math.floor(Math.random() * length);
+        let randomNumber1 = Math.floor(Math.random() * arrayLength);
         let randomNumber2 = Math.floor(Math.random() * adjustedLength);
+
         getOptions(randomNumber1, randomNumber2);
         // The random numbers then used to pick and splice options from the array.
         function getOptions(num1, num2) {
