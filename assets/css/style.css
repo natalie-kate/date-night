@@ -354,6 +354,12 @@ a.attribute,
   .nav-item .nav-link {
     font-size: 14px;
   }
+  .heading {
+    margin: 5vh 15px 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 50vh;
+  }
   #start {
     width: 60vw;
     font-size: 20px;
@@ -363,12 +369,6 @@ a.attribute,
   }
 }
 @media(max-width:450px) {
-  .heading {
-    margin: 5vh 15px 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    min-height: 50vh;
-  }
   button.submit,
   #options button {
     width: 80%;
