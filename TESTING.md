@@ -171,14 +171,52 @@ syntax errors in the project.
 
 - ### First Time Visitor 
    1. As a first time visitor, I want to easily understand the main purpose of the site. 
+      - The overlay box on the landing page has the main title "Date Night" with an accompanying sentence of "Let us help you decide what to do". In addition there is a link to about in the nav to explain it more thoroughly.
    
-      ![Contact page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-404.png)
+      ![Picture showing title and accompanying sentence](assets/readme-assets/testing-images/title.png)
+      ![Picture showing About modal](assets/readme-assets/testing-images/about-modal.png)
 
    2. As a first time visitor, I want to be able to intuitively use the site.
+      - The layout is what users expect to see, nav menu at the top of all pages and social links at the bottom. 
+
+      ![Picture showing nav menu](assets/readme-assets/testing-images/nav.png)
+      ![Picture showing social links](assets/readme-assets/testing-images/social.png)
+
    3. As a first time visitor, I expect to see an attractive, visually appealing site.
+      - Used landing page image to pick colours from to ensure a pleasing colour palette. Hover effects draw attention to links and call to action buttons. Hover effects being size increase for social links, colour change on the result links, nav links, image attribute links and main buttons. The same colours were consistently used across the site for predictability and doesn't look too busy which can be off putting. 
+
+      ![Picture showing button hover effect](assets/readme-assets/testing-images/button.png)
+      ![Picture showing link hover effect](assets/readme-assets/testing-images/link.png)
+    
    4. As a first time visitor, I expect an accessible site.
+      - Aria labels, screen reader only text and alternative text have been used throughout the site. Styled the outline of keyboard focus making it more obvious as to where they are on the page and colour ties in with the design of the page. All colour contrast scores were a pass in chrome dev tools and accessibility score was 100%. Added in a media query for reduce motion to remove the pulse effect of the timer at 0 and the transition effects on the social links and buttons. Kept colour change on button and introduced one for the social links so that interactivity is still noticeable.
+
+       ![Picture showing keyboard focus](assets/readme-assets/testing-images/focus.png)
+
    5. As a first time visitor, I expect the site to look good on my mobile device.
+      - Designed mobile first. As hover effects not in use, main landing page button has a shadow effect border giving it a more obvious button look and on screens smaller than 1000px the useful links in the result page have the underline text decoration that users are used to being indicative of a link.  Have ensured the site is responsive on all screen sizes by using bootstrap and media queries.
+
+      ![Picture showing landing page on mobile](assets/readme-assets/testing-images/mobile-landing.png)
+      ![Picture showing game page on mobile](assets/readme-assets/testing-images/mobile-game.png)
+      ![Picture showing stay in result on mobile](assets/readme-assets/testing-images/mobile-in-result.png)
+      ![Picture showing go out result on mobile](assets/readme-assets/testing-images/mobile-out-result.png)
+      ![Picture showing contact page on mobile](assets/readme-assets/testing-images/mobile-contact.png)
+      ![Picture showing landing page on tablet](assets/readme-assets/testing-images/tablet-landing.png)
+      ![Picture showing game page on tablet](assets/readme-assets/testing-images/tablet-game.png)
+      ![Picture showing stay in result on tablet](assets/readme-assets/testing-images/tablet-in-result.png)
+      ![Picture showing go out result on tablet](assets/readme-assets/testing-images/tablet-out-result.png)
+      ![Picture showing contact page on tablet](assets/readme-assets/testing-images/tablet-contact.png)
+      ![Picture showing landing page on desktop](assets/readme-assets/testing-images/desktop-landing.png)
+      ![Picture showing game page on desktop](assets/readme-assets/testing-images/desktop-game.png)
+      ![Picture showing stay in result on desktop](assets/readme-assets/testing-images/desktop-in-result.png)
+      ![Picture showing go out result on desktop](assets/readme-assets/testing-images/desktop-out-result.png)
+      ![Picture showing contact page on desktop](assets/readme-assets/testing-images/desktop-contact.png)
+      
    6. As a first time visitor, I want a quick and fun way to choose what to do for date night.
+   - The about modal explains that there is only 8 decisions and 8 seconds for each so its definitely quick and the timer with the colour change adds a bit of excitement and more fun to it, the cartoon type result pictures add to the lightheartedness aswell.
+
+     ![Picture showing a result image](assets/readme-assets/testing-images/result-image.png)
+     ![Picture showing timer](assets/readme-assets/testing-images/timer.png)
 
 - ### Returning Visitor Goals
 
