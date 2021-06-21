@@ -20,10 +20,10 @@ body {
   border-radius: 18px;
 }
 .heading {
-  margin: 15vh 15px;
+  margin: 10vh 15px 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 60vh;
+  min-height: 60vh;
 }
 h1 {
   font-family: 'Lobster', cursive;
@@ -35,6 +35,9 @@ h2 {
   margin-top: 5vh;
   line-height: 1;
   font-size: 2.2rem;
+}
+.overlay p {
+  margin: 10px 5px;
 }
 /*----CSS tricks for gradient effect----*/
 hr {
@@ -112,7 +115,7 @@ button.submit {
 }
 .footer{
   padding-top: 10px;
-  height: 10vh;
+  min-height: 10vh;
 }
 
 /*---- Modals ----*/
@@ -362,20 +365,12 @@ a.attribute,
     width: 80%;
     margin-left: 10%;
   }
-  .heading {
-    margin: 5vh 15px;
-    height: 50vh;
-  }
   #start {
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
 }
 @media(min-width:750px) {
-  .heading {
-    margin: 10vh 15px;
-    height: 60vh;
-  }
   #picture img {
     height: 30vh;
   }
