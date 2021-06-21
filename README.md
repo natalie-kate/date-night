@@ -105,6 +105,8 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 
 - When timer stops flashing 0, time is up, the user gets the option to start again.
 
+- Option number counter so that the user can keep track of where they are.
+
 -   If user gets result of getting food delivered there are links to Uber Eats, Deliveroo and Just Eat. Likewise with the other staying in results, there are useful links too.
 
 -   If users initial option is Go out. Then their result will have a google map showing them where the cinema,
@@ -134,6 +136,10 @@ Wireframes were created on Balsamiq (see links below)
 * [Tablet](assets/readme-assets/wireframes/ms2-tablet.pdf)
 * [Desktop](assets/readme-assets/wireframes/ms2-desktop.pdf)
 
+Changes from the wireframes to final site are minimal. 
+- The planned desktop had a different layout in theory but in reality it didn't look right. For the staying in result which had a couple of links, they didn't take up enough room and just looked a bit strange. Again having the timer beside the options rather than above them didn't look great in practice either.
+- Added in a decision counter below the option buttons so the user has feedback of where they are in the game.
+
  ### Surface
 
  -   #### Colour Scheme
@@ -154,10 +160,9 @@ Wireframes were created on Balsamiq (see links below)
 -   #### Imagery
       
        Picked the background image for its modern and simple design as I didn't want it to be distracting. The overlay muted the colours, so that the writing could still be clearly seen. 
-       Used vectors for the result images. They have a fun aspect to them and they are all of similar design so they tie in together which would be harder to get with photos.
+       Used vectors for the result images. They have a fun aspect to them and they are all of similar design so they tie in together which would be harder to get with photos. These vectors required attribution so this is found directly below the vectors with the attribute required by [Freepik](https://www.freepik.com/).
        Also tried to pick vectors that weren't just of same sex couples where I could.
 
-    
 ## Technologies 
 
 ### Languages Used
