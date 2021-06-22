@@ -68,7 +68,7 @@ syntax errors in the project.
 
     ![Initial contact javascript test](assets/readme-assets/validations/contactjs-validation-initial.png)
 
-    Added in the missing semi-colon. The undefined variables I left as one was $ for jquery and the other is emailjs so neither need defined.
+    Added in the missing semi-colon. The undefined variables I left, as one was $ for jquery and the other is emailjs so neither need defined.
 
     - decision.js
 
@@ -77,8 +77,8 @@ syntax errors in the project.
      ![Initial decision javascript test](assets/readme-assets/validations/decisionjs-validation3.png)
 
      Fixed all the semi-colons. I had two read only warnings. This was due to me using length as a variable name so I renamed it which did the trick. Again $ for jquery was being flagged as well as google (for google maps) for being undefined so I added in /*globals $:false */ and /*globals google:false */ to stop them being flagged.
-     The other undefined variables I went though and declared them all.
-     It was flagging initMap as unused, this is due to it not being called in my JS file. It is called however by the google maps API when a going out result creates the script for it. So it has been left as is.
+     The other undefined variables I went through and declared them all.
+     It was flagging initMap as unused, this is due to it not being called in my JS file. It is called however by the Google Maps API when a going out result creates the script for it. So it has been left as is.
 
     ### Final testing
 
@@ -149,21 +149,21 @@ syntax errors in the project.
 
     #### Contact Page
 
-    + Final Mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-contact-report.pdf)))
+    + Final Mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-contact-report.pdf))
 
     ![Contact page scores for mobile](assets/readme-assets/lighthouse-testing/mobile-contact.png)
 
-    + Final Desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-contact-report.pdf)))
+    + Final Desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-contact-report.pdf))
 
     ![Contact page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-contact.png)
 
     #### 404 Page
 
-    + Final Mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-404-report.pdf)))
+    + Final Mobile (see report [here](assets/readme-assets/lighthouse-testing/mobile-404-report.pdf))
 
     ![Contact page scores for mobile](assets/readme-assets/lighthouse-testing/mobile-404.png)
 
-    + Final Desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-404-report.pdf)))
+    + Final Desktop (see report [here](assets/readme-assets/lighthouse-testing/desktop-404-report.pdf))
 
     ![Contact page scores for desktop](assets/readme-assets/lighthouse-testing/desktop-404.png)
 
@@ -257,7 +257,7 @@ syntax errors in the project.
    2. As a frequent visitor, I want to be able to contact the owner with suggestions of more options.
     - As previously covered in story 3 of frequent visitor, link to contact page is at the top throughout. In addition to what has already been covered, the information from the contact form is linked to my email and so any suggestions would come straight to me and with the email address completed by the user I could respond to them.
   
-    ![Picture showing email received with the information from the contact form](assets/readme-assets/testing-images/email.js.png)
+    ![Picture showing email received with the information from the contact form](assets/readme-assets/testing-images/emailjs.png)
 
    3. As a frequent visitor I want to use links to food delivery services if the result is takeaway.
 
@@ -320,5 +320,5 @@ syntax errors in the project.
    -  Colours not supported on internet explorer so everything is pretty much white. Looked into fixes for this but the slack community advised against it due to Internet explorer no longer being supported.
    -  Still not happy with the view on mobile. On dev tools all the mobile views look fine, no scrolling required. I have everything bar the footer in a container, min-height: 90vh and footer being 10vh. But on my phone I'm not seeing the social icons in the same view as the nav menu. I don't know if its because newer mobiles have full size screens but have overlays at the top and bottom. and thats why I'm not seeing everything, because they are included in the 100vh maybe? I tried changing heights in dev tools which just gives gaps. So i thought it best to stick with a bit of vertical scrolling than gaps.
 
-    ![iphone11 view](assets/readme-assets/testing-images/iphone.png)
-    ![Second iphone11 view](assets/readme-assets/testing-images/iphone2.png)
+  ![iphone11 view](assets/readme-assets/testing-images/iphone.png)
+  ![Second iphone11 view](assets/readme-assets/testing-images/iphone2.png)
