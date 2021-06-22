@@ -12,7 +12,7 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 
 ## Contents 
 
-- [User Experience (UX)](#user-experience-(ux))
+- [User Experience (UX)](#user-experience-ux)
    * [Strategy](#strategy)
    * [User Stories](#user-stories) 
    * [Scope](#scope)
@@ -26,7 +26,7 @@ The premise is that you subconsciously know what you want to do, so asking a ser
      + [Imagery](#imagery)
 - [Technologies](#technologies)
    * [Languages used](#languages-used)
-   * [Frameworks, Libraries & Programs Used](#frameworks-,-libraries-&-programs-used)
+   * [Frameworks, Libraries & Programs Used](#frameworks-libraries-&-programs-used)
 
 - [Challenges](#challenges)
 
@@ -37,7 +37,7 @@ The premise is that you subconsciously know what you want to do, so asking a ser
 - [Credits](#credits)
    * [Code](#code)
    * [Content](#content)
-   * [Media](media)
+   * [Media](#media)
    * [Acknowledgements](#acknowledgements)
 
 
@@ -217,7 +217,7 @@ Changes from the wireframes to final site are minimal.
        + <span style="color: grey;">Solution: Turns out I was barking up the wrong tree I had transitions on my colour changes, once I removed them it worked fine. </span>
    - Wanted the footer to be at the bottom of the content and at the bottom of the screen even when the content isn't long to push it there. Tried sticky and fixes but when mobile was turned for horizontal viewing the footer would be messing up the layout or be in the middle of the screen. I tried giving footer a height which caused issues on the home page.
        + <span style="color: grey;">Solution: Put footer within its own container and the content in another, made content 90vh and footer 10vh, this still wasn't quite right so changed this to min height. </span>
-   - Functions in general were a steep learning curve. I originally focused on the "staying in" side of the game and wrote everything apart from the timer in one big function and then for the going out I just copied it and changed the names for everything. I knew this wasn't right so I split my large function into smaller ones and called the next function in the previous one, this got rid of a lot of repetition too. I then was struggling with how to get variables available outside of its own function without making them all global. Realised I was missing the basic understanding required so went back revised, did some w3 tutorials and watched Steve Griffith YouTube videos on functions.
+   - Functions in general were a steep learning curve. I originally focused on the "staying in" side of the game and wrote everything apart from the timer in one big function and then for the going out I just copied it and changed the names for everything. I knew this wasn't right so I split my large function into smaller ones and called the next function in the previous one, this got rid of a lot of repetition too. I then was struggling with how to get variables available outside of its own function without making them all global. Realised I was missing the basic understanding required so went back revised, did some [w3 tutorials](https://www.w3schools.com/js/default.asp) and watched Steve Griffith YouTube videos on functions.
        + <span style="color: grey;">Solution: Smaller individual functions calling the next one and passing in the variables required. I also removed even more repetition when tidying up my final code, replacing it with two more functions. </span>
    - Was having an issue with my arrays, options that hadn't been getting chosen were coming up again, console.log of the array was giving me 2,3, 4 arrays, so figured this was due to the event listener for my buttons passing in the full array again. 
        + <span style="color: grey;">Solution: Once the game was started the buttons with id 1 & 2 were hidden and buttons 3 and 4 were shown this stops the event listener on buttons 1 & 2 starting another game when one is still in progress. </span>
@@ -325,7 +325,7 @@ For more information or troubleshooting see the Github documentation
  - [Freepik vectors](https://www.freepik.com/free-vector/board-game-collection_10258859.htm#page=1&query=board%20games&position=4): Image for games night result.
  - [pch vectors on freepik](https://www.freepik.com/free-vector/dating-couple-enjoying-romantic-dinner_7732606.htm#page=1&query=restaurant&position=25): Image for bar result.
  - [pch vectors on freepik](https://www.freepik.com/free-vector/smiling-tiny-woman-drinking-alcohol-happy-hours-flat-illustration_11235862.htm#page=1&query=cocktail%20menu&position=29): Image for cocktails result.
- - [pch vectors on freepik](https://www.freepik.com/free-vector/happy-young-people-dancing-club-isolated-flat-vector-illustration-cartoon-characters-enjoying-dance-disco-night-party-dj-scene-perform): Image for clubbing result
+ - [pch vectors on freepik](https://www.freepik.com/free-vector/happy-young-people-dancing-club-isolated-flat-vector-illustration-cartoon-characters-enjoying-dance-disco-night-party-dj-scene-performance-entertainment-concept_11671774.htm#page=1&query=clubbing&position=25): Image for clubbing result
  - [pch vectors on freepik](https://www.freepik.com/free-vector/happy-young-couple-home_12291118.htm#page=1&query=couple%20massage&position=0): Image for pamper night.
  - [VectorPouch on Freepik](https://www.freepik.com/free-vector/bowling-alleys-with-balls-pins-scoreboards_6198139.htm#page=1&query=bowling&position=7): Image for bowling result.
  - [VectorPouch on Freepik](https://www.freepik.com/free-vector/quest-escape-asylum-room-with-people-searching-exit_5901244.htm#page=1&query=escape%20room&position=13): Image for escape room result.
